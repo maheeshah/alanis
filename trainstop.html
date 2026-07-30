@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALANIS · Train Stop Planner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c0e; --panel:#f8f7f7; --panel-2:#17171c; --line:#2a2a31;
+    --ink:#c41616; --dim:#8a8a93; --white:#f7f5f2;
+    --green:#37c86c; --amber:#ffb020; --red:#d11a1a;
+    --mono:'IBM Plex Mono',monospace; --sans:'IBM Plex Sans',sans-serif; --disp:'Barlow Condensed',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--sans);background:var(--bg);color:var(--white);overflow:hidden}
+  .app{display:grid;grid-template-rows:52px 1fr;height:100vh}
+
+  .topbar{display:flex;align-items:center;gap:14px;padding:0 16px;background:var(--panel-2);border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:baseline;gap:10px}
+  .brand h1{font-family:var(--disp);font-weight:700;font-size:22px;letter-spacing:.04em;text-transform:uppercase;color:var(--white)}
+  .brand .tag{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.08em}
+  .topbar .spacer{flex:1}
+  .btn{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.05em;text-transform:uppercase;
+       background:transparent;color:var(--white);border:1px solid var(--line);border-radius:4px;
+       padding:7px 13px;cursor:pointer;transition:border-color .15s,background .15s}
+  .btn:hover{border-color:var(--red)}
+  .btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+  .status{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.04em}
+  .status .ok{color:var(--green)}
+
+  .main{display:grid;grid-template-columns:300px 1fr 320px;min-height:0}
+  .side{background:var(--panel-2);border-right:1px solid var(--line);min-height:0;overflow-y:auto;display:flex;flex-direction:column}
+  .side.right{border-right:none;border-left:1px solid var(--line)}
+  .mapwrap{position:relative;min-height:0}
+  #map{position:absolute;inset:0;background:#0e1216}
+
+  .sec{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .sec-t{font-family:var(--disp);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
+  .sec-t .n{color:var(--red)}
+
+  select,input{width:100%;padding:9px 10px;background:#0e0e12;border:1px solid var(--line);border-radius:4px;
+    color:var(--white);font-family:var(--mono);font-size:13px;margin-bottom:8px}
+  select:focus,input:focus{outline:none;border-color:var(--red)}
+  label.mini{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:3px}
+
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-family:var(--mono);font-size:12.5px;line-height:1.5}
+  .kv .k{color:var(--dim)}
+  .kv .v{color:var(--white);text-align:right}
+  .kv .v.auto{color:var(--amber)}
+
+  .stoptypes{display:flex;flex-direction:column;gap:7px}
+  .stoptype{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:5px;padding:9px 11px;cursor:pointer;
+    font-family:var(--mono);font-size:12.5px;color:var(--white);transition:border-color .15s,background .15s;background:transparent;text-align:left}
+  .stoptype:hover{border-color:var(--red)}
+  .stoptype.active{border-color:var(--red);background:rgba(209,26,26,.08)}
+  .stoptype .dot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none}
+  .stoptype.active .dot{background:var(--red)}
+
+  .analysis-empty{padding:22px 16px;font-family:var(--mono);font-size:12px;color:var(--dim);line-height:1.6}
+  .an-title{font-family:var(--disp);font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+  .verdict{border:1px solid var(--line);border-radius:6px;padding:12px 13px;margin:12px 0;font-family:var(--mono);font-size:12.5px;line-height:1.55}
+  .verdict.blocked{border-color:var(--red);background:rgba(209,26,26,.07)}
+  .verdict.clear{border-color:var(--green);background:rgba(55,200,108,.06)}
+  .verdict .big{font-family:var(--disp);font-weight:700;font-size:19px;letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:4px}
+  .verdict.blocked .big{color:var(--red)}
+  .verdict.clear .big{color:var(--green)}
+  .note{font-family:var(--mono);font-size:10.5px;color:var(--dim);line-height:1.55;margin-top:8px}
+
+  .hint-banner{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:1000;
+    background:rgba(23,23,28,.94);border:1px solid var(--line);border-radius:99px;
+    padding:6px 16px;font-family:var(--mono);font-size:11px;color:var(--dim);pointer-events:none;white-space:nowrap}
+  .legend{position:absolute;bottom:14px;right:12px;z-index:1000;background:rgba(23,23,28,.94);border:1px solid var(--line);
+    border-radius:6px;padding:9px 12px;font-family:var(--mono);font-size:11px;line-height:1.9}
+  .legend .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+
+  .leaflet-popup-content-wrapper{background:var(--panel-2);color:var(--white);border:1px solid var(--line);font-family:var(--sans)}
+  .leaflet-popup-tip{background:var(--panel-2)}
+  .leaflet-popup-content{font-size:12.5px}
+  .route-glow{filter:drop-shadow(0 0 4px var(--amber)) drop-shadow(0 0 10px rgba(255,176,32,.5))}
+
+  .empty-hint{color:var(--dim);font-family:var(--mono);font-size:11.5px;line-height:1.6;padding:4px 0}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand"><h1>ALANIS</h1><span class="tag">TRAIN STOP PLANNER</span></div>
+    <div class="spacer"></div>
+    <input type="file" id="trackInput" accept=".json,.geojson" hidden>
+    <input type="file" id="routeInput" accept=".json,.txt" hidden>
+    <span class="status" id="status">no data loaded</span>
+    <button class="btn" id="loadTrackBtn">Track Files</button>
+    <button class="btn" id="loadRouteBtn">Routes</button>
+    <button class="btn primary" id="dartBtn">Load DART</button>
+    <button class="btn" onclick="window.location.href='alanis.html'">Home</button>
+  </div>
+
+  <div class="main">
+    <!-- LEFT: train + consist + stop types -->
+    <aside class="side">
+      <div class="sec">
+        <div class="sec-t"><span class="n">1 ·</span> Select train</div>
+        <label class="mini">Running train (DART ∩ routes)</label>
+        <select id="trainSelect"><option value="">— load DART & routes —</option></select>
+        <label class="mini">…or enter a routed Train ID</label>
+        <input id="trainManual" placeholder="e.g. B10105" autocomplete="off">
+        <button class="btn" id="pickTrainBtn" style="width:100%">Focus this train</button>
+      </div>
+
+      <div class="sec">
+        <div class="sec-t"><span class="n">2 ·</span> Consist</div>
+        <div class="kv" id="consist">
+          <span class="k">train</span><span class="v" id="cTrain">—</span>
+          <span class="k">type</span><span class="v" id="cType">—</span>
+          <span class="k">speed</span><span class="v auto" id="cSpeed">—</span>
+          <span class="k">length</span><span class="v auto" id="cLen">—</span>
+          <span class="k">cars</span><span class="v auto" id="cCars">—</span>
+        </div>
+        <div class="note" id="consistNote" style="margin-top:10px">Auto-populated from DART when the train is live.</div>
+      </div>
+
+      <div class="sec" style="flex:1">
+        <div class="sec-t"><span class="n">3 ·</span> Stop type</div>
+        <div class="stoptypes" id="stopTypes">
+          <button class="stoptype active" data-type="custom"><span class="dot"></span>Stop at custom point</button>
+          <button class="stoptype" data-type="milepost"><span class="dot"></span>Stop at milepost</button>
+          <button class="stoptype" data-type="signal"><span class="dot"></span>Stop at signal</button>
+          <button class="stoptype" data-type="before"><span class="dot"></span>Stop before crossing</button>
+          <button class="stoptype" data-type="after"><span class="dot"></span>Stop after crossing</button>
+        </div>
+        <div id="stopTypeAux" style="margin-top:10px"></div>
+        <div class="empty-hint" id="leftHint" style="margin-top:12px">Pick a train, then click its route on the map to set a stop.</div>
+      </div>
+    </aside>
+
+    <!-- CENTER: map -->
+    <div class="mapwrap">
+      <div id="map"></div>
+      <div class="hint-banner" id="hintBanner">Load track files & routes, then select a train</div>
+      <div class="legend">
+        <div><span class="sw" style="background:var(--amber)"></span>route</div>
+        <div><span class="sw" style="background:var(--green)"></span>signal</div>
+        <div><span class="sw" style="background:var(--red)"></span>crossing</div>
+        <div><span class="sw" style="background:#fff"></span>stop</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: stop location analysis -->
+    <aside class="side right" id="analysisPane">
+      <div class="analysis-empty" id="analysisEmpty">
+        STOP LOCATION ANALYSIS<br><br>
+        Select a train and click a point on its route. This panel will show the milepost,
+        track, direction, nearest signal and crossing, and — for crossing stops — an occupancy analysis.
+      </div>
+      <div id="analysisBody" style="display:none;padding:16px"></div>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/* ============================================================
+   ALANIS · Train Stop Planner (trainstop.html)
+
+   PURPOSE: This page lets a dispatcher pick a single train,
+   see its route on the map, then click a point to analyze a
+   proposed stop: milepost, track name, direction, nearest signal,
+   nearest crossing, and — critically — whether the train body
+   would block that crossing while stopped.
+
+   DATA SHAPES (all loaded at runtime, nothing hardcoded):
+     track files : JSON with a "trackFiles" array. Each entry covers
+                   one railroad subdivision and contains:
+                     - tracks[]  : arrays of lat/lon/offset points
+                     - signals[] : lat/lon + name for each wayside signal
+                     - crossings[]: lat/lon + name for each grade crossing
+                     - milepostMeasures[]: ties a track offset (ft from
+                       start) to an actual railroad milepost number
+
+     routes      : JSON array. Each entry has a TrainID (e.g. "B10105")
+                   and a SubList — which subdivisions the train runs on
+                   and the MP range + track name within each one.
+
+     DART        : Live position feed, loaded via dart-proxy.py running
+                   locally. Keyed by locomotive ID; each record carries
+                   consist info (train ID, type, speed, length, cars)
+                   and the current lat/lon.
+   ============================================================ */
+
+// Unit conversion used everywhere we convert milepost distances to feet.
+const FT_PER_MILE = 5280;
+
+// dart-proxy.py must be running locally (see README). The proxy fetches from
+// the real DART API and re-serves it without CORS restrictions.
+const DART_PROXY_URL = 'http://localhost:8010/posl?ctl=1&age=1200&g=3';
+
+// --- Application state ---
+// These are the three data sources the user loads at runtime.
+let trackFiles = [];      // Array of track-file objects (from "Load Track Files" button)
+let routes = [];          // Array of route objects (from "Load Routes" button)
+let dartPos = {};         // Live DART positions keyed by locomotive ID (from "Load DART" button)
+
+// The currently focused train. Set by selectTrain(); null until a train is picked.
+// Shape: { route: routeObj, dart: dartRecord|null, id: "B10105" }
+let selected = null;
+
+// Which stop-type button the user has active (custom / milepost / signal / before / after)
+let stopType = 'custom';
+
+// The most recently analyzed stop. Holds the projected point plus derived values.
+// Kept around so renderAnalysis() can re-render without re-computing.
+let currentStop = null;
+
+/* ---------- Map setup ----------
+   We use four separate Leaflet layer groups so we can clear and redraw
+   each category independently (e.g. update just the stop marker without
+   redrawing all route geometry). */
+const map = L.map('map', {zoomControl:true}).setView([37.5,-83], 5);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);
+
+const routeLayer   = L.layerGroup().addTo(map);   // amber polylines showing the focused train's route
+const assetLayer   = L.layerGroup().addTo(map);   // green signals + red crossings along that route
+const trainLayer   = L.layerGroup().addTo(map);   // the live train emoji marker from DART
+const stopLayer    = L.layerGroup().addTo(map);   // the white circle dropped at the proposed stop
+
+const hintBanner = document.getElementById('hintBanner');
+const statusEl = document.getElementById('status');
+
+/* ---------- Small utility helpers ---------- */
+
+// Escape user-facing strings before inserting into innerHTML.
+// This prevents XSS if any field in the loaded JSON contains HTML characters.
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+// Convert meters (Leaflet's native distance unit) to feet.
+function feet(m){ return m*3.28084; }
+
+// DART's consist_train_id is a packed string like "W26529    BIRMIN07290700"
+// (the train symbol, spaces, then an origin/date code). The routes file uses
+// just the symbol ("W26529") as its key, so we strip everything after the
+// first whitespace block before doing any comparisons.
+function trainSymbol(consistTrainId){
+  return String(consistTrainId ?? '').trim().split(/\s+/)[0].toLowerCase();
+}
+
+// Subdivision IDs arrive in a few formats across files: "CSXT378", "378", "CSX 378".
+// This splits the railroad prefix (SCAC) from the numeric part so we can compare
+// them independently — e.g. a route file might say "CSXT378" while a track file
+// says "378", and they should be treated as the same subdivision.
+function parseSubId(subId){
+  const m=String(subId??'').trim().match(/^([A-Za-z]+)\s*(\d+)$/);
+  return m?{scac:m[1].toUpperCase(),sub:m[2]}:{scac:String(subId??'').trim().toUpperCase(),sub:''};
+}
+
+// Compare two subdivision IDs leniently. Handles "CSXT378" vs "378" by
+// falling back to parsing both as integers when string equality fails.
+function sameSub(a,b){
+  const sa=String(a??'').trim(),sb=String(b??'').trim();
+  if(!sa||!sb) return false;
+  if(sa===sb) return true;   // exact string match — fastest path
+  const na=parseInt(sa,10),nb=parseInt(sb,10);
+  return isFinite(na)&&isFinite(nb)&&na===nb;  // numeric equality fallback
+}
+
+// Standard haversine-adjacent bearing formula: given two [lat,lon] points,
+// returns the compass heading from a to b in degrees (0 = north, 90 = east, ...).
+function bearingDeg(a,b){
+  const toR=x=>x*Math.PI/180,toD=x=>x*180/Math.PI;
+  const dLon=toR(b[1]-a[1]);
+  const y=Math.sin(dLon)*Math.cos(toR(b[0]));
+  const x=Math.cos(toR(a[0]))*Math.sin(toR(b[0]))-Math.sin(toR(a[0]))*Math.cos(toR(b[0]))*Math.cos(dLon);
+  return (toD(Math.atan2(y,x))+360)%360;
+}
+
+// Snap a bearing in degrees to the nearest of 8 cardinal / intercardinal directions.
+function cardinal(deg){return ['N','NE','E','SE','S','SW','W','NW'][Math.round(deg/45)%8];}
+
+// Turn the short cardinal code into the English phrase shown in the UI.
+function boundWord(c){return {N:'Northbound',S:'Southbound',E:'Eastbound',W:'Westbound',
+  NE:'NE-bound',SE:'SE-bound',SW:'SW-bound',NW:'NW-bound'}[c]||c;}
+
+// Pull the numeric subdivision IDs out of a route's SubList (e.g. ["378","390"]).
+// Used to quickly decide which track files are relevant for a given train.
+function routeSubs(route){ return (route.SubList||[]).map(s=>parseSubId(s.SubID).sub); }
+
+// True if a track file belongs to one of the subdivisions the route runs through.
+function fileOnRoute(tf, route){ return routeSubs(route).some(sub=>sameSub(tf.subdivisionId,sub)); }
+
+/* projectToRoute — find the closest point on any route track to a given lat/lon.
+
+   This is a standard "point to polyline" projection. For every consecutive
+   pair of points (a, b) in every track belonging to the route, we compute
+   the parameter t ∈ [0,1] that minimizes the distance from (lat,lon) to the
+   segment, then build the projected point by lerp-ing between a and b.
+
+   We also interpolate the track's "offset" value (cumulative distance along
+   the track in feet from its origin) so we can later map back to a milepost.
+
+   Returns an object with:
+     lat, lon       — snapped position on the track
+     offset         — interpolated cumulative offset at the snapped point
+     blockId        — which track block the point landed on
+     subdivisionId  — which subdivision that block is in
+     scac           — the railroad code (e.g. "CSXT")
+     distM          — how far in meters the click was from the nearest track
+     _pts, _i       — the point array and segment index, for bearing calculation
+   Returns null if no route geometry has been loaded. */
+function projectToRoute(lat, lon, route){
+  let best=null, bestD=Infinity;
+  trackFiles.forEach(tf=>{
+    if(route && !fileOnRoute(tf,route)) return;
+    (tf.tracks||[]).forEach(track=>{
+      const pts=track.points||[];
+      for(let i=0;i<pts.length-1;i++){
+        const a=pts[i], b=pts[i+1];
+        const ax=a.lon, ay=a.lat, bx=b.lon, by=b.lat;
+        const dx=bx-ax, dy=by-ay;
+        const lenSq=dx*dx+dy*dy;
+        if(lenSq===0) continue;
+        let t=((lon-ax)*dx+(lat-ay)*dy)/lenSq;
+        t=Math.max(0,Math.min(1,t));
+        const projX=ax+t*dx, projY=ay+t*dy;
+        const d=map.distance([lat,lon],[projY,projX]);
+        if(d<bestD){
+          bestD=d;
+          best={lat:projY,lon:projX,
+            offset:a.offset+t*((b.offset??0)-(a.offset??0)),
+            blockId:track.blockId, subdivisionId:tf.subdivisionId, scac:tf.scac, distM:d,
+            _pts:pts, _i:i};
+        }
+      }
+    });
+  });
+  return best;
+}
+
+/* mpForProjection — convert a track offset to a railroad milepost number.
+
+   Track geometry uses an internal "offset" (cumulative feet from the start of
+   the track file), but dispatchers think in mileposts. The milepostMeasures
+   table ties specific offsets to real MP values; we find the closest entry on
+   the same block and return its measure. Works well in practice because the
+   measure table is densely sampled.
+
+   Returns the MP as a number, or null if no matching measure exists. */
+function mpForProjection(proj){
+  if(!proj) return null;
+  let best=null, bestDelta=Infinity;
+  trackFiles.forEach(tf=>{
+    (tf.milepostMeasures||[]).forEach(m=>{
+      if(!sameSub(m.subdivisionId, proj.subdivisionId)) return;
+      if(m.blockId!==proj.blockId) return;
+      const delta=Math.abs(m.offset-proj.offset);
+      if(delta<bestDelta){ bestDelta=delta; best=m; }
+    });
+  });
+  return best ? best.measure : null;
+}
+
+/* nearestAsset — find the closest signal or crossing to a point, on-route only.
+
+   "kind" is either 'signals' or 'crossings' — the field name in a track file.
+   We scan only track files that belong to the focused train's route, then
+   also project the found asset back onto the route to get its milepost.
+
+   Returns: { name, lat, lon, distFt, mp }  — distance in feet, mp may be null.
+   Returns null if the track files have no entries of that kind. */
+function nearestAsset(kind, lat, lon, route){
+  let best=null, bestD=Infinity;
+  trackFiles.forEach(tf=>{
+    if(route && !fileOnRoute(tf,route)) return;
+    (tf[kind]||[]).forEach(a=>{
+      if(!isFinite(+a.lat)||!isFinite(+a.lon)) return;
+      const d=map.distance([lat,lon],[+a.lat,+a.lon]);
+      if(d<bestD){ bestD=d; best=a; }
+    });
+  });
+  if(!best) return null;
+  const proj=projectToRoute(+best.lat,+best.lon,route);
+  return {name:best.name||best.text||'—', lat:+best.lat, lon:+best.lon,
+    distFt:Math.round(feet(bestD)), mp:mpForProjection(proj)};
+}
+
+/* bearingAt — compute the track heading at a projected stop point.
+
+   We saved the segment index (_i) when projecting, so we just pull that
+   segment's start and end points and run bearingDeg on them. This gives
+   the instantaneous track direction at the proposed stop, which we convert
+   to a cardinal direction (e.g. "Southbound") for the analysis panel. */
+function bearingAt(proj){
+  if(!proj||!proj._pts) return null;
+  const a=proj._pts[proj._i], b=proj._pts[proj._i+1];
+  if(!a||!b) return null;
+  return bearingDeg([a.lat,a.lon],[b.lat,b.lon]);
+}
+
+/* ---------- Data loading ----------
+
+   Three separate file-picker buttons: track files, routes, and DART.
+   Each one just stores its result into the relevant state variable and
+   then refreshes whatever UI depends on it (status bar, train dropdown). */
+
+document.getElementById('loadTrackBtn').onclick=()=>trackInput.click();
+document.getElementById('trackInput').addEventListener('change', async e=>{
+  const f=e.target.files[0]; if(!f) return;
+  try{
+    const data=JSON.parse(await f.text());
+    trackFiles=data.trackFiles||[];
+    setStatus();
+    hintBanner.textContent=`${trackFiles.length} track files loaded`;
+  }catch(err){ console.error(err); alert('Unable to load track file.'); }
+  e.target.value='';
+});
+
+document.getElementById('loadRouteBtn').onclick=()=>routeInput.click();
+document.getElementById('routeInput').addEventListener('change', async e=>{
+  const f=e.target.files[0]; if(!f) return;
+  try{
+    const data=JSON.parse(await f.text());
+    routes=Array.isArray(data)?data.filter(t=>t&&t.TrainID!=null):[];
+    setStatus(); rebuildTrainList();
+    hintBanner.textContent=`${routes.length} routes loaded`;
+  }catch(err){ console.error(err); alert('Unable to load routes file.'); }
+  e.target.value='';
+});
+
+document.getElementById('dartBtn').onclick=fetchDart;
+async function fetchDart(){
+  hintBanner.textContent='Loading DART…';
+  try{
+    // dart-proxy.py must be running on port 8010; it proxies the DART API
+    // and strips CORS headers so a browser page can call it directly.
+    const r=await fetch(DART_PROXY_URL);
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const data=await r.json();
+    dartPos=data.pos||{};
+    setStatus(); rebuildTrainList();
+    hintBanner.textContent=`${Object.keys(dartPos).length} DART trains loaded`;
+  }catch(err){
+    console.error(err);
+    // Most common failure: proxy isn't running. Give an actionable message.
+    hintBanner.textContent='DART unreachable — start dart_proxy.py (see main app)';
+  }
+}
+
+// Update the top-bar status text with counts of loaded data sets.
+// Green = data present, dim = not loaded yet.
+function setStatus(){
+  const part=(n,w)=> n?`<span class="ok">${n} ${w}</span>`:`no ${w}`;
+  statusEl.innerHTML=`${part(trackFiles.length,'track files')} · ${part(routes.length,'routes')} · ${part(Object.keys(dartPos).length,'DART')}`;
+}
+
+/* --- Train list helpers ---
+
+   dartRecordForTrainId: scan DART's pos object (keyed by locomotive ID) and
+   find the first record whose consist_train_id symbol matches the queried
+   train ID. Returns { loco, rec } or null.
+
+   routeForTrainId: find the route object that matches a given train ID.
+   Matching is case-insensitive and strips whitespace (DART IDs often have
+   trailing spaces from the source system).
+
+   rebuildTrainList: refresh the "Select train" dropdown to show only the
+   trains that are *both* live in DART *and* have a loaded route. These are
+   the trains you can actually do meaningful stop planning for. */
+function dartRecordForTrainId(trainId){
+  const q=String(trainId??'').trim().toLowerCase();
+  for(const [loco,recs] of Object.entries(dartPos)){
+    if(!recs||!recs.length) continue;
+    const r=recs[0];
+    if(trainSymbol(r.consist_train_id)===q) return {loco,rec:r};
+  }
+  return null;
+}
+function routeForTrainId(trainId){
+  const q=String(trainId??'').trim().toLowerCase();
+  return routes.find(t=>String(t.TrainID??'').trim().toLowerCase()===q) || null;
+}
+function rebuildTrainList(){
+  const sel=document.getElementById('trainSelect');
+  const ids=new Set();
+  Object.values(dartPos).forEach(recs=>{
+    const r=recs&&recs[0]; if(!r) return;
+    const id=trainSymbol(r.consist_train_id);
+    if(id && routeForTrainId(id)) ids.add(id.toUpperCase());
+  });
+  const list=[...ids].sort();
+  sel.innerHTML = list.length
+    ? '<option value="">— select running train —</option>'+list.map(id=>`<option value="${esc(id)}">${esc(id)}</option>`).join('')
+    : '<option value="">— none live with a route —</option>';
+}
+
+/* ---------- Train selection ----------
+
+   The user can pick a train from the dropdown (which only shows trains
+   that are live in DART AND have a route) or type one manually (for
+   route-only planning when DART data isn't available). Either way, we
+   call selectTrain() with the clean train ID string. */
+document.getElementById('pickTrainBtn').onclick=()=>{
+  const id=(document.getElementById('trainSelect').value||document.getElementById('trainManual').value||'').trim();
+  if(!id){ alert('Pick a running train or type a routed Train ID.'); return; }
+  selectTrain(id);
+};
+document.getElementById('trainSelect').addEventListener('change',e=>{
+  if(e.target.value) selectTrain(e.target.value);
+});
+
+// selectTrain: look up the route and (optionally) the DART record for this
+// train, populate the consist panel, then draw the route on the map.
+function selectTrain(trainId){
+  const route=routeForTrainId(trainId);
+  if(!route){ alert(`No loaded route for train ${trainId}. Load its routes file first.`); return; }
+  const dart=dartRecordForTrainId(trainId);
+  selected={ route, dart:dart?dart.rec:null, id:String(route.TrainID).trim() };
+
+  // consist readout
+  const d=selected.dart;
+  document.getElementById('cTrain').textContent = selected.id;
+  document.getElementById('cType').textContent  = d?.consist_train_type ?? '—';
+  document.getElementById('cSpeed').textContent = d?`${d.speed} mph`:'—';
+  document.getElementById('cLen').textContent   = d?`${d.consist_train_length} ft`:'—';
+  // consist_cars can be like "31 (31,0)" — show the leading count
+  document.getElementById('cCars').textContent  = d ? String(d.consist_cars ?? '—').split(' ')[0] : '—';
+  document.getElementById('consistNote').textContent = d
+    ? 'Auto-populated from live DART data.'
+    : 'This train is not live in DART right now — consist values are unavailable, but route planning still works.';
+
+  drawFocusedTrain();
+  clearAnalysis();
+  hintBanner.textContent = `Focused on ${selected.id} — click its route to set a stop`;
+}
+
+/* drawFocusedTrain — rebuild all map geometry for the selected train.
+
+   We clear all four layer groups and redraw from scratch. The route is drawn
+   as amber glowing polylines trimmed to the MP range declared in the route's
+   TrackInfo (so we don't light up the whole subdivision, only the portion
+   the train is actually dispatched over). Signals and crossings are drawn
+   only from track files that overlap the route. The live DART position, if
+   available, is shown as a train emoji marker.
+
+   After drawing, we fit the map to the visible route + train bounds. */
+function drawFocusedTrain(){
+  routeLayer.clearLayers(); assetLayer.clearLayers(); trainLayer.clearLayers(); stopLayer.clearLayers();
+  const route=selected.route;
+  const bounds=[];
+
+  // route polylines, trimmed to the route MP ranges where measures exist
+  const TOL=0.1;
+  (route.SubList||[]).forEach(s=>{
+    const p=parseSubId(s.SubID);
+    const ranges=(s.TrackInfo||[]).map(ti=>({lo:Math.min(+ti.MinMP,+ti.MaxMP)-TOL,hi:Math.max(+ti.MinMP,+ti.MaxMP)+TOL}));
+    trackFiles.forEach(tf=>{
+      if(!sameSub(tf.subdivisionId,p.sub)) return;
+      (tf.tracks||[]).forEach(track=>{
+        const pts=track.points||[];
+        const measures=(tf.milepostMeasures||[]).filter(m=>m.blockId===track.blockId).sort((a,b)=>a.offset-b.offset);
+        const keep=[];
+        if(measures.length>=2){
+          let run=[];
+          pts.forEach(pt=>{
+            const mp=mpForOffset(measures,pt.offset);
+            const on=ranges.some(r=>mp>=r.lo&&mp<=r.hi);
+            if(on){ run.push([pt.lat,pt.lon]); }
+            else{ if(run.length>1) keep.push(run); run=[]; }
+          });
+          if(run.length>1) keep.push(run);
+        }else{
+          const ll=pts.map(pt=>[pt.lat,pt.lon]); if(ll.length>1) keep.push(ll);
+        }
+        keep.forEach(ll=>{ ll.forEach(x=>bounds.push(x));
+          L.polyline(ll,{color:'#ffb020',weight:5,opacity:.95,className:'route-glow'}).addTo(routeLayer); });
+      });
+    });
+  });
+
+  // on-route signals + crossings only
+  trackFiles.forEach(tf=>{
+    if(!fileOnRoute(tf,route)) return;
+    (tf.signals||[]).forEach(sig=>{
+      if(!isFinite(+sig.lat)) return;
+      L.circleMarker([+sig.lat,+sig.lon],{radius:4,color:'#37c86c',fillColor:'#37c86c',fillOpacity:.85})
+        .bindPopup(`Signal: ${esc(sig.name)}`).addTo(assetLayer);
+    });
+    (tf.crossings||[]).forEach(cr=>{
+      if(!isFinite(+cr.lat)) return;
+      L.circleMarker([+cr.lat,+cr.lon],{radius:4,color:'#d11a1a',fillColor:'#d11a1a',fillOpacity:.85})
+        .bindPopup(`Crossing: ${esc(cr.name)}`).addTo(assetLayer);
+    });
+  });
+
+  // the live train
+  if(selected.dart && isFinite(+selected.dart.lat)){
+    L.marker([+selected.dart.lat,+selected.dart.lon],{
+      icon:L.divIcon({className:'',html:'🚂',iconSize:[24,24],iconAnchor:[12,12]})
+    }).bindPopup(`<b>${esc(selected.id)}</b> · ${esc(selected.dart.speed)} mph`).addTo(trainLayer);
+    bounds.push([+selected.dart.lat,+selected.dart.lon]);
+  }
+
+  if(bounds.length) map.fitBounds(L.latLngBounds(bounds).pad(0.12));
+}
+
+// mpForOffset — linearly interpolate a milepost value from the sorted
+// milepostMeasures table for a given cumulative offset. Clamps to the
+// first/last measure when the offset falls outside the table's range
+// (can happen at track endpoints).
+function mpForOffset(measures, offset){
+  if(offset<=measures[0].offset) return measures[0].measure;
+  const last=measures[measures.length-1];
+  if(offset>=last.offset) return last.measure;
+  for(let i=0;i<measures.length-1;i++){
+    const a=measures[i],b=measures[i+1];
+    if(offset>=a.offset&&offset<=b.offset){
+      const t=(offset-a.offset)/((b.offset-a.offset)||1);
+      return a.measure+t*(b.measure-a.measure);
+    }
+  }
+  return last.measure;
+}
+
+/* trackNameForMp — figure out which named track (Main 1, Siding, etc.) a
+   given milepost falls on. A subdivision can have multiple TrackInfo entries
+   covering different MP ranges; we pick the one whose range contains the MP
+   and is narrowest ("tightest wins") to handle overlapping ranges correctly.
+   Falls back to the only TrackInfo entry if there's just one. */
+function trackNameForMp(route, subId, mp){
+  const sub=(route.SubList||[]).find(s=>sameSub(parseSubId(s.SubID).sub,subId));
+  if(!sub) return null;
+  const infos=sub.TrackInfo||[];
+  if(isFinite(+mp)){
+    let best=null,span=Infinity;
+    infos.forEach(ti=>{
+      const lo=Math.min(+ti.MinMP,+ti.MaxMP)-0.1, hi=Math.max(+ti.MinMP,+ti.MaxMP)+0.1;
+      if(+mp>=lo&&+mp<=hi&&(hi-lo)<span){ span=hi-lo; best=ti.TrackName; }
+    });
+    if(best) return best;
+  }
+  return infos.length===1?infos[0].TrackName:null;
+}
+
+/* ---------- Stop type selection ----------
+
+   The five stop-type buttons control how the click (or the milepost input)
+   is interpreted:
+     custom   — drop the stop at the nearest point on the route
+     milepost — find the route geometry closest to a typed milepost number
+     signal   — snap the stop to the nearest green signal marker
+     before   — crossing stop where the FRONT of the train is short of the crossing
+     after    — crossing stop where the REAR of the train has fully cleared it
+
+   "before" and "after" don't actually move the click point here — the
+   occupancy analysis panel handles the geometry and communicates the
+   clearance requirement in plain language. */
+document.getElementById('stopTypes').addEventListener('click',e=>{
+  const b=e.target.closest('.stoptype'); if(!b) return;
+  stopType=b.dataset.type;
+  [...document.querySelectorAll('.stoptype')].forEach(x=>x.classList.toggle('active',x===b));
+  renderStopTypeAux();
+});
+
+// Update the auxiliary area below the stop-type buttons with relevant
+// instructions or, for the milepost type, an input + button.
+function renderStopTypeAux(){
+  const box=document.getElementById('stopTypeAux');
+  if(stopType==='milepost'){
+    box.innerHTML=`<label class="mini">Milepost</label>
+      <input id="mpInput" placeholder="e.g. 734.2" autocomplete="off">
+      <button class="btn" id="goMp" style="width:100%">Place at MP</button>`;
+    document.getElementById('goMp').onclick=()=>{
+      const mp=parseFloat(document.getElementById('mpInput').value);
+      if(!isFinite(mp)){ alert('Enter a milepost.'); return; }
+      placeStopAtMp(mp);
+    };
+  }else if(stopType==='signal'){
+    box.innerHTML=`<div class="empty-hint">Click near a green signal on the route — the stop snaps to it.</div>`;
+  }else if(stopType==='before'||stopType==='after'){
+    box.innerHTML=`<div class="empty-hint">Click a red crossing on the route. The stop is placed so the train ${stopType==='before'?'stops short of':'fully clears'} it, using the consist length.</div>`;
+  }else{
+    box.innerHTML=`<div class="empty-hint">Click anywhere on the route to drop the stop.</div>`;
+  }
+}
+renderStopTypeAux();
+
+/* pointAtMp — given a milepost number, find the track point on the route
+   whose computed milepost is closest to that target value. This is the
+   inverse of mpForProjection: instead of offset→MP we're doing MP→lat/lon.
+
+   We scan every point in every on-route track block, compute its MP, and
+   keep the one with the smallest absolute difference. Returns a
+   projection-compatible object so analyzeStop() can handle it uniformly. */
+function pointAtMp(mp){
+  let best=null,bestDelta=Infinity;
+  trackFiles.forEach(tf=>{
+    if(!fileOnRoute(tf,selected.route)) return;
+    (tf.tracks||[]).forEach(track=>{
+      const measures=(tf.milepostMeasures||[]).filter(m=>m.blockId===track.blockId).sort((a,b)=>a.offset-b.offset);
+      if(measures.length<2) return;
+      (track.points||[]).forEach(pt=>{
+        const cur=mpForOffset(measures,pt.offset);
+        const delta=Math.abs(cur-mp);
+        if(delta<bestDelta){ bestDelta=delta;
+          best={lat:pt.lat,lon:pt.lon,offset:pt.offset,blockId:track.blockId,subdivisionId:tf.subdivisionId,scac:tf.scac,_pts:track.points,_i:0}; }
+      });
+    });
+  });
+  return best;
+}
+function placeStopAtMp(mp){
+  if(!selected){ return; }
+  const p=pointAtMp(mp);
+  if(!p){ alert('No route geometry near that milepost.'); return; }
+  analyzeStop(p.lat,p.lon);
+}
+
+/* ---------- Map click handler ----------
+   Any click on the map triggers a stop analysis at that lat/lon,
+   but only once a train is selected. */
+map.on('click', e=>{
+  if(!selected){ hintBanner.textContent='Select a train first'; return; }
+  analyzeStop(e.latlng.lat, e.latlng.lng);
+});
+
+/* ---------- analyzeStop — the core stop-analysis routine ----------
+
+   Given a lat/lon (from a map click or a milepost lookup), this function:
+     1. Projects the point onto the nearest route track segment.
+     2. Adjusts the projected point if the stop type requires snapping
+        (e.g. "signal" type snaps to the closest signal marker).
+     3. Derives milepost, track name, and bearing at that point.
+     4. Finds the nearest signal and nearest crossing.
+     5. Stores everything in currentStop and calls renderAnalysis().
+
+   The stop marker (white circle) is placed at the snapped track point,
+   not the raw click, so the UI always reflects the actual rail location. */
+function analyzeStop(lat, lon){
+  const route=selected.route;
+  let proj=projectToRoute(lat,lon,route);
+  if(!proj){ hintBanner.textContent='No route geometry to snap to — load track files'; return; }
+
+  // stop-type adjustments
+  let intentNote='';
+  if(stopType==='signal'){
+    const sig=nearestAsset('signals',proj.lat,proj.lon,route);
+    if(sig){ const sp=projectToRoute(sig.lat,sig.lon,route); if(sp){ proj=sp; intentNote=`Snapped to signal ${sig.name}.`; } }
+  }
+
+  const mp=mpForProjection(proj);
+  const track=trackNameForMp(route,proj.subdivisionId,mp);
+  const brg=bearingAt(proj);
+  const card=brg!=null?cardinal(brg):null;
+  const sig=nearestAsset('signals',proj.lat,proj.lon,route);
+  const cr=nearestAsset('crossings',proj.lat,proj.lon,route);
+
+  currentStop={proj,mp,track,brg,card,sig,cr};
+
+  // stop marker
+  stopLayer.clearLayers();
+  L.circleMarker([proj.lat,proj.lon],{radius:9,color:'#fff',weight:3,fillColor:'#fff',fillOpacity:.2}).addTo(stopLayer);
+  map.panTo([proj.lat,proj.lon]);
+
+  renderAnalysis(intentNote);
+}
+
+function clearAnalysis(){
+  currentStop=null;
+  document.getElementById('analysisEmpty').style.display='';
+  document.getElementById('analysisBody').style.display='none';
+  stopLayer.clearLayers();
+}
+
+function fmtMp(mp){ return mp==null?'—':(+mp).toFixed(2); }
+function fmtSec(s){ if(s==null) return '—'; s=Math.round(s); const m=Math.floor(s/60); const ss=String(s%60).padStart(2,'0'); return `${m}:${ss}`; }
+
+function renderAnalysis(intentNote){
+  const {proj,mp,track,brg,card,sig,cr}=currentStop;
+  const d=selected.dart;
+  document.getElementById('analysisEmpty').style.display='none';
+  const body=document.getElementById('analysisBody');
+  body.style.display='';
+
+  let occHtml='';
+  if((stopType==='before'||stopType==='after'||stopType==='custom') && cr && mp!=null){
+    occHtml = occupancyHtml(mp, cr, d);
+  }
+
+  body.innerHTML = `
+    <div class="an-title">Stop Location Analysis</div>
+    <div class="kv">
+      <span class="k">train</span><span class="v">${esc(selected.id)}</span>
+      <span class="k">selected MP</span><span class="v">${fmtMp(mp)}</span>
+      <span class="k">track</span><span class="v">${esc(track||'—')}</span>
+      <span class="k">direction</span><span class="v">${card?esc(boundWord(card))+` (${card})`:'—'}</span>
+      <span class="k">lat/lon</span><span class="v">${proj.lat.toFixed(5)}, ${proj.lon.toFixed(5)}</span>
+    </div>
+    ${intentNote?`<div class="note">${esc(intentNote)}</div>`:''}
+
+    <div class="an-title" style="margin-top:18px;font-size:13px">Nearest features</div>
+    <div class="kv">
+      <span class="k">signal</span><span class="v">${sig?esc(sig.name):'—'}</span>
+      <span class="k">· distance</span><span class="v">${sig?sig.distFt+' ft':'—'}</span>
+      <span class="k">crossing</span><span class="v">${cr?esc(cr.name):'—'}</span>
+      <span class="k">· distance</span><span class="v">${cr?cr.distFt+' ft':'—'}</span>
+    </div>
+
+    ${occHtml}
+
+    <div class="note" style="margin-top:16px">
+      Direction is the track bearing at the stop, computed from the route geometry.
+      ${d?'':'Consist length/speed need live DART data for occupancy timing.'}
+    </div>
+  `;
+}
+
+/* occupancyHtml — compute and format the crossing occupancy analysis.
+
+   This answers the most operationally important question: "If the train stops
+   here, does it block a grade crossing?"
+
+   The math is intentionally simple and conservative:
+
+   BLOCKING (geometric check):
+     If the distance from the stop milepost to the crossing milepost is less
+     than the train's length (in miles), the train body physically sits over
+     the crossing. A stopped train stays blocked indefinitely — we show how
+     many feet the head end must pull forward to clear it.
+
+   PASS-THROUGH TIME (informational, only when speed > 0):
+     If the train is moving, we compute length ÷ speed to estimate how long
+     the crossing is occupied as the train rolls through. This is NOT the
+     same as a stop — it's shown as context for moving operations.
+
+   We need the DART live record to get consist length and speed. If either
+   is unavailable, we fall back to a graceful message explaining what's
+   missing and why the analysis can't be completed. */
+function occupancyHtml(stopMp, cr, dart){
+  if(cr.mp==null){
+    return `<div class="verdict"><span class="big">Crossing MP unknown</span>
+      Couldn't project ${esc(cr.name)} onto a milepost, so occupancy can't be computed.</div>`;
+  }
+  const gapMiles=Math.abs(cr.mp-stopMp);
+  const gapFt=Math.round(gapMiles*FT_PER_MILE);
+
+  if(!dart || !isFinite(+dart.consist_train_length)){
+    return `<div class="verdict">
+      <span class="big">Length needed</span>
+      Crossing <b>${esc(cr.name)}</b> is <b>${gapFt} ft</b> (MP ${fmtMp(cr.mp)}) from the stop.
+      Load this train live in DART to get its length and compute blocking.</div>`;
+  }
+
+  const Lft=+dart.consist_train_length;
+  const Lmiles=Lft/FT_PER_MILE;
+  const blocked = gapMiles<=Lmiles;
+  const clearanceFt = blocked ? Math.round((Lmiles-gapMiles)*FT_PER_MILE) : gapFt;
+
+  // pass-through occupancy if moving
+  let passHtml='';
+  if(isFinite(+dart.speed) && +dart.speed>0){
+    const ftPerSec=(+dart.speed)*FT_PER_MILE/3600;
+    const passSec=Lft/ftPerSec;
+    passHtml=`<div class="note">If the train instead passes through at ${esc(dart.speed)} mph,
+      the crossing is occupied for ~<b>${fmtSec(passSec)}</b> (length ÷ speed).</div>`;
+  }
+
+  if(blocked){
+    return `<div class="verdict blocked">
+      <span class="big">Crossing blocked</span>
+      With the head end at MP ${fmtMp(stopMp)}, the ${Lft} ft train body sits over
+      <b>${esc(cr.name)}</b> (MP ${fmtMp(cr.mp)}, ${gapFt} ft away).
+      To clear it, the head must pull ahead ~<b>${clearanceFt} ft</b>.
+      A stopped train blocks the crossing until it moves.
+      ${passHtml}
+    </div>`;
+  }
+  return `<div class="verdict clear">
+    <span class="big">Crossing remains clear</span>
+    <b>${esc(cr.name)}</b> (MP ${fmtMp(cr.mp)}) is ${gapFt} ft from the stop — beyond the
+    ${Lft} ft train length, so the body does not reach it.
+    ${passHtml}
+  </div>`;
+}
+
+setStatus();
+</script>
+</body>
+</html>
+
+

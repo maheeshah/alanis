@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALANIS — Project Presentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#d11a1a;
+    --red-deep:#8f0f0f;
+    --black:#0c0c0e;
+    --ink:#131317;
+    --panel:#17171c;
+    --line:#2a2a31;
+    --white:#f7f5f2;
+    --dim:#8a8a93;
+    --dimmer:#5a5a63;
+    --mono:'IBM Plex Mono',monospace;
+    --sans:'IBM Plex Sans',sans-serif;
+    --disp:'Barlow Condensed',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--black);color:var(--white);font-family:var(--sans);overflow:hidden}
+
+  /* ---------- deck chrome ---------- */
+  .deck{position:fixed;inset:0}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;
+    padding:56px 72px 92px;opacity:0;transition:opacity .4s ease}
+  .slide.active{display:flex;opacity:1}
+  .slide.leaving{display:flex;opacity:0}
+
+  /* eyebrow row */
+  .eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12px;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:auto}
+  .eyebrow .code{color:var(--red);font-weight:600}
+  .eyebrow .aspect{width:9px;height:9px;border-radius:50%;background:var(--red);
+    box-shadow:0 0 10px var(--red)}
+
+  h1{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+  h2{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.02em;
+    font-size:clamp(30px,4.6vw,58px);line-height:1;margin-bottom:6px}
+  .kicker{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--red);margin-bottom:16px}
+  p{font-size:clamp(15px,1.5vw,19px);line-height:1.55;color:#d8d6d2;max-width:60ch}
+  strong{color:var(--white);font-weight:600}
+  .lede{font-size:clamp(18px,2vw,24px);color:var(--white);line-height:1.4;max-width:26ch}
+
+  /* progress track / rail */
+  .rail{position:fixed;left:0;right:0;bottom:0;height:64px;pointer-events:none;z-index:50}
+  .rail svg{width:100%;height:100%}
+  .rail-meta{position:fixed;bottom:20px;left:72px;right:72px;display:flex;justify-content:space-between;
+    align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--dimmer);
+    text-transform:uppercase;z-index:51;pointer-events:none}
+  .rail-meta .now{color:var(--white)}
+  .rail-meta .now b{color:var(--red)}
+
+  /* nav hint */
+  .hint{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:52;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--dimmer);text-transform:uppercase}
+  .hint kbd{color:var(--dim);border:1px solid var(--line);border-radius:3px;padding:1px 5px;margin:0 1px}
+
+  /* ---------- title slide ---------- */
+  .title-wrap{display:flex;flex-direction:column;justify-content:center;height:100%;margin:0}
+  .title-wrap h1{font-size:clamp(72px,15vw,190px);letter-spacing:.02em}
+  .title-wrap .sub{font-family:var(--disp);font-weight:600;text-transform:uppercase;
+    font-size:clamp(18px,2.4vw,30px);letter-spacing:.14em;color:var(--red);margin-top:10px}
+  .title-wrap .tag{font-family:var(--mono);font-size:14px;letter-spacing:.1em;color:var(--dim);
+    margin-top:26px;max-width:52ch;line-height:1.6}
+  .title-badge{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);
+    border-radius:99px;padding:7px 16px;margin-bottom:30px;width:fit-content}
+
+  /* ---------- generic layout helpers ---------- */
+  .body-2col{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;flex:1;min-height:0}
+  .body-wide{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+  .stack{display:flex;flex-direction:column;gap:18px}
+
+  ul.ticks{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:8px}
+  ul.ticks li{position:relative;padding-left:26px;font-size:clamp(15px,1.5vw,18.5px);line-height:1.45;color:#d8d6d2}
+  ul.ticks li::before{content:'';position:absolute;left:0;top:.5em;width:9px;height:9px;background:var(--red);
+    border-radius:2px;transform:rotate(45deg)}
+  ul.ticks li b{color:var(--white)}
+
+  /* pipeline cards */
+  .pipe{display:grid;grid-template-columns:repeat(3,1fr);gap:0;flex:1;min-height:0;align-items:stretch}
+  .stage{position:relative;border:1px solid var(--line);padding:26px 24px;display:flex;flex-direction:column;
+    background:linear-gradient(180deg,var(--panel),#101014)}
+  .stage + .stage{border-left:none}
+  .stage .n{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.16em;margin-bottom:14px}
+  .stage h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:26px;line-height:1;
+    letter-spacing:.02em;margin-bottom:6px}
+  .stage .lang{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.1em;margin-bottom:16px}
+  .stage p{font-size:14.5px;line-height:1.5;color:#c9c7c3}
+  .stage .arrow{position:absolute;right:-13px;top:50%;transform:translateY(-50%);z-index:5;
+    width:24px;height:24px;background:var(--black);border:1px solid var(--line);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--red);font-size:13px}
+  .stage:last-child .arrow{display:none}
+  .stage .out{margin-top:auto;padding-top:16px;font-family:var(--mono);font-size:11px;color:var(--dim);
+    letter-spacing:.06em}
+  .stage .out b{color:var(--red)}
+
+  /* metric / feature grid */
+  .fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;flex:1;min-height:0;align-content:center}
+  .fcard{border:1px solid var(--line);background:var(--panel);padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;
+    transition:border-color .2s}
+  .fcard:hover{border-color:var(--red-deep)}
+  .fcard .ic{width:34px;height:34px;color:var(--red);margin-bottom:4px}
+  .fcard h4{font-family:var(--disp);font-weight:600;text-transform:uppercase;font-size:19px;letter-spacing:.03em;line-height:1.05}
+  .fcard p{font-size:13.5px;line-height:1.45;color:#bdbbb7}
+
+  /* challenge chips */
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .chip{border:1px solid var(--red-deep);border-radius:99px;padding:9px 18px;font-family:var(--mono);
+    font-size:12.5px;letter-spacing:.05em;color:#e6a3a3;background:rgba(209,26,26,.06)}
+
+  /* big statement */
+  .statement{display:flex;flex-direction:column;justify-content:center;height:100%;max-width:22ch}
+  .statement h2{font-size:clamp(40px,6vw,86px);line-height:.98}
+  .statement .accent{color:var(--red)}
+
+  /* data source diagram */
+  .hub{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+  .hub svg{width:100%;height:100%;max-height:60vh}
+
+  /* two-up technical */
+  .tech{display:grid;grid-template-columns:1fr 1fr;gap:48px;flex:1;min-height:0;align-items:center}
+  .tech .art{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:28px;height:100%;
+    display:flex;align-items:center;justify-content:center;min-height:0}
+  .tech .art svg{width:100%;height:auto;max-height:52vh}
+
+  .callout{font-family:var(--mono);font-size:12.5px;color:var(--dim);letter-spacing:.04em;margin-top:20px;
+    padding-left:16px;border-left:2px solid var(--red)}
+
+  .num-line{display:flex;align-items:baseline;gap:16px;margin-bottom:6px}
+  .num-line .v{font-family:var(--disp);font-weight:700;color:var(--red);font-size:clamp(34px,4vw,52px);line-height:1;min-width:2ch}
+  .num-line .l{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--dim);text-transform:uppercase}
+
+  @media (max-width:900px){
+    .slide{padding:40px 34px 88px}
+    .body-2col,.tech{grid-template-columns:1fr;gap:26px}
+    .pipe{grid-template-columns:1fr}
+    .stage + .stage{border-left:1px solid var(--line);border-top:none}
+    .stage .arrow{display:none}
+    .fgrid{grid-template-columns:1fr 1fr}
+    .rail-meta{left:34px;right:34px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .slide{transition:none}
+    .aspect{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+  <!-- 1 · TITLE -->
+  <section class="slide" data-title="Title">
+    <div class="title-wrap">
+      <span class="title-badge"><span class="aspect" style="width:9px;height:9px;border-radius:50%;background:var(--red);display:inline-block"></span> Name Location Service · Final Presentation</span>
+      <h1>ALANIS</h1>
+      <div class="sub">From raw rail messages to a live location map</div>
+      <div class="tag">A data pipeline and mapping tool that turns encoded railroad
+        messages into named, mapped, GPS-accurate track locations and shows trains running in real time.</div>
+    </div>
+  </section>
+
+  <!-- 2 · THE PROBLEM -->
+  <section class="slide" data-title="The problem">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·00</span> The problem</div>
+    <div class="body-2col">
+      <div class="stack">
+        <h2>Locations live in <span style="color:var(--red)">code</span>, not on a map</h2>
+        <p>Railroad operations generate a constant stream of encoded messages — track warrants,
+          bulletins, position updates. Buried inside them are the <strong>locations that matter</strong>:
+          where a train can go, where it stops, where the limits of authority are.</p>
+        <p>But those locations arrive as <strong>subdivision IDs, track names, and mileposts</strong> , 
+          not coordinates. There was no single place to search a location by name, see it on a map,
+          or line it up against the trains actually running.</p>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:22px;font-family:var(--mono);font-size:13px;line-height:1.9;color:var(--dim)">
+          <div style="color:var(--dimmer);letter-spacing:.1em;margin-bottom:10px">RAW &nbsp;→</div>
+          <div>SCAC <span style="color:var(--white)">CPRS</span></div>
+          <div>SUBDIV <span style="color:var(--white)">157</span></div>
+          <div>TRACK <span style="color:var(--white)">MAIN</span></div>
+          <div>MP <span style="color:var(--white)">157.9</span></div>
+          <div style="color:var(--red);margin:12px 0 10px;letter-spacing:.1em">RESOLVED &nbsp;→</div>
+          <div>NAME <span style="color:var(--white)">CLINTON</span></div>
+          <div>LAT/LON <span style="color:var(--white)">41.8444, −90.1887</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · USE CASE (moved up) -->
+  <section class="slide" data-title="Use case">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·01</span> Why it matters · Trip Optimizer Zero to Zero</div>
+    <div class="body-2col">
+      <div class="stack">
+        <h2 style="font-size:clamp(28px,4.2vw,50px)">Stopping a train, <span style="color:var(--red)">by name</span></h2>
+        <p>With <strong>Trip Optimizer Zero to Zero</strong>, a train can run start-to-stop on its own
+          but today there's <strong>no simple way to tell it where to stop</strong>. Someone has to hand-enter
+          the track details and push them to the train.</p>
+        <p>Alanis fixes that: pick the stop <strong>by its name</strong>, and the exact location is sent
+          straight to the train.</p>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:24px">
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dim);margin-bottom:12px">CREW → DISPATCHER</div>
+          <p style="font-size:16px;color:var(--white);max-width:none">"We won't make the crew-change point on our hours of service.
+            Set a stop at <span style="color:var(--red)">Hoover</span> and send a crew van."</p>
+          <div style="height:1px;background:var(--line);margin:20px 0"></div>
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dim);margin-bottom:8px">RESULT</div>
+          <p style="max-width:none">The stop goes straight to the on-board system and the train comes to a stop
+            <strong>automatically</strong>, with no manual track entry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b · VISION · RODA -->
+  <section class="slide" data-title="The vision">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·02</span> The bigger picture · RODA</div>
+    <div class="body-2col">
+      <div class="stack">
+        <h2 style="font-size:clamp(28px,4.2vw,50px)">A building block for <span style="color:var(--red)">RODA</span></h2>
+        <p>Stopping a train is the first use but the real vision is bigger. <strong>RODA</strong>, the Railroad
+          Operations Digital Assistant, is an application that allows any user to query it to answer questions.</p>
+        <p>Alanis is the
+          piece that identifies track locations for any purpose - the foundation RODA would be built on.</p>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:22px">
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--red);margin-bottom:14px">ASK RODA…</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:15px;color:#d8d6d2">
+            <div style="border-left:2px solid var(--line);padding-left:12px">"Where can train B10105 stop before Clinton?"</div>
+            <div style="border-left:2px solid var(--line);padding-left:12px">"What's at milepost 157.9 on the Davenport Sub?"</div>
+            <div style="border-left:2px solid var(--line);padding-left:12px">"Show me every siding on this subdivision."</div>
+          </div>
+          <div style="height:1px;background:var(--line);margin:18px 0"></div>
+          <p style="font-size:13.5px;color:var(--dim);max-width:none">Alanis resolves the <strong style="color:#fff">locations</strong> behind every answer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · RAW MESSAGE + THE GAP -->
+  <section class="slide" data-title="A raw message">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·03</span> Start with what actually arrives</div>
+    <div class="body-wide" style="justify-content:center;gap:0">
+      <h2 style="margin-bottom:6px">One message, as raw bytes</h2>
+      <p style="margin-bottom:14px">Every location begins as a <strong>1051 authority message</strong> and it arrives looking like this.</p>
+      <div style="border:1px solid var(--line);border-radius:6px;padding:13px 16px;background:#0e0e12;margin-bottom:16px">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--dimmer);margin-bottom:6px">RAW HEX PAYLOAD · ONE 1051 MESSAGE</div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--dim);word-break:break-all;line-height:1.6">04041b061100026b113a07366a1859dd28003b0030637072732e623a7074637372767200626e73662e6c2e626e73662e323335323a697463000103435052530c03b815033332350301009d07ea051c0f060000000102001817f8000000186e060000044d41494e00</div>
+      </div>
+      <div class="body-2col" style="flex:0 1 auto;align-items:stretch;gap:20px">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:8px;overflow:hidden">
+          <div style="background:#101014;color:var(--white);font-family:var(--mono);font-size:13px;letter-spacing:.1em;padding:12px 20px;border-bottom:1px solid var(--line)">WHAT'S IN THERE</div>
+          <div style="padding:20px 24px;font-family:var(--mono);font-size:17px;line-height:2.1;color:var(--dim)">
+            <div>name &nbsp;&nbsp;&nbsp;<span style="color:var(--white)">CLINTON</span></div>
+            <div>scac &nbsp;&nbsp;&nbsp;<span style="color:var(--white)">CPRS</span></div>
+            <div>subdiv &nbsp;<span style="color:var(--white)">157</span></div>
+            <div>track &nbsp;&nbsp;<span style="color:var(--white)">MAIN</span></div>
+            <div>mp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--white)">157.9 – 160.1</span></div>
+          </div>
+        </div>
+        <div style="border:2px solid var(--red);background:var(--panel);border-radius:8px;overflow:hidden">
+          <div style="background:var(--red);color:#fff;font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:12px 20px;font-size:19px">What's missing</div>
+          <div style="padding:20px 24px;font-family:var(--mono);font-size:17px;line-height:2.1;color:var(--dim)">
+            <div>lat &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--red)">— none —</span></div>
+            <div>lon &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--red)">— none —</span></div>
+            <p style="margin-top:14px;font-size:15px;color:#cfcdc9;max-width:none;line-height:1.5">No coordinates anywhere in the message, so it can't go on a map yet. That gap is the whole problem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · DECODING IT -->
+  <section class="slide" data-title="Decoding it">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·04</span> First we had to read the messages</div>
+    <div class="body-2col">
+      <div class="stack">
+        <div class="kicker">From bytes to fields</div>
+        <h2 style="font-size:clamp(28px,4vw,46px)">Decoding the messages</h2>
+        <ul class="ticks">
+          <li>The logs live in <b>S3 buckets</b> which is cloud storage holding millions of files; we then filtered to about <b>two weeks of files</b> to keep the data load manageable</li>
+          <li><b>BNSF</b> stored theirs differently from everyone else, so it needed its own path</li>
+          <li>We decoded only <b>1041</b> (bulletins) and <b>1051</b> (authorities) — the messages that name track locations</li>
+          <li>Turned the raw hex into clean fields, <b>reassembling messages split across many lines</b></li>
+        </ul>
+        <div class="callout">Now every message is readable but it still has no coordinates.</div>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:18px 20px">
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--red);margin-bottom:8px">WHAT'S AN S3 BUCKET?</div>
+          <p style="font-size:14.5px;color:#c9c7c3">Amazon's cloud storage — think a giant online folder. It's where each railroad keeps its raw message logs, by the million.</p>
+        </div>
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+          <div style="background:#101014;color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:.1em;padding:9px 16px;border-bottom:1px solid var(--line)">DECODED SO FAR</div>
+          <div style="padding:14px 18px;font-family:var(--mono);font-size:12.5px;line-height:1.9;color:var(--dim)">
+            <div>name <span style="color:var(--white)">CLINTON</span> &nbsp; subdiv <span style="color:var(--white)">157</span> &nbsp; mp <span style="color:var(--white)">157.9</span></div>
+            <div>lat/lon <span style="color:var(--red)">still missing →</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · TRACK FILES -->
+  <section class="slide" data-title="Track files">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·05</span> The other half of the picture</div>
+    <div class="body-2col">
+      <div class="stack">
+        <div class="kicker">The map of the ground</div>
+        <h2 style="font-size:clamp(28px,4vw,46px)">What track files give us</h2>
+        <p>A <strong>track file</strong> is the railroad's fixed map of the physical network, assembled from
+          <strong>over 1,000 customer track databases</strong>.</p>
+        <p>For every point on the track it lists a real <strong>GPS coordinate</strong> — exactly the thing our
+          decoded messages are missing.</p>
+        <div class="callout">The messages know the place. The track files know where it is.</div>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+          <div style="background:var(--red);color:#fff;font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:10px 18px;font-size:15px">Each track file contains</div>
+          <div style="padding:18px 20px;font-family:var(--mono);font-size:13.5px;line-height:2.1;color:var(--dim)">
+            <div>mileposts &nbsp;<span style="color:var(--white)">→ lat / lon</span></div>
+            <div>signals</div>
+            <div>switches</div>
+            <div>crossings</div>
+            <div>signage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- 7b · WHY NAMING WAS HARD -->
+<section class="slide" data-title="Why naming was hard">
+  <div class="eyebrow">
+    <span class="aspect"></span>
+    <span class="code">SLIDE·06</span>
+    The catch · the same idea is never written the same way
+  </div>
+
+  <div class="body-wide" style="justify-content:center">
+    <h2 style="margin-bottom:8px">Why pulling the name was hard</h2>
+
+    <p style="margin:0 0 20px;max-width:1000px;text-align:center">
+      The location is in the text but where it sits, and how it's phrased,
+      changes every time. The name is
+      <span style="color:var(--red)">highlighted</span> in each.
+    </p>
+
+    <!-- 2 × 2 grid -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;width:100%">
+
+      <!-- A -->
+      <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+        <div style="background:#101014;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;padding:8px 16px;border-bottom:1px solid var(--line)">
+          ENTER MAIN TRACK · A
+        </div>
+        <div style="padding:14px 16px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#c9c7c3">
+          …ENTER MAIN TRACK MAIN TRK BOTH DIR
+          <span style="color:red;font-weight:bold">BTW NAS DAISY LANE</span>
+          MAIN TRK AND
+          <span style="color:red;font-weight:bold">SAS VINE STREET</span>
+          MAIN TRK
+        </div>
+      </div>
+
+      <!-- B -->
+      <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+        <div style="background:#101014;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;padding:8px 16px;border-bottom:1px solid var(--line)">
+          ENTER MAIN TRACK · B
+        </div>
+        <div style="padding:14px 16px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#c9c7c3">
+          …ENTER MAIN TRACK
+          <span style="color:red;font-weight:bold">AT NAHANT</span>,
+          AHEAD OF Q501, THEN PROCEED NORTH TO CP 214
+        </div>
+      </div>
+
+      <!-- C -->
+      <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+        <div style="background:#101014;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;padding:8px 16px;border-bottom:1px solid var(--line)">
+          TRACK WARRANT · C
+        </div>
+        <div style="padding:14px 16px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#c9c7c3">
+          PROCEED FROM
+          <span style="color:red;font-weight:bold">DAVENPORT</span>
+          TO
+          <span style="color:red;font-weight:bold">MUSCATINE</span>
+          ON MAIN TRACK
+        </div>
+      </div>
+
+      <!-- D -->
+      <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+        <div style="background:#101014;color:var(--dim);font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;padding:8px 16px;border-bottom:1px solid var(--line)">
+          TRACK WARRANT · D
+        </div>
+        <div style="padding:14px 16px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#c9c7c3">
+          WORK BETWEEN MP 210 AND
+          <span style="color:red;font-weight:bold">WEST LIBERTY</span>;
+          NOT IN EFFECT UNTIL AFTER ARRIVAL OF 2352
+          <span style="color:red;font-weight:bold">AT WILTON</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="callout" style="margin-top:18px">
+      Different word, different position, sometimes two names, sometimes mixed
+      with mileposts — so we mined historical messages for the patterns and
+      built an algorithm to catch them all.
+    </div>
+  </div>
+</section>
+
+  <!-- 6 · MATCHING / BRIDGE -->
+  <section class="slide" data-title="Matching">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·07</span> Bridge the two together</div>
+    <div class="tech">
+      <div class="stack">
+        <div class="kicker">Message ⋈ track file</div>
+        <h2 style="font-size:clamp(28px,4vw,46px)">Matching them up</h2>
+        <p>We take the <strong>subdivision, prefix/suffix, track and milepost</strong> from the decoded message and look up the
+          same point in the track files.</p>
+        <p>Out comes the exact <strong>lat/lon</strong>. That's the bridge and it's what finally lands each
+          location on the map.</p>
+        <div class="callout">Joined on subdivision + prefix/suffix + track + milepost. Neither side could do it alone.</div>
+      </div>
+      <div class="art">
+        <!-- message key → track-file lookup → coordinate -->
+        <svg viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Mono">
+          <!-- MESSAGE key -->
+          <text x="16" y="40" fill="#8a8a93" font-size="11" letter-spacing="1">MESSAGE</text>
+          <rect x="16" y="48" width="150" height="124" rx="6" fill="#17171c" stroke="#2a2a31"/>
+          <g font-size="12">
+            <text x="30" y="76" fill="#8a8a93">SUBDIV</text><text x="118" y="76" fill="#f7f5f2">157</text>
+            <text x="30" y="102" fill="#8a8a93">TRACK</text><text x="118" y="102" fill="#f7f5f2">MAIN</text>
+            <text x="30" y="128" fill="#8a8a93">MP</text><text x="118" y="128" fill="#d11a1a">157.9</text>
+            <text x="30" y="154" fill="#8a8a93">Prefix</text><text x="118" y="154" fill="#d11a1a">A</text>
+          </g>
+          <!-- TRACK FILE lookup table -->
+          <text x="250" y="24" fill="#8a8a93" font-size="11" letter-spacing="1">TRACK FILE</text>
+          <rect x="250" y="32" width="154" height="150" rx="6" fill="#17171c" stroke="#2a2a31"/>
+          <line x1="250" y1="58" x2="404" y2="58" stroke="#2a2a31"/>
+          <g font-size="11">
+            <text x="264" y="52" fill="#8a8a93">MP</text><text x="322" y="52" fill="#8a8a93">LAT / LON</text>
+            <text x="264" y="80" fill="#6f6f77">157.7</text><text x="322" y="80" fill="#6f6f77">···</text>
+            <rect x="254" y="90" width="146" height="24" rx="3" fill="#2a0f0f" stroke="#d11a1a"/>
+            <text x="264" y="107" fill="#f7f5f2">157.9</text><text x="322" y="107" fill="#e6a3a3">41.84,−90.19</text>
+            <text x="264" y="136" fill="#6f6f77">158.1</text><text x="322" y="136" fill="#6f6f77">···</text>
+            <text x="264" y="162" fill="#6f6f77">158.3</text><text x="322" y="162" fill="#6f6f77">···</text>
+          </g>
+          <!-- match connector -->
+          <line x1="166" y1="124" x2="250" y2="102" stroke="#d11a1a" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="150" y="150" fill="#8a8a93" font-size="10">match on MP</text>
+          <!-- result path + box -->
+          <path d="M327 114 L 327 210 L 210 210 L 210 230" stroke="#2a2a31" stroke-width="1.5" fill="none"/>
+          <text x="95" y="224" fill="#8a8a93" font-size="10" letter-spacing="1">RESULT</text>
+          <rect x="95" y="232" width="230" height="46" rx="6" fill="#d11a1a"/>
+          <text x="210" y="261" fill="#fff" font-size="15" text-anchor="middle" letter-spacing="1">41.8444, −90.1887</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · ALL CONNECTED -->
+  <section class="slide" data-title="All connected">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·08</span> The payoff · one complete record</div>
+    <div class="body-2col">
+      <div class="stack">
+        <h2 style="font-size:clamp(30px,4.4vw,52px)">Now it's all <span style="color:var(--red)">connected</span></h2>
+        <p>Start with raw bytes. Decode them into fields. Match the milepost to a coordinate. Keep the name.
+          What comes out the other side is one <strong>complete, mapped location</strong>.</p>
+        <p>Do that across the whole message stream and you get a searchable <strong>location database</strong> —
+          the foundation for everything in the app.</p>
+      </div>
+      <div class="stack">
+        <div style="border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden">
+          <div style="background:var(--red);color:#fff;font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:10px 18px;font-size:15px">Location database · record</div>
+          <div style="padding:18px;font-family:var(--mono);font-size:13px;line-height:2;color:var(--dim)">
+            <div>name &nbsp;&nbsp; <span style="color:var(--white)">CLINTON</span></div>
+            <div>scac &nbsp;&nbsp; <span style="color:var(--white)">CPRS</span></div>
+            <div>subdiv &nbsp;<span style="color:var(--white)">157</span></div>
+            <div>track &nbsp;&nbsp;<span style="color:var(--white)">MAIN</span></div>
+            <div>mp &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--white)">157.9</span></div>
+            <div>lat/lon <span style="color:var(--red)">41.8444, −90.1887 ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8 · MEET ALANIS -->
+  <section class="slide" data-title="Meet Alanis">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·09</span> The application</div>
+    <h2 style="margin-bottom:6px;text-align:center">Meet Alanis</h2>
+    <p style="margin:0 auto 4px;text-align:center;max-width:660px">A web app built with <strong>Leaflet</strong> that brings the whole pipeline together on one map — pulling four sources at once.</p>
+    <div class="hub">
+      <svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Mono">
+        <!-- connectors -->
+        <g stroke="#2a2a31" stroke-width="1.5">
+          <line x1="180" y1="90" x2="380" y2="190"/>
+          <line x1="580" y1="90" x2="380" y2="190"/>
+          <line x1="180" y1="290" x2="380" y2="190"/>
+          <line x1="580" y1="290" x2="380" y2="190"/>
+        </g>
+        <g stroke="#d11a1a" stroke-width="1.5" stroke-dasharray="3 5">
+          <line x1="180" y1="90" x2="380" y2="190"/>
+          <line x1="580" y1="90" x2="380" y2="190"/>
+          <line x1="180" y1="290" x2="380" y2="190"/>
+          <line x1="580" y1="290" x2="380" y2="190"/>
+        </g>
+        <!-- source nodes -->
+        <g>
+          <rect x="80" y="62" width="200" height="56" rx="4" fill="#17171c" stroke="#2a2a31"/>
+          <text x="98" y="88" fill="#f7f5f2" font-size="15" font-weight="600">Track files</text>
+          <text x="98" y="106" fill="#8a8a93" font-size="11">1,000+ track databases</text>
+        </g>
+        <g>
+          <rect x="480" y="62" width="200" height="56" rx="4" fill="#17171c" stroke="#2a2a31"/>
+          <text x="498" y="88" fill="#f7f5f2" font-size="15" font-weight="600">Train routes</text>
+          <text x="498" y="106" fill="#8a8a93" font-size="11">common routes per train</text>
+        </g>
+        <g>
+          <rect x="80" y="262" width="200" height="56" rx="4" fill="#17171c" stroke="#2a2a31"/>
+          <text x="98" y="288" fill="#f7f5f2" font-size="15" font-weight="600">DART</text>
+          <text x="98" y="306" fill="#8a8a93" font-size="11">trains running now · live</text>
+        </g>
+        <g>
+          <rect x="480" y="262" width="200" height="56" rx="4" fill="#17171c" stroke="#2a2a31"/>
+          <text x="498" y="288" fill="#f7f5f2" font-size="15" font-weight="600">Location DB</text>
+          <text x="498" y="306" fill="#8a8a93" font-size="11">the pipeline output</text>
+        </g>
+        <!-- center hub -->
+        <circle cx="380" cy="190" r="62" fill="#d11a1a"/>
+        <circle cx="380" cy="190" r="62" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="1"/>
+        <text x="380" y="184" fill="#fff" font-family="Barlow Condensed" font-weight="700" font-size="30" text-anchor="middle" letter-spacing="1">ALANIS</text>
+        <text x="380" y="205" fill="#fff" fill-opacity=".8" font-size="10" text-anchor="middle" letter-spacing="2">LEAFLET MAP</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 9 · FEATURES -->
+  <section class="slide" data-title="What it does">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·10</span> What it does — and why it matters</div>
+    <div class="fgrid">
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        <h4>Search by name</h4>
+        <p>Find a location the way crews say it — by name — and jump straight to it. No coordinates required.</p>
+      </div>
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+        <h4>See a train's route</h4>
+        <p>Enter a train ID and highlight the route it runs — the context you need to place a stop correctly.</p>
+      </div>
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="14" rx="3"/><line x1="8" y1="21" x2="8" y2="17"/><line x1="16" y1="21" x2="16" y2="17"/><circle cx="9" cy="13" r="1.3" fill="currentColor"/><circle cx="15" cy="13" r="1.3" fill="currentColor"/></svg>
+        <h4>Live running trains</h4>
+        <p>Pull current trains from DART and watch them move — refreshed every 30 seconds, in place.</p>
+      </div>
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="18" x2="20" y2="18"/><line x1="7" y1="18" x2="7" y2="12"/><line x1="12" y1="18" x2="12" y2="8"/><line x1="17" y1="18" x2="17" y2="13"/></svg>
+        <h4>Toggle track detail</h4>
+        <p>Show or hide signals, switches, crossings and mileposts — straight from the track files.</p>
+      </div>
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        <h4>Set a stop</h4>
+        <p>Pick where a train ends — and it's validated against that train's own route so a bad stop is caught.</p>
+      </div>
+      <div class="fcard">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><polyline points="15 7 21 7 21 13"/></svg>
+        <h4>Snaps to the rail</h4>
+        <p>Click near the track and it snaps to the line, then interpolates the exact milepost — accurate, not fiddly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · CHALLENGES · DATA & DECODING -->
+  <section class="slide" data-title="Challenges — data">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·11</span> The hard parts · data &amp; decoding</div>
+    <div class="body-wide">
+      <h2 style="margin-bottom:24px">Challenges — getting the data right</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">APPENDING HEX PAYLOADS</div>
+          <p style="font-size:14.5px">A single message came in as hex spread across many log lines. I had to append the pieces <b>in the right order</b> before anything could be decoded. The ICD is incredibly strict so even if the message was off by just a byte, the whole message was garbage.</p>
+        </div>
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">KEEPING MEMORY IN CHECK</div>
+          <p style="font-size:14.5px">Millions of records wouldn't fit in memory at once. I <b>had to stream the files in batches</b> and released as we went, so it stayed within limits instead of crashing.</p>
+        </div>
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">EDGE CASES</div>
+          <p style="font-size:14.5px">Some messages didn't follow the spec — missing fields, odd lengths, BNSF used a different ICD version. Each one had to be <b>detected and handled</b> rather than allowed to break the parser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · CHALLENGES · BUILDING THE APP -->
+  <section class="slide" data-title="Challenges — app">
+    <div class="eyebrow"><span class="aspect"></span><span class="code">SLIDE·12</span> The hard parts · building the app</div>
+    <div class="body-wide">
+      <h2 style="margin-bottom:24px">Challenges — making it usable</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">BUILDING A DART PROXY</div>
+          <p style="font-size:14.5px">A browser can't call DART directly — keys and cross-origin rules block it. I built a small <b>local proxy</b> to forward the request and keep the key server-side. First time building one, so a real learning curve.</p>
+        </div>
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">INTERPOLATION</div>
+          <p style="font-size:14.5px">Turning a map click into an exact milepost meant <b>projecting onto the rail line</b> and interpolating between known mileposts. Getting it to land accurately took real iteration.</p>
+        </div>
+        <div style="border-top:2px solid var(--red);padding-top:16px">
+          <div style="font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em;margin-bottom:8px">A FUNCTIONAL WEBPAGE</div>
+          <p style="font-size:14.5px">Wiring live data, layer toggles, search and validation into <b>one responsive map</b> that stays usable and doesn't jump around every time the live data refreshes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · CLOSE -->
+  <section class="slide" data-title="Close">
+    <div class="title-wrap" style="justify-content:center">
+      <div class="kicker">Thank you</div>
+      <h1 style="font-size:clamp(56px,11vw,150px)">ALANIS</h1>
+      <div class="sub">Raw messages → named, mapped, live locations</div>
+      <div class="tag">Questions welcome, happy to walk through the pipeline, the map, or the live demo!</div>
+    </div>
+  </section>
+</div>
+
+<!-- rail / progress -->
+<div class="rail" aria-hidden="true">
+  <svg viewBox="0 0 1000 64" preserveAspectRatio="none">
+    <line x1="0" y1="30" x2="1000" y2="30" stroke="#2a2a31" stroke-width="2"/>
+    <line x1="0" y1="40" x2="1000" y2="40" stroke="#2a2a31" stroke-width="2"/>
+    <g id="ties" stroke="#1d1d22" stroke-width="6"></g>
+    <line id="progressLine" x1="0" y1="35" x2="0" y2="35" stroke="#d11a1a" stroke-width="3"/>
+    <circle id="progressDot" cx="0" cy="35" r="6" fill="#d11a1a"/>
+  </svg>
+</div>
+<div class="rail-meta">
+  <span class="now">MP <b id="mpNow">01</b> / <span id="mpTotal">15</span></span>
+  <span id="slideName">TITLE</span>
+</div>
+<div class="hint"><kbd>←</kbd> <kbd>→</kbd> navigate &nbsp;·&nbsp; <kbd>F</kbd> fullscreen</div>
+
+<style>
+  .flowstep{flex:1;min-width:120px;border:1px solid var(--line);background:var(--panel);padding:16px 14px;
+    font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.03em;font-size:16px;
+    line-height:1.1;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white)}
+  .flowstep.last{border-color:var(--red);color:var(--red);background:rgba(209,26,26,.07)}
+  .flowsep{display:flex;align-items:center;justify-content:center;color:var(--red);font-size:18px;padding:0 8px}
+  @media (max-width:900px){.flowsep{display:none}.flowstep{min-width:0;flex:1 1 40%}}
+</style>
+
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  const total = slides.length;
+  let idx = 0;
+
+  // build ties on the rail
+  const ties = document.getElementById('ties');
+  let tieStr = '';
+  for(let x=8; x<1000; x+=22){ tieStr += `<line x1="${x}" y1="26" x2="${x}" y2="44"/>`; }
+  ties.innerHTML = tieStr;
+
+  document.getElementById('mpTotal').textContent = String(total).padStart(2,'0');
+
+  const progressLine = document.getElementById('progressLine');
+  const progressDot = document.getElementById('progressDot');
+  const mpNow = document.getElementById('mpNow');
+  const slideName = document.getElementById('slideName');
+
+  function show(n){
+    const prev = idx;
+    idx = Math.max(0, Math.min(total-1, n));
+    slides.forEach((s,i)=>{
+      s.classList.toggle('active', i===idx);
+    });
+    // progress
+    const pct = total>1 ? idx/(total-1) : 0;
+    const x = pct*1000;
+    progressLine.setAttribute('x2', x);
+    progressDot.setAttribute('cx', x);
+    mpNow.textContent = String(idx+1).padStart(2,'0');
+    slideName.textContent = (slides[idx].dataset.title||'').toUpperCase();
+    location.hash = idx+1;
+  }
+
+  function next(){ show(idx+1); }
+  function prev(){ show(idx-1); }
+
+  document.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); next(); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); prev(); }
+    else if(e.key==='Home'){ show(0); }
+    else if(e.key==='End'){ show(total-1); }
+    else if(e.key==='f'||e.key==='F'){
+      if(!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+      else document.exitFullscreen?.();
+    }
+  });
+
+  // click right / left halves to navigate
+  document.getElementById('deck').addEventListener('click', (e)=>{
+    if(e.target.closest('a,button')) return;
+    const mid = window.innerWidth/2;
+    if(e.clientX > mid) next(); else prev();
+  });
+
+  // swipe on touch
+  let tx=null;
+  document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',e=>{
+    if(tx===null) return;
+    const dx=e.changedTouches[0].clientX-tx;
+    if(Math.abs(dx)>50){ dx<0?next():prev(); }
+    tx=null;
+  },{passive:true});
+
+  // deep link via hash
+  const start = parseInt((location.hash||'').replace('#',''),10);
+  show(isFinite(start)&&start>=1 ? start-1 : 0);
+</script>
+</body>
+</html>
+
+

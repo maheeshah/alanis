@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch subdivs",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build solution",
+      "program": "${workspaceFolder}/subdivs/bin/Debug/net10.0/subdivs.dll",
+      "cwd": "${workspaceFolder}/subdivs",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

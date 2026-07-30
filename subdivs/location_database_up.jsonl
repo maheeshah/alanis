@@ -1,0 +1,880 @@
+{"location_name": "CP X188", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 189.14, "lat": 44.01873304507217, "lon": -90.06888900931882}
+{"location_name": "OZOL", "source": "start", "scac": "UP", "subdivision_id": 910, "track_name": "OZOL SIDING", "mp": 31.02, "lat": 38.02048199496313, "lon": -122.14743205975974}
+{"location_name": "AVON", "source": "start", "scac": "UP", "subdivision_id": 924, "track_name": "MT", "mp": 35.83, "lat": 38.025548026794915, "lon": -122.11653602566993}
+{"location_name": "EAST OAKLAND", "source": "start", "scac": "UP", "subdivision_id": 922, "track_name": "SIDING", "mp": 7.64, "lat": 37.791129109467384, "lon": -122.26272995842601}
+{"location_name": "MELROSE", "source": "start", "scac": "UP", "subdivision_id": 922, "track_name": "MT 2", "mp": 9.66, "lat": 37.77718300911412, "lon": -122.23057895339333}
+{"location_name": "MP 26 to 26.5 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 13.65, "lat": 37.736739046507154, "lon": -122.18040002430259}
+{"location_name": "26.5 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 27, "lat": 37.582407055515986, "lon": -122.0620210427225}
+{"location_name": "MP 26.5 to 26 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 27, "lat": 37.595943043473845, "lon": -122.07354794028913}
+{"location_name": "26 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 13.65, "lat": 37.735396978204975, "lon": -122.17939600449782}
+{"location_name": "CP CO030", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 30.73, "lat": 37.52672204583354, "lon": -122.03603805883692}
+{"location_name": "CP NI014", "source": "end", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 13.65, "lat": 37.735396978204975, "lon": -122.17939600449782}
+{"location_name": "CP F030", "source": "end", "scac": "UP", "subdivision_id": 953, "track_name": "MT", "mp": 0.26, "lat": 37.56982906275418, "lon": -121.96750602462045}
+{"location_name": "MONROE", "source": "start", "scac": "UP", "subdivision_id": 450, "track_name": "MT", "mp": 501.22, "lat": 32.50321404509276, "lon": -92.1042730114349}
+{"location_name": "P&G", "source": "start", "scac": "UP", "subdivision_id": 958, "track_name": "MT", "mp": 405.5, "lat": 34.19722504413895, "lon": -119.15554498526465}
+{"location_name": "OXNARD", "source": "start", "scac": "UP", "subdivision_id": 958, "track_name": "SIDING", "mp": 404.01, "lat": 34.20422207223818, "lon": -119.1770180068164}
+{"location_name": "LOMPOC IL", "source": "start", "scac": "UP", "subdivision_id": 958, "track_name": "MT", "mp": 303.42, "lat": 34.66444405524724, "lon": -120.60726604930728}
+{"location_name": "CP Z384", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 383.67, "lat": 40.039785061161226, "lon": -95.58492899326548}
+{"location_name": "VERDON", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 393.6, "lat": 40.146663000606885, "lon": -95.7140700300492}
+{"location_name": "450 TRACK", "source": "start", "scac": "UP", "subdivision_id": 94, "track_name": "E FUEL TRK SIDING", "mp": 289.01, "lat": 39.14553604973442, "lon": -94.63248003161652}
+{"location_name": "BUNSEN", "source": "start", "scac": "UP", "subdivision_id": 680, "track_name": "MT", "mp": 950.3, "lat": 32.00102908411081, "lon": -106.32375598990592}
+{"location_name": "ALLAMORE", "source": "start", "scac": "UP", "subdivision_id": 515, "track_name": "MT", "mp": 745.46, "lat": 31.073767133936055, "lon": -104.98756419350437}
+{"location_name": "CP V582", "source": "end", "scac": "UP", "subdivision_id": 350, "track_name": "MT", "mp": 488.12, "lat": 35.96709203537058, "lon": -95.3791326027232}
+{"location_name": "OLD YARD", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT 2", "mp": 82.66, "lat": 37.9762340361106, "lon": -121.28288604423683}
+{"location_name": "GALT", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 62.27, "lat": 38.2663349968735, "lon": -121.31165706859856}
+{"location_name": "STAPLETON", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT 1", "mp": 632.6, "lat": 39.76874102929115, "lon": -104.86328800521805}
+{"location_name": "THE DALLES", "source": "start", "scac": "UP", "subdivision_id": 830, "track_name": "MT 1", "mp": 81.73, "lat": 45.63196200878587, "lon": -121.21200599962015}
+{"location_name": "HOOD RIVER", "source": "start", "scac": "UP", "subdivision_id": 830, "track_name": "MT", "mp": 59.4, "lat": 45.70710006037555, "lon": -121.58570897757437}
+{"location_name": "SECO", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 917.8, "lat": 32.88487301659283, "lon": -111.77023495525037}
+{"location_name": "DIAMOND LD", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 917.8, "lat": 32.88487301659283, "lon": -111.77023495525037}
+{"location_name": "CP T063", "source": "end", "scac": "UP", "subdivision_id": 163, "track_name": "MT", "mp": 63.06, "lat": 42.42157205105201, "lon": -88.6200460713534}
+{"location_name": "RIDGEFIELD", "source": "start", "scac": "UP", "subdivision_id": 163, "track_name": "MT 1", "mp": 46.39, "lat": 42.271594959690525, "lon": -88.36893293996603}
+{"location_name": "SAMUELS", "source": "end", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 86.51, "lat": 48.401302025012285, "lon": -116.48821005703735}
+{"location_name": "BONNERS FERRY", "source": "end", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 109.8, "lat": 48.69520000320284, "lon": -116.31652798825154}
+{"location_name": "SNYDER CREEK", "source": "end", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 132.67, "lat": 48.88468628034409, "lon": -116.16552585217829}
+{"location_name": "MOYIE SPRINGS", "source": "start", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 119.37, "lat": 48.726241054645214, "lon": -116.18809008689742}
+{"location_name": "THE WEEDS", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 1", "mp": 5.73, "lat": 34.01146197602978, "lon": -118.17619404820329}
+{"location_name": "ALFAFA", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 3", "mp": 3.63, "lat": 34.01485195802135, "lon": -118.20656890751349}
+{"location_name": "ANDERSON", "source": "start", "scac": "UP", "subdivision_id": 918, "track_name": "MT", "mp": 244.92, "lat": 40.427718046295105, "lon": -122.2677010537777}
+{"location_name": "REDDING", "source": "start", "scac": "UP", "subdivision_id": 918, "track_name": "MT", "mp": 258.66, "lat": 40.573997035093555, "lon": -122.39112397068013}
+{"location_name": "SIERRA PACIFIC X", "source": "start", "scac": "UP", "subdivision_id": 918, "track_name": "MT", "mp": 253.3, "lat": 40.50121203425089, "lon": -122.37509599388495}
+{"location_name": "CP RB091", "source": "start", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 90.9, "lat": 30.967359001281423, "lon": -94.82705500624947}
+{"location_name": "CP T234", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 233.54, "lat": 32.35999106487872, "lon": -96.64872601812552}
+{"location_name": "CP T234", "source": "start", "scac": "UP", "subdivision_id": 619, "track_name": "MT", "mp": 0.05, "lat": 32.36182704592069, "lon": -96.65065996238121}
+{"location_name": "CP HL209", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 208.71, "lat": 32.06912925611296, "lon": -96.46345307191969}
+{"location_name": "TOPEKA SQUIRRELL", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 1", "mp": 67.41, "lat": 39.06806000875169, "lon": -95.65956707005057}
+{"location_name": "LAWRENCE", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 2", "mp": 37.84, "lat": 38.98430805860113, "lon": -95.20308109705918}
+{"location_name": "WEST END TIE YARD", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 1", "mp": 68.18, "lat": 39.06669302079883, "lon": -95.66973595674574}
+{"location_name": "EL DORADO JCT", "source": "start", "scac": "UP", "subdivision_id": 447, "track_name": "MT", "mp": 338.75, "lat": 33.57088405122294, "lon": -92.8235619992299}
+{"location_name": "CAMDEN", "source": "start", "scac": "UP", "subdivision_id": 447, "track_name": "MT", "mp": 336.88, "lat": 33.59899206813653, "lon": -92.82509601970845}
+{"location_name": "WALDO", "source": "start", "scac": "UP", "subdivision_id": 447, "track_name": "MT", "mp": 369.13, "lat": 33.35194201050404, "lon": -93.22654605610589}
+{"location_name": "NOLTE SPUR", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "MT", "mp": 177.45, "lat": 29.59369901060902, "lon": -98.01820803173723}
+{"location_name": "WEST END AMELIA", "source": "start", "scac": "UP", "subdivision_id": 538, "track_name": "MT", "mp": 449.67, "lat": 30.098840620216123, "lon": -94.30259065684517}
+{"location_name": "INDY PARK", "source": "start", "scac": "UP", "subdivision_id": 536, "track_name": "MT", "mp": 77.85, "lat": 30.668655991171104, "lon": -96.37377698550085}
+{"location_name": "CP Q078", "source": "start", "scac": "UP", "subdivision_id": 617, "track_name": "MT", "mp": 99.38, "lat": 30.6664220171631, "lon": -96.37344804703197}
+{"location_name": "CP Q077", "source": "end", "scac": "UP", "subdivision_id": 527, "track_name": "MT", "mp": 77.23, "lat": 31.021727361207645, "lon": -96.4908371677241}
+{"location_name": "HEARNE YARD", "source": "start", "scac": "UP", "subdivision_id": 517, "track_name": "MT", "mp": 0.08, "lat": 30.88277207707652, "lon": -96.59530601101731}
+{"location_name": "BRYAN YARD", "source": "start", "scac": "UP", "subdivision_id": 536, "track_name": "MT 2", "mp": 77.63, "lat": 30.665422046800394, "lon": -96.37330903286431}
+{"location_name": "CP N030", "source": "start", "scac": "UP", "subdivision_id": 152, "track_name": "MT", "mp": 29.72, "lat": 42.25560299090216, "lon": -87.86190904364692}
+{"location_name": "PARK CITY", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT", "mp": 35.68, "lat": 42.31938383429384, "lon": -87.87972978696519}
+{"location_name": "GURNEE", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT 1", "mp": 38.28, "lat": 42.378128992194114, "lon": -87.89783698029048}
+{"location_name": "CP RB010", "source": "start", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 10.29, "lat": 29.855820015412345, "lon": -95.32092796031148}
+{"location_name": "CLINTON AVENUE", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT 2", "mp": 202.71, "lat": 36.774250021377945, "lon": -119.8396319963723}
+{"location_name": "THE JUNK", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 209.27, "lat": 36.69343100339873, "lon": -119.75088398123299}
+{"location_name": "MADERA", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 179.71, "lat": 37.00488002222729, "lon": -120.1107830325755}
+{"location_name": "TULARE", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 249.6, "lat": 36.21340906338753, "lon": -119.34964603049056}
+{"location_name": "MERCED", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 147.98, "lat": 37.31623809827569, "lon": -120.52918089580264}
+{"location_name": "SEDALIA", "source": "start", "scac": "UP", "subdivision_id": 70, "track_name": "MT", "mp": 182.94, "lat": 38.68714522415846, "lon": -93.1246512872261}
+{"location_name": "UNION", "source": "start", "scac": "UP", "subdivision_id": 152, "track_name": "MT 1", "mp": 10.78, "lat": 42.029101069343675, "lon": -87.91369398473672}
+{"location_name": "O'HARE XOVERS", "source": "start", "scac": "UP", "subdivision_id": 152, "track_name": "MT 2", "mp": 7.46, "lat": 41.99097499943382, "lon": -87.93904195776464}
+{"location_name": "50 LEAD", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT 2", "mp": 313.27, "lat": 35.378033978418905, "lon": -118.99542502383464}
+{"location_name": "BYPASS (S LEAD)", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "BYPASS", "mp": 313.46, "lat": 35.37530300455065, "lon": -118.98386196129263}
+{"location_name": "WATSONVILLE", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT 1", "mp": 97.33, "lat": 36.89118103309682, "lon": -121.74689003647234}
+{"location_name": "LOGAN", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT 2", "mp": 89.68, "lat": 36.909278007555066, "lon": -121.63060296490251}
+{"location_name": "CP CO113", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 113.1, "lat": 36.69052801159509, "lon": -121.68816704430895}
+{"location_name": "KING CITY", "source": "end", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 159.31, "lat": 36.25629008224182, "lon": -121.14083405574274}
+{"location_name": "EAST YARD", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 737.42, "lat": 32.68114105413357, "lon": -114.56900702497879}
+{"location_name": "MARSHALL YARD", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 351.06, "lat": 32.55142906130788, "lon": -94.36465904188502}
+{"location_name": "STROHS", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "MT", "mp": 93.03, "lat": 32.50091809849294, "lon": -94.77207099139555}
+{"location_name": "GREGGTON", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "MT", "mp": 93.09, "lat": 32.50329799237714, "lon": -94.78534901829353}
+{"location_name": "ARLINGTON", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 2", "mp": 55.28, "lat": 33.95711699283541, "lon": -117.419305009519}
+{"location_name": "KENSETT", "source": "start", "scac": "UP", "subdivision_id": 400, "track_name": "MT 1", "mp": 298.31, "lat": 35.23362101708502, "lon": -91.665762997423}
+{"location_name": "BRICELYN", "source": "end", "scac": "UP", "subdivision_id": 135, "track_name": "MT", "mp": 43.21, "lat": 43.55910604392305, "lon": -93.8076450492523}
+{"location_name": "BLOOMBERG", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "MT", "mp": 177.45, "lat": 29.59369901060902, "lon": -98.01820803173723}
+{"location_name": "22 UNLOCKS", "source": "start", "scac": "UP", "subdivision_id": 260, "track_name": "MT 2", "mp": 802.49, "lat": 41.58564507528526, "lon": -109.22263501994034}
+{"location_name": "P&G", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 43.22, "lat": 38.53102200763207, "lon": -121.40981293259328}
+{"location_name": "CTC EAST LACASSINE", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 201.782, "lat": 30.237853057545458, "lon": -92.88442402300394}
+{"location_name": "UP 1093 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 173, "lat": 30.180695052233034, "lon": -92.44712818896629}
+{"location_name": "LERDO", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 299.32, "lat": 35.50656808233059, "lon": -119.17377596003942}
+{"location_name": "23 UNLOCKS", "source": "start", "scac": "UP", "subdivision_id": 260, "track_name": "MT 2", "mp": 800.97, "lat": 41.59327097304977, "lon": -109.20110401631896}
+{"location_name": "WEST SIDING", "source": "start", "scac": "UP", "subdivision_id": 860, "track_name": "MT", "mp": 163.63, "lat": 47.334280338433324, "lon": -122.23889590078582}
+{"location_name": "ANDOVER", "source": "start", "scac": "UP", "subdivision_id": 860, "track_name": "MT", "mp": 172.75, "lat": 47.4513062014365, "lon": -122.24192597704139}
+{"location_name": "TRENTWOOD", "source": "start", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 11.97, "lat": 47.68204298506823, "lon": -117.178951998825}
+{"location_name": "PAPERMILL", "source": "start", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 3.2, "lat": 47.67197195736391, "lon": -117.35376605762438}
+{"location_name": "LIBERAL", "source": "start", "scac": "UP", "subdivision_id": 318, "track_name": "SIDING", "mp": 425.7, "lat": 37.07779103561067, "lon": -100.84761398912602}
+{"location_name": "ELOY", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 933.63, "lat": 32.75823599961259, "lon": -111.56586003152648}
+{"location_name": "AIRPORT", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT 2", "mp": 76.53, "lat": 42.93149106376837, "lon": -87.88738597373592}
+{"location_name": "BAIN", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT", "mp": 52.43, "lat": 42.581857286873834, "lon": -87.89765500540868}
+{"location_name": "CP N102", "source": "start", "scac": "UP", "subdivision_id": 157, "track_name": "MT", "mp": 101.43, "lat": 43.13184506199633, "lon": -87.99103694970297}
+{"location_name": "CP N097", "source": "end", "scac": "UP", "subdivision_id": 157, "track_name": "MT", "mp": 96.82, "lat": 43.12181205372971, "lon": -88.05106398611076}
+{"location_name": "MP 88.1 to 88.5 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 152, "track_name": "MT 1", "mp": 88, "lat": 42.99832506796188, "lon": -87.96176196470711}
+{"location_name": "88.5 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT 1", "mp": 92.33, "lat": 43.0327850363853, "lon": -88.04674304846677}
+{"location_name": "ARMAX", "source": "start", "scac": "UP", "subdivision_id": 795, "track_name": "MT", "mp": 277.33, "lat": 39.6054830360871, "lon": -119.22977500946789}
+{"location_name": "CP HL001", "source": "start", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 0.41, "lat": 29.786036328878733, "lon": -95.439472435594}
+{"location_name": "CP HL033", "source": "start", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 32.94, "lat": 30.033275137924118, "lon": -95.86225431398194}
+{"location_name": "CP HL046", "source": "start", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 46.39, "lat": 30.10019312079797, "lon": -96.07958898530748}
+{"location_name": "BASS", "source": "start", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 847.58, "lat": 31.53023901264698, "lon": -97.15515407694376}
+{"location_name": "CP Q166", "source": "end", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 842.21, "lat": 31.5879441068702, "lon": -97.09359795193484}
+{"location_name": "OPAL JCT", "source": "start", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 880.89, "lat": 31.086226109020636, "lon": -97.33795000888287}
+{"location_name": "EDDY", "source": "end", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 865.54, "lat": 31.29032806770698, "lon": -97.25376901031504}
+{"location_name": "DANA JCT", "source": "start", "scac": "UP", "subdivision_id": 537, "track_name": "MT", "mp": 196.02, "lat": 32.008611066813685, "lon": -97.13356602786399}
+{"location_name": "LEHIGH CEMENT", "source": "start", "scac": "UP", "subdivision_id": 537, "track_name": "MT", "mp": 162.91, "lat": 31.550449035529425, "lon": -97.08726900890211}
+{"location_name": "PORKCHOP LEAD", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 1", "mp": 155.2, "lat": 42.04274304048516, "lon": -92.89441591599825}
+{"location_name": "12TH AVENUE", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 153.73, "lat": 42.040663019178325, "lon": -92.91891201435925}
+{"location_name": "12TH AVE", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 1", "mp": 155.2, "lat": 42.04274304048516, "lon": -92.89441591599825}
+{"location_name": "SCOTTSVILLE", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 337.64, "lat": 32.501472015835475, "lon": -94.14916502070825}
+{"location_name": "MALVERN", "source": "start", "scac": "UP", "subdivision_id": 405, "track_name": "MT", "mp": 384.78, "lat": 34.375573015859324, "lon": -92.74663227266059}
+{"location_name": "SUNKIST", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "MT 2", "mp": 520.93, "lat": 34.06166507844945, "lon": -117.64191900074694}
+{"location_name": "WYBARK", "source": "start", "scac": "UP", "subdivision_id": 350, "track_name": "MT 1", "mp": 497.46, "lat": 35.830376069057685, "lon": -95.33204294441164}
+{"location_name": "JONESBORO", "source": "start", "scac": "UP", "subdivision_id": 440, "track_name": "MT", "mp": 123.98, "lat": 35.85136304269223, "lon": -90.62130802463719}
+{"location_name": "DELHI", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 130.39, "lat": 37.44847182510485, "lon": -120.79472373902395}
+{"location_name": "STUTTGART", "source": "start", "scac": "UP", "subdivision_id": 440, "track_name": "SIDING", "mp": 231.29, "lat": 34.525613031109, "lon": -91.52311000277528}
+{"location_name": "TEXARKANA", "source": "start", "scac": "UP", "subdivision_id": 447, "track_name": "MT", "mp": 419.06, "lat": 33.41814502835674, "lon": -94.04261500998574}
+{"location_name": "CP SHARK", "source": "start", "scac": "UP", "subdivision_id": 953, "track_name": "MT", "mp": 17.65, "lat": 37.33812198130972, "lon": -121.90330902074949}
+{"location_name": "ARGON", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 175.86, "lat": 42.916149836302026, "lon": -93.23154303562018}
+{"location_name": "MP 144.75 to 144 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 147.62, "lat": 42.521331055457615, "lon": -93.25137957880628}
+{"location_name": "144 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 144, "lat": 42.48545200940761, "lon": -93.32034302038137}
+{"location_name": "SOUTH LEEDS", "source": "start", "scac": "UP", "subdivision_id": 95, "track_name": "MT", "mp": 284.66, "lat": 39.051178031075686, "lon": -94.50891200804303}
+{"location_name": "TORRANCE/EL SEGUNDO", "source": "start", "scac": "UP", "subdivision_id": 980, "track_name": "MT", "mp": 5.7, "lat": 33.94195676337904, "lon": -118.24332406712271}
+{"location_name": "TROY GROVE SUB/DEKALB", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 55.52, "lat": 41.921905066925156, "lon": -88.69310502331187}
+{"location_name": "OLD MECHANICAL", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 2", "mp": 5.83, "lat": 34.010026052043514, "lon": -118.15996106334109}
+{"location_name": "GENERAL TIRE", "source": "start", "scac": "UP", "subdivision_id": 47, "track_name": "MT", "mp": 277.31, "lat": 38.295057108462444, "lon": -88.89341298694156}
+{"location_name": "AIRSCULE", "source": "start", "scac": "UP", "subdivision_id": 440, "track_name": "MT", "mp": 55.37, "lat": 36.60137202277638, "lon": -89.96821105585198}
+{"location_name": "LOZETA", "source": "start", "scac": "UP", "subdivision_id": 60, "track_name": "MT", "mp": 156.59, "lat": 36.968386008334726, "lon": -89.86534805405391}
+{"location_name": "VC", "source": "start", "scac": "UP", "subdivision_id": 958, "track_name": "MT", "mp": 404.01, "lat": 34.20422207223818, "lon": -119.1770180068164}
+{"location_name": "RUSSELLVILLE", "source": "start", "scac": "UP", "subdivision_id": 415, "track_name": "MT", "mp": 411.45, "lat": 35.24578518533314, "lon": -93.03346435884254}
+{"location_name": "CONWAY", "source": "start", "scac": "UP", "subdivision_id": 415, "track_name": "MT", "mp": 365.17, "lat": 34.977779084673706, "lon": -92.41956402392253}
+{"location_name": "SHEFFIELD", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 175.86, "lat": 42.916149836302026, "lon": -93.23154303562018}
+{"location_name": "SMITH LEAD", "source": "start", "scac": "UP", "subdivision_id": 595, "track_name": "SIDING", "mp": 259.43, "lat": 30.089461980713793, "lon": -93.78673496232098}
+{"location_name": "ORANGE", "source": "start", "scac": "UP", "subdivision_id": 595, "track_name": "MT", "mp": 259.36, "lat": 30.088808041873914, "lon": -93.78272802294215}
+{"location_name": "CP FL077", "source": "start", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 78.06, "lat": 29.955100067113435, "lon": -97.04136396195725}
+{"location_name": "SEALY", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 135.2, "lat": 29.78260201953004, "lon": -96.16111594847918}
+{"location_name": "LCRA", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 95.81, "lat": 29.909332999100858, "lon": -96.74178500726526}
+{"location_name": "CP FL078", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 78.37, "lat": 29.95409830096561, "lon": -97.0316653641308}
+{"location_name": "SMITHVILLE JCT", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 78.06, "lat": 29.955035000987944, "lon": -97.03802305165001}
+{"location_name": "WALLULA", "source": "start", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 215.36, "lat": 46.10102310396863, "lon": -118.91462498997268}
+{"location_name": "ALBRAE", "source": "start", "scac": "UP", "subdivision_id": 950, "track_name": "MT", "mp": 33.03, "lat": 37.50805108819507, "lon": -122.00242699695343}
+{"location_name": "SALEM", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT", "mp": 715.43, "lat": 44.89956635318124, "lon": -123.00418654996761}
+{"location_name": "DURAFLAKE", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT", "mp": 694.37, "lat": 44.66486603338462, "lon": -123.0606410754833}
+{"location_name": "DOW", "source": "start", "scac": "UP", "subdivision_id": 25, "track_name": "MT", "mp": 54.99, "lat": 41.32091799335547, "lon": -88.14166508989702}
+{"location_name": "HAVANNA DISTRICT", "source": "start", "scac": "UP", "subdivision_id": 29, "track_name": "MT", "mp": 155.72, "lat": 40.155401711358465, "lon": -89.35503740824248}
+{"location_name": "WASKOM", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 335.46, "lat": 32.48208809541115, "lon": -94.07723096065412}
+{"location_name": "LEE'S SUMMIT", "source": "start", "scac": "UP", "subdivision_id": 70, "track_name": "SIDING", "mp": 258.09, "lat": 38.88893400258871, "lon": -94.36293094777237}
+{"location_name": "ZERAGA", "source": "start", "scac": "UP", "subdivision_id": 70, "track_name": "MT", "mp": 259.66, "lat": 38.909608511107294, "lon": -94.37679117259323}
+{"location_name": "CAMPBELLTON", "source": "end", "scac": "UP", "subdivision_id": 534, "track_name": "MT", "mp": 56.81, "lat": 28.724010026385752, "lon": -98.29632600947865}
+{"location_name": "LEHR", "source": "end", "scac": "UP", "subdivision_id": 534, "track_name": "MT", "mp": 21.86, "lat": 29.15832301714688, "lon": -98.49787995489372}
+{"location_name": "CREEK", "source": "end", "scac": "UP", "subdivision_id": 638, "track_name": "MT", "mp": 0.7, "lat": 28.791766062465886, "lon": -97.00073300419253}
+{"location_name": "AYALA", "source": "start", "scac": "UP", "subdivision_id": 900, "track_name": "MT", "mp": 71.72, "lat": 37.69624303808003, "lon": -121.41633804747667}
+{"location_name": "PRATT", "source": "start", "scac": "UP", "subdivision_id": 316, "track_name": "SIDING", "mp": 296.12, "lat": 37.67286403957804, "lon": -98.71411497298908}
+{"location_name": "NEW DRILL", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "MT", "mp": 499.9, "lat": 34.03115801575517, "lon": -117.9688430592631}
+{"location_name": "HINES LEAD", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "MT 1", "mp": 22.53, "lat": 29.627300939680637, "lon": -95.60026794841849}
+{"location_name": "EAGLE LAKE", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "SIDING", "mp": 69.35, "lat": 29.59723211076904, "lon": -96.34196401953301}
+{"location_name": "MP 12.35 to 12.5 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 2, "lat": 29.80087602173242, "lon": -95.45975891139058}
+{"location_name": "12.5 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 13, "lat": 29.914959925826874, "lon": -95.62030126646548}
+{"location_name": "NALCO", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "MT 1", "mp": 27.54, "lat": 29.617900037396314, "lon": -95.6414370160921}
+{"location_name": "BONNER SPRINGS", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 1", "mp": 20.68, "lat": 39.05253602039082, "lon": -94.88435092875355}
+{"location_name": "MUSKOGEE", "source": "start", "scac": "UP", "subdivision_id": 350, "track_name": "MT 2", "mp": 503.87, "lat": 35.74654402847008, "lon": -95.36865396781012}
+{"location_name": "NECEDAH", "source": "end", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 189.14, "lat": 44.01875929107971, "lon": -90.06872504363618}
+{"location_name": "HANSEN", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "MT", "mp": 186.18, "lat": 32.737665032455595, "lon": -96.33539906619212}
+{"location_name": "MINEOLA", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "SIDING", "mp": 135.97, "lat": 32.661690991479745, "lon": -95.48682499197923}
+{"location_name": "WANN YARD", "source": "start", "scac": "UP", "subdivision_id": 29, "track_name": "MT 2", "mp": 262.33, "lat": 38.868076065067676, "lon": -90.10748992890791}
+{"location_name": "CP T948", "source": "end", "scac": "UP", "subdivision_id": 619, "track_name": "MT", "mp": 50.17, "lat": 32.69646404666733, "lon": -97.30583701881967}
+{"location_name": "MAGNOLIA", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "MT 1", "mp": 756.23, "lat": 32.73998207310964, "lon": -97.32172595129784}
+{"location_name": "OLD SIDING AT HODGE", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "MT 2", "mp": 749.54, "lat": 32.80899203672173, "lon": -97.2986059733896}
+{"location_name": "GATE CITY STERLING", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 113.75, "lat": 41.78796800823017, "lon": -89.76936095198405}
+{"location_name": "AVE K STERLING", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 113.75, "lat": 41.78796800823017, "lon": -89.76936095198405}
+{"location_name": "WEST YARD", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT 1", "mp": 87.33, "lat": 37.91202903457563, "lon": -121.27428301750354}
+{"location_name": "VILLA GROVE", "source": "start", "scac": "UP", "subdivision_id": 44, "track_name": "SIDING", "mp": 144.71, "lat": 39.866014031765324, "lon": -88.15428200793913}
+{"location_name": "COALER", "source": "start", "scac": "UP", "subdivision_id": 40, "track_name": "MT 2", "mp": 82.34, "lat": 40.73446305214072, "lon": -87.73232197597204}
+{"location_name": "DOMINO", "source": "start", "scac": "UP", "subdivision_id": 405, "track_name": "MT", "mp": 14.23, "lat": 33.27087087314505, "lon": -94.10023935567838}
+{"location_name": "CP R197", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 196.26, "lat": 31.325073041503668, "lon": -92.47274300894071}
+{"location_name": "CHOPIN", "source": "end", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 220.41, "lat": 31.46956003929754, "lon": -92.78871392930073}
+{"location_name": "TIOGA", "source": "start", "scac": "UP", "subdivision_id": 450, "track_name": "MT", "mp": 591.61, "lat": 31.3975910005862, "lon": -92.42158398702597}
+{"location_name": "CP R220", "source": "end", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 220.41, "lat": 31.46956003929754, "lon": -92.78871392930073}
+{"location_name": "SHELBYVILLE", "source": "start", "scac": "UP", "subdivision_id": 46, "track_name": "MT", "mp": 197.76, "lat": 39.406560009323954, "lon": -88.78929301835183}
+{"location_name": "WEST END ICE HOUSE", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 1", "mp": 137.34, "lat": 41.83384902114162, "lon": -90.19212101688626}
+{"location_name": "CENTRAL STEEL", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 3.72, "lat": 41.80858911922053, "lon": -90.2433870531113}
+{"location_name": "OLD ALTON MAIN", "source": "start", "scac": "UP", "subdivision_id": 29, "track_name": "MT", "mp": 262.18, "lat": 38.870239028891966, "lon": -90.10882001368722}
+{"location_name": "ROCK TRACK", "source": "start", "scac": "UP", "subdivision_id": 682, "track_name": "MT", "mp": 739.39, "lat": 34.61408803818928, "lon": -105.20661300391927}
+{"location_name": "TUCUMCARI", "source": "start", "scac": "UP", "subdivision_id": 682, "track_name": "SIDING", "mp": 636.72, "lat": 35.19192708719765, "lon": -103.69919996607688}
+{"location_name": "SANTA ROSA", "source": "start", "scac": "UP", "subdivision_id": 682, "track_name": "MT", "mp": 700.39, "lat": 34.94181504612217, "lon": -104.68968697725396}
+{"location_name": "ROCK", "source": "end", "scac": "UP", "subdivision_id": 174, "track_name": "MT", "mp": 287.6, "lat": 43.231936011011854, "lon": -88.55739695960817}
+{"location_name": "DE SOTO", "source": "start", "scac": "UP", "subdivision_id": 80, "track_name": "SIDING", "mp": 41.56, "lat": 38.14960404228664, "lon": -90.5508150395044}
+{"location_name": "DAVIS JCT.", "source": "start", "scac": "UP", "subdivision_id": 80, "track_name": "MT", "mp": 6.79, "lat": 38.54369104414944, "lon": -90.26004100062369}
+{"location_name": "CP D010", "source": "end", "scac": "UP", "subdivision_id": 80, "track_name": "MT", "mp": 9.81, "lat": 38.50503204074151, "lon": -90.27504200955802}
+{"location_name": "HAZEN", "source": "start", "scac": "UP", "subdivision_id": 795, "track_name": "SIDING", "mp": 289.18, "lat": 39.56527399021772, "lon": -119.04778601856444}
+{"location_name": "RIVERSIDE", "source": "start", "scac": "UP", "subdivision_id": 80, "track_name": "SIDING", "mp": 26.3, "lat": 38.28959603957139, "lon": -90.37784199824239}
+{"location_name": "BIG SANDY", "source": "start", "scac": "UP", "subdivision_id": 590, "track_name": "SIDING", "mp": 525.34, "lat": 32.58127803289062, "lon": -95.11077603314881}
+{"location_name": "CP Y901", "source": "start", "scac": "UP", "subdivision_id": 445, "track_name": "MT", "mp": 8.64, "lat": 35.132098123210696, "lon": -90.18033206396393}
+{"location_name": "SHELL", "source": "start", "scac": "UP", "subdivision_id": 924, "track_name": "MT", "mp": 35.83, "lat": 38.025548026794915, "lon": -122.11653602566993}
+{"location_name": "CHESTER", "source": "start", "scac": "UP", "subdivision_id": 60, "track_name": "CHSTR SIDING-CON TKS", "mp": 62.82, "lat": 37.89019497563274, "lon": -89.81066908561414}
+{"location_name": "ESS BERWICK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 81.012, "lat": 29.6915449859974, "lon": -91.21646899111603}
+{"location_name": "UP 1500 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 97.747, "lat": 29.74572501567241, "lon": -91.44770700667976}
+{"location_name": "WSS BAYOU SALE TO MP 129", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 97.747, "lat": 29.740007980607395, "lon": -91.4392880372477}
+{"location_name": "ESS NEW IBERIA", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 125.549, "lat": 30.007338046359273, "lon": -91.82305201321397}
+{"location_name": "UP 1500 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95.805, "lat": 29.74572501567241, "lon": -91.44770700667976}
+{"location_name": "ESS BAYOU SALE", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95.805, "lat": 29.740007980607395, "lon": -91.4392880372477}
+{"location_name": "ESS SCHRIEVER", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 54.189, "lat": 29.75199603287069, "lon": -90.8020960167083}
+{"location_name": "ESS SCHRIEVER TO ESS SALIX", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 54.189, "lat": 29.75199603287069, "lon": -90.8020960167083}
+{"location_name": "CTC LIVE OAK TO ESS SALIX", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 14.8, "lat": 29.93461197965828, "lon": -90.24863003590869}
+{"location_name": "WSS SALIX TO WSS RACELAND", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 20.202, "lat": 29.929831035230382, "lon": -90.30049594250762}
+{"location_name": "WSS RACELAND TO WSS BERWICK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 42.149, "lat": 29.748692000859407, "lon": -90.57402397877257}
+{"location_name": "WSS BERWICK TO MP 130", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 129.626, "lat": 30.02915708110676, "lon": -91.84709897532899}
+{"location_name": "ESS NEW IBERIA TO MP 95", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 125.549, "lat": 30.007338046359273, "lon": -91.82305201321397}
+{"location_name": "MP 95 TO MP 85", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95, "lat": 29.716490008047636, "lon": -91.40462096119924}
+{"location_name": "MP 95 TO MP 78", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95, "lat": 29.716490008047636, "lon": -91.40462096119924}
+{"location_name": "MP 95 TO WSS SCHRIEVER", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95, "lat": 29.716490008047636, "lon": -91.40462096119924}
+{"location_name": "WSS SCHRIEVER", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 55.647, "lat": 29.747467088563667, "lon": -90.81362700009802}
+{"location_name": "WSS SCHRIEVER TO MP 27", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 55.647, "lat": 29.747467088563667, "lon": -90.81362700009802}
+{"location_name": "MP 27 TO CTC LIVE OAK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 27, "lat": 29.88970702413527, "lon": -90.41956600660205}
+{"location_name": "CTC LIVE OAK TO WSS SALIX", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 14.8, "lat": 29.93461197965828, "lon": -90.24863003590869}
+{"location_name": "WSS SALIX TO MP 38", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 20.202, "lat": 29.929831035230382, "lon": -90.30049594250762}
+{"location_name": "MP 38 TO MP 54", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 38, "lat": 29.775378062554584, "lon": -90.53391602287743}
+{"location_name": "MP 38 TO MP 91", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 38, "lat": 29.775378062554584, "lon": -90.53391602287743}
+{"location_name": "MP 38 TO MP 78", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 38, "lat": 29.775378062554584, "lon": -90.53391602287743}
+{"location_name": "MP 91 TO ESS BAYOU SALE", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 91, "lat": 29.694489045950185, "lon": -91.34536295534437}
+{"location_name": "ESS BALDWIN TO MP 129", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 105.326, "lat": 29.83623999383905, "lon": -91.5540529911325}
+{"location_name": "WSS BAYOU SALE", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 97.747, "lat": 29.740007980607395, "lon": -91.4392880372477}
+{"location_name": "ESS NEW IBERIA TO MP 111", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 125.549, "lat": 30.007338046359273, "lon": -91.82305201321397}
+{"location_name": "MP 83 TO ESS BERWICK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 83, "lat": 29.6855540823396, "lon": -91.24536399056798}
+{"location_name": "MP 111 TO MP 83", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 111, "lat": 29.88432199270206, "lon": -91.61082502081702}
+{"location_name": "MP 83 TO MP 72", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 83, "lat": 29.6855540823396, "lon": -91.24536399056798}
+{"location_name": "MP 72 TO MP 46", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 72, "lat": 29.667626035026363, "lon": -91.0696243831499}
+{"location_name": "MP 46 TO CTC LIVE OAK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 46, "lat": 29.75153799022373, "lon": -90.63885395912968}
+{"location_name": "CTC LIVE OAK TO MP 42", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 14.8, "lat": 29.93461197965828, "lon": -90.24863003590869}
+{"location_name": "MP 31 TO WSS RACELAND", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 31, "lat": 29.863188022395008, "lon": -90.45386503726057}
+{"location_name": "MP 31 TO ESS SCHRIEVER", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 44, "lat": 29.747346086067996, "lon": -90.60978239115349}
+{"location_name": "ESS BAYOU SALE TO MP 125", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95.805, "lat": 29.740007980607395, "lon": -91.4392880372477}
+{"location_name": "ESS BAYOU SALE TO MP 129", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95.805, "lat": 29.740007980607395, "lon": -91.4392880372477}
+{"location_name": "ESS BALDWIN TO MP 95", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 105.326, "lat": 29.83623999383905, "lon": -91.5540529911325}
+{"location_name": "MP 95 TO MP 74", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 95, "lat": 29.716490008047636, "lon": -91.40462096119924}
+{"location_name": "MP 74 TO WSS RACELAND", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 74, "lat": 29.66833798579131, "lon": -91.09405096047004}
+{"location_name": "WSS RACELAND", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 42.149, "lat": 29.748692000859407, "lon": -90.57402397877257}
+{"location_name": "WSS SALIX TO MP 23", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 20.202, "lat": 29.929831035230382, "lon": -90.30049594250762}
+{"location_name": "MP 23 TO WSS RACELAND", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 23, "lat": 29.91797299571266, "lon": -90.33050102184761}
+{"location_name": "WSS BERWICK", "source": "start", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 82.475, "lat": 29.6915449859974, "lon": -91.21646899111603}
+{"location_name": "MUNCIE PASS", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "SIDING", "mp": 8.4, "lat": 39.09281200935919, "lon": -94.72622203351247}
+{"location_name": "SCHUYLER", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 1", "mp": 71.59, "lat": 41.44657307702749, "lon": -97.09758099109973}
+{"location_name": "SCALE TRACK", "source": "start", "scac": "UP", "subdivision_id": 595, "track_name": "MT", "mp": 222.7, "lat": 30.238019025780495, "lon": -93.27810033110616}
+{"location_name": "AIRPORT", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "MT", "mp": 181.24, "lat": 32.73280408412445, "lon": -96.25417503233975}
+{"location_name": "NEW BRAUNFELS DEPOT", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 223.11, "lat": 29.738077579960787, "lon": -98.08831416373546}
+{"location_name": "NEW BRAUNFELS", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 227.57, "lat": 29.701969053427796, "lon": -98.12800700689486}
+{"location_name": "CORBYN", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "SIDING", "mp": 233.62, "lat": 29.66086900484281, "lon": -98.21471205070158}
+{"location_name": "FREMONT", "source": "start", "scac": "UP", "subdivision_id": 203, "track_name": "SIDING", "mp": 364.48, "lat": 41.427436055974084, "lon": -96.45467191349123}
+{"location_name": "SOUTH SIDE FREMONT", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 2", "mp": 39.26, "lat": 41.42872503390331, "lon": -96.49523695241714}
+{"location_name": "VALLEY", "source": "start", "scac": "UP", "subdivision_id": 200, "track_name": "MT 2", "mp": 25.99, "lat": 41.28401843726127, "lon": -96.27735766771231}
+{"location_name": "MP 38.5", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 2", "mp": 39.17, "lat": 41.4276090661181, "lon": -96.49241900115774}
+{"location_name": "WEST AMES YARD", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 186.86, "lat": 42.03027703713919, "lon": -93.54593593460518}
+{"location_name": "BIG SANDY", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "SIDING", "mp": 112.99, "lat": 32.58150199951995, "lon": -95.10911402430867}
+{"location_name": "CP CB544", "source": "start", "scac": "UP", "subdivision_id": 590, "track_name": "MT", "mp": 544.48, "lat": 32.39840567012556, "lon": -95.2530290942534}
+{"location_name": "CP CB549", "source": "end", "scac": "UP", "subdivision_id": 590, "track_name": "MT", "mp": 548.66, "lat": 32.35043408809955, "lon": -95.31246803024008}
+{"location_name": "MP 435.35 to 435.5 Do not exceed 30 MPH", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 434, "lat": 40.65533906355102, "lon": -95.8763112103629}
+{"location_name": "435.5 Do not exceed 30 MPH", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 447, "lat": 40.80742305439216, "lon": -95.92146092852681}
+{"location_name": "ROCKWOOD", "source": "start", "scac": "UP", "subdivision_id": 830, "track_name": "MT", "mp": 10.2, "lat": 45.542650022962995, "lon": -122.49716195361503}
+{"location_name": "BIG SPRING", "source": "start", "scac": "UP", "subdivision_id": 515, "track_name": "N SIDING", "mp": 512.33, "lat": 32.2613619938124, "lon": -101.45833496222392}
+{"location_name": "BATTLE MOUNTAIN", "source": "start", "scac": "UP", "subdivision_id": 781, "track_name": "MT 1", "mp": 468.06, "lat": 40.75227203464508, "lon": -117.0741900174199}
+{"location_name": "NEWMONT", "source": "start", "scac": "UP", "subdivision_id": 781, "track_name": "MT 1", "mp": 502.11, "lat": 40.69562404418285, "lon": -116.56879103735794}
+{"location_name": "AUBURN", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 414.57, "lat": 40.40075905876858, "lon": -95.83757206018475}
+{"location_name": "MP 447 to 446.05 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 447, "lat": 40.80248302258564, "lon": -95.91691009785222}
+{"location_name": "446.05 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 434, "lat": 40.66561503519766, "lon": -95.86566525953616}
+{"location_name": "PAUL", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 428.77, "lat": 40.57708705303082, "lon": -95.8892690545761}
+{"location_name": "E CROSSOVER MORTON YARD", "source": "start", "scac": "UP", "subdivision_id": 316, "track_name": "MT", "mp": 246.01, "lat": 38.04695078325178, "lon": -97.94155947393406}
+{"location_name": "15 TRACK MORTON YARD", "source": "start", "scac": "UP", "subdivision_id": 316, "track_name": "MT", "mp": 246.01, "lat": 38.04695078325178, "lon": -97.94155947393406}
+{"location_name": "HIAWATHA", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 359.58, "lat": 39.72591011432717, "lon": -95.53047097856953}
+{"location_name": "CP SX124", "source": "start", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 123.62, "lat": 43.97864501557786, "lon": -94.65121004553916}
+{"location_name": "HUDSON", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 18.9, "lat": 44.98074004700213, "lon": -92.77251401726325}
+{"location_name": "SONO JCT", "source": "end", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 41, "lat": 44.957415997517, "lon": -92.32546002431354}
+{"location_name": "HOLLYWOOD YD", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "SIDING", "mp": 3.52, "lat": 32.46105704508172, "lon": -93.78823709226407}
+{"location_name": "CP X094", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 93.31, "lat": 44.796387052476746, "lon": -91.38451098539133}
+{"location_name": "MERRILLAN", "source": "end", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 110.72, "lat": 44.6676739319138, "lon": -91.10509983909775}
+{"location_name": "ABILENE", "source": "start", "scac": "UP", "subdivision_id": 511, "track_name": "MT", "mp": 405.43, "lat": 32.44706705081091, "lon": -99.71454196854526}
+{"location_name": "MIRA LOMA", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 1", "mp": 46.56, "lat": 34.01610699655524, "lon": -117.52263000674661}
+{"location_name": "DURANT", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "MT", "mp": 641.2, "lat": 33.99608597296211, "lon": -96.37149202481814}
+{"location_name": "GLUCOSE", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 137.34, "lat": 41.83301103541886, "lon": -90.19324793665152}
+{"location_name": "EAST CLINTON", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 1", "mp": 136.63, "lat": 41.836406069864594, "lon": -90.17037096167765}
+{"location_name": "BESTWALL", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 2", "mp": 146.96, "lat": 39.83007501421481, "lon": -96.63408498514265}
+{"location_name": "WEST SETOUT", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 1", "mp": 149.09, "lat": 39.851830037669814, "lon": -96.65566003343268}
+{"location_name": "WEST SIDNEY", "source": "start", "scac": "UP", "subdivision_id": 235, "track_name": "MT 2", "mp": 408.01, "lat": 41.14597712735451, "lon": -102.9857700199749}
+{"location_name": "EAST SIDNEY", "source": "start", "scac": "UP", "subdivision_id": 235, "track_name": "MT 2", "mp": 407.71, "lat": 41.14690100546742, "lon": -102.95532391847023}
+{"location_name": "BROWNSON", "source": "start", "scac": "UP", "subdivision_id": 235, "track_name": "MT 1", "mp": 410.21, "lat": 41.147293011937286, "lon": -103.02773894772899}
+{"location_name": "VAN BUREN", "source": "start", "scac": "UP", "subdivision_id": 345, "track_name": "SIDING", "mp": 498.39, "lat": 35.4323450162818, "lon": -94.3558209228756}
+{"location_name": "CP X087", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 86.98, "lat": 44.8385580510278, "lon": -91.52761104756581}
+{"location_name": "VALLEY", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 171.27, "lat": 44.05087004283169, "lon": -90.40981792453401}
+{"location_name": "RODELL", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 102.99, "lat": 44.74400104488199, "lon": -91.21190692114092}
+{"location_name": "PECOS", "source": "start", "scac": "UP", "subdivision_id": 719, "track_name": "N YD SIDING", "mp": 3.38, "lat": 39.79988906911606, "lon": -104.99906498702519}
+{"location_name": "WYNNE", "source": "start", "scac": "UP", "subdivision_id": 435, "track_name": "MT", "mp": 277.93, "lat": 35.32713580846952, "lon": -90.76970634640487}
+{"location_name": "FMC PASS", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "MT 2", "mp": 222.72, "lat": 42.90465791930571, "lon": -112.55630044314447}
+{"location_name": "OPELOUSAS", "source": "start", "scac": "UP", "subdivision_id": 461, "track_name": "MT", "mp": 590.02, "lat": 30.539862973768713, "lon": -92.091722956246}
+{"location_name": "1 BOXES MARKED: 7", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 123, "lat": 43.97605308798192, "lon": -94.66881864303846}
+{"location_name": "CP SX129", "source": "start", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 129.12, "lat": 43.95837901032226, "lon": -94.78861297412632}
+{"location_name": "CP R316", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 315.57, "lat": 32.436495000309314, "lon": -93.80412201868519}
+{"location_name": "WESTDALE", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 286.46, "lat": 32.13953705799561, "lon": -93.4798800573139}
+{"location_name": "JCT SW LYNDALE JCT", "source": "start", "scac": "BNSF", "subdivision_id": 7137, "track_name": "MAIN", "mp": 0, "lat": 44.97652101016831, "lon": -93.29154102588834}
+{"location_name": "UP 1917 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7137, "track_name": "MAIN", "mp": 1.738, "lat": 44.97559605921148, "lon": -93.30318308623174}
+{"location_name": "ARGON YARD", "source": "start", "scac": "UP", "subdivision_id": 110, "track_name": "SIDING", "mp": 150.03, "lat": 42.547228069396866, "lon": -93.24307505500033}
+{"location_name": "MP 145.5 to 144 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 147.62, "lat": 42.521331055457615, "lon": -93.25137957880628}
+{"location_name": "CP P137", "source": "start", "scac": "UP", "subdivision_id": 820, "track_name": "MT", "mp": 136.74, "lat": 42.900528084944916, "lon": -112.45638605984534}
+{"location_name": "UNLOCKS", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "MT 3", "mp": 211.14, "lat": 42.82725502657578, "lon": -112.40941600289024}
+{"location_name": "LA SALLE MT", "source": "start", "scac": "UP", "subdivision_id": 710, "track_name": "MT", "mp": 47.17, "lat": 40.34944101658187, "lon": -104.70207106313535}
+{"location_name": "BISBEE", "source": "end", "scac": "UP", "subdivision_id": 619, "track_name": "MT", "mp": 40.11, "lat": 32.61171595037296, "lon": -97.18687398474982}
+{"location_name": "DUNSMUIR", "source": "start", "scac": "UP", "subdivision_id": 918, "track_name": "SIDING", "mp": 321.36, "lat": 41.201042001978564, "lon": -122.2736859656442}
+{"location_name": "PACIFIC", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 737.42, "lat": 32.68114105413357, "lon": -114.56900702497879}
+{"location_name": "CP E035", "source": "start", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 36, "lat": 47.86005808536862, "lon": -116.75126401524984}
+{"location_name": "VAY", "source": "end", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 56.8, "lat": 48.0921001202581, "lon": -116.79469106261882}
+{"location_name": "SANDPOINT", "source": "end", "scac": "UP", "subdivision_id": 880, "track_name": "MT", "mp": 77.3, "lat": 48.30089102073664, "lon": -116.54056795953045}
+{"location_name": "IRON MOUNTAIN", "source": "start", "scac": "UP", "subdivision_id": 80, "track_name": "MT", "mp": 77.2, "lat": 37.759211008591876, "lon": -90.62161197639944}
+{"location_name": "VALLEY XOVERS", "source": "start", "scac": "UP", "subdivision_id": 200, "track_name": "MT 1", "mp": 25.99, "lat": 41.28461301012971, "lon": -96.24786252960698}
+{"location_name": "CHENOA", "source": "start", "scac": "UP", "subdivision_id": 25, "track_name": "MT", "mp": 94.98, "lat": 40.8408977642198, "lon": -88.66110024276337}
+{"location_name": "BUNGE", "source": "start", "scac": "UP", "subdivision_id": 25, "track_name": "MT", "mp": 84.67, "lat": 40.96791304681118, "lon": -88.55793802234193}
+{"location_name": "CP SH445", "source": "end", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 445.22, "lat": 32.59358901692115, "lon": -93.73235596298551}
+{"location_name": "CP RB230", "source": "start", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 229.76, "lat": 32.43893704738633, "lon": -93.78164998591366}
+{"location_name": "KEITHVILLE", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 216.77, "lat": 32.32196306084702, "lon": -93.84247998645587}
+{"location_name": "TIMPSON", "source": "start", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 164.24, "lat": 31.87565204624656, "lon": -94.42437196101831}
+{"location_name": "APPLEBY", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 146.59, "lat": 31.719411610646617, "lon": -94.59621600494152}
+{"location_name": "JUNCTION CITY", "source": "start", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 137.97, "lat": 39.05181108315981, "lon": -96.80962998387486}
+{"location_name": "CP K091", "source": "end", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 90.82, "lat": 39.19171603629422, "lon": -96.06325999947717}
+{"location_name": "CP CU027", "source": "start", "scac": "UP", "subdivision_id": 637, "track_name": "MT", "mp": 27.08, "lat": 28.800727210274616, "lon": -96.99945238055201}
+{"location_name": "CP SA120", "source": "end", "scac": "UP", "subdivision_id": 637, "track_name": "MT", "mp": 101.76, "lat": 29.686070047292265, "lon": -97.11617901877446}
+{"location_name": "CP Z472", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 472.07, "lat": 41.13274997549926, "lon": -95.92750798613068}
+{"location_name": "CP V045", "source": "start", "scac": "UP", "subdivision_id": 330, "track_name": "MT", "mp": 44.99, "lat": 38.548637052016865, "lon": -94.90172100657296}
+{"location_name": "CP HL156", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 208.71, "lat": 32.06912925611296, "lon": -96.46345307191969}
+{"location_name": "CP PX952", "source": "start", "scac": "UP", "subdivision_id": 685, "track_name": "MT", "mp": 952.62, "lat": 33.135418060908606, "lon": -111.50289896797581}
+{"location_name": "GERMANN", "source": "end", "scac": "UP", "subdivision_id": 685, "track_name": "MT", "mp": 937.9, "lat": 33.26652426873905, "lon": -111.6506981115388}
+{"location_name": "SMITHVILLE JCT", "source": "start", "scac": "UP", "subdivision_id": 570, "track_name": "MT", "mp": 0.14, "lat": 30.00680006722214, "lon": -97.16197201462737}
+{"location_name": "CP Q209", "source": "end", "scac": "UP", "subdivision_id": 570, "track_name": "MT", "mp": 51.76, "lat": 29.885267037013673, "lon": -97.92397695106983}
+{"location_name": "LIMON", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 548.33, "lat": 39.231969860976626, "lon": -103.61858141567501}
+{"location_name": "CP K291", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 338.12, "lat": 39.03704990057984, "lon": -100.15016666875323}
+{"location_name": "CP K249", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 249.33, "lat": 38.84611102770311, "lon": -98.58343898612024}
+{"location_name": "CP K207", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 207.51, "lat": 38.74449463713148, "lon": -97.96229472456203}
+{"location_name": "SALIX", "source": "start", "scac": "UP", "subdivision_id": 119, "track_name": "MT", "mp": 63.42, "lat": 42.31177291257606, "lon": -96.28838393517081}
+{"location_name": "CP SX008", "source": "end", "scac": "UP", "subdivision_id": 119, "track_name": "MT", "mp": 8.04, "lat": 41.586938554627295, "lon": -96.00479455437906}
+{"location_name": "CP Z371", "source": "start", "scac": "UP", "subdivision_id": 304, "track_name": "MT", "mp": 43.23, "lat": 39.85940303984459, "lon": -95.5437620525554}
+{"location_name": "CP Z143", "source": "end", "scac": "UP", "subdivision_id": 304, "track_name": "MT", "mp": 107.93, "lat": 39.828848081599844, "lon": -96.53721494868638}
+{"location_name": "CP U109", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 109.57, "lat": 42.020117700835904, "lon": -93.3991326578419}
+{"location_name": "CP U051", "source": "start", "scac": "UP", "subdivision_id": 78, "track_name": "MT", "mp": 50.92, "lat": 41.34787334082434, "lon": -93.29308005740029}
+{"location_name": "CP U030", "source": "end", "scac": "UP", "subdivision_id": 78, "track_name": "MT", "mp": 29.41, "lat": 41.084923233618255, "lon": -93.25597677569456}
+{"location_name": "LONE PINE", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT 2", "mp": 379.99, "lat": 35.112817822498116, "lon": -118.20621599711565}
+{"location_name": "TWC LIMIT MP 225.4", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.24641811477574, "lon": -88.82301898805957}
+{"location_name": "UP 2551 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "VIENNA JCT", "source": "start", "scac": "UP", "subdivision_id": 56, "track_name": "MT", "mp": 339.77, "lat": 37.43004330260146, "lon": -88.9685870471587}
+{"location_name": "CP I320", "source": "end", "scac": "UP", "subdivision_id": 56, "track_name": "MT", "mp": 319.87, "lat": 37.683066379858694, "lon": -88.93521132725131}
+{"location_name": "CP I318", "source": "start", "scac": "UP", "subdivision_id": 56, "track_name": "MT", "mp": 317.7, "lat": 37.71895602150396, "lon": -88.9316119590559}
+{"location_name": "CP I999", "source": "end", "scac": "UP", "subdivision_id": 56, "track_name": "MT", "mp": 298.66, "lat": 37.98680521493677, "lon": -88.91622525813088}
+{"location_name": "IRVING", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "SIDING", "mp": 653.37, "lat": 44.11135103772291, "lon": -123.16331485868402}
+{"location_name": "CP G110", "source": "start", "scac": "UP", "subdivision_id": 750, "track_name": "MT", "mp": 109.79, "lat": 42.630782094512796, "lon": -112.18980093986232}
+{"location_name": "CP G005", "source": "end", "scac": "UP", "subdivision_id": 750, "track_name": "MT", "mp": 6.27, "lat": 41.30607822048271, "lon": -112.0098251161782}
+{"location_name": "WESTERN", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 227.6, "lat": 29.701969053427796, "lon": -98.12800700689486}
+{"location_name": "CP Q919", "source": "start", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 919.38, "lat": 30.56210007005754, "lon": -97.40450099386214}
+{"location_name": "SMITHVILLE JCT", "source": "end", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 969.26, "lat": 30.007554055275243, "lon": -97.16342094088648}
+{"location_name": "CACHE JCT.", "source": "end", "scac": "UP", "subdivision_id": 750, "track_name": "MT", "mp": 49.55, "lat": 41.83248437637244, "lon": -111.99422738279688}
+{"location_name": "FIFE", "source": "start", "scac": "UP", "subdivision_id": 860, "track_name": "MT", "mp": 147.38, "lat": 47.23862600214994, "lon": -122.38879106967524}
+{"location_name": "KINGFISHER", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 379.91, "lat": 35.858500019473375, "lon": -97.92897100907095}
+{"location_name": "BELKNAP", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 537.3, "lat": 33.6492010541883, "lon": -97.89501196640093}
+{"location_name": "HICKS", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 579.8, "lat": 33.111603839377786, "lon": -97.63425898585547}
+{"location_name": "CP T954", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 609.49, "lat": 32.78995808341792, "lon": -97.3397709382586}
+{"location_name": "ALBANY", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT", "mp": 691.36, "lat": 44.6335610320779, "lon": -123.09661195063684}
+{"location_name": "CP E067", "source": "start", "scac": "UP", "subdivision_id": 10, "track_name": "MT", "mp": 66.7, "lat": 42.78010435256223, "lon": -87.81016520230466}
+{"location_name": "CP E053", "source": "end", "scac": "UP", "subdivision_id": 10, "track_name": "MT", "mp": 52.86, "lat": 42.60473300653109, "lon": -87.82591098729955}
+{"location_name": "GRANGER", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "MT", "mp": 0.25, "lat": 41.59552699752833, "lon": -109.9670099894002}
+{"location_name": "CP Y901", "source": "end", "scac": "UP", "subdivision_id": 444, "track_name": "MT", "mp": 479.33, "lat": 35.13403100410758, "lon": -90.1771089781075}
+{"location_name": "CP CB200", "source": "end", "scac": "UP", "subdivision_id": 445, "track_name": "MT", "mp": 70.58, "lat": 34.8785160614685, "lon": -91.19191100174682}
+{"location_name": "MINIDOKA", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "SIDING", "mp": 271.45, "lat": 42.750056967071295, "lon": -113.46664306032069}
+{"location_name": "CP RV737", "source": "start", "scac": "UP", "subdivision_id": 796, "track_name": "MT", "mp": 737.4, "lat": 41.22170997756607, "lon": -112.81366971886493}
+{"location_name": "CP RV755", "source": "end", "scac": "UP", "subdivision_id": 796, "track_name": "MT", "mp": 754.9, "lat": 41.21634102628393, "lon": -112.5149598571641}
+{"location_name": "CTC COON CREEK", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.17095804892087, "lon": -93.29415702557819}
+{"location_name": "UP 2597 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "SSS HINCKLEY TO SSS ANDOVER", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "UP 2597 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131.407, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "CP CB390", "source": "start", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 390.29, "lat": 33.35587202078934, "lon": -93.58712001404083}
+{"location_name": "CP SH447", "source": "end", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 445.22, "lat": 32.59358901692115, "lon": -93.73235596298551}
+{"location_name": "W. END GARRETT", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 2", "mp": 228.12, "lat": 32.74005507306317, "lon": -97.03083297855699}
+{"location_name": "CP HL255", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 254.3, "lat": 32.64927296757642, "lon": -96.71213797141732}
+{"location_name": "ARMSTRONG", "source": "end", "scac": "UP", "subdivision_id": 542, "track_name": "MT", "mp": 78.52, "lat": 26.93791820770661, "lon": -97.7932069736126}
+{"location_name": "KINGSVILLE", "source": "end", "scac": "UP", "subdivision_id": 542, "track_name": "MT", "mp": 118.4, "lat": 27.504197362215322, "lon": -97.86833800523942}
+{"location_name": "CP J141", "source": "end", "scac": "UP", "subdivision_id": 542, "track_name": "MT", "mp": 141.43, "lat": 27.782331898571584, "lon": -97.66641094336461}
+{"location_name": "UTIP", "source": "start", "scac": "UP", "subdivision_id": 796, "track_name": "MT 1", "mp": 767.13, "lat": 41.24441797580605, "lon": -112.25558905610569}
+{"location_name": "EVANSTON", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 915.61, "lat": 41.22392107145491, "lon": -110.91192691411554}
+{"location_name": "LOLA", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 581.85, "lat": 33.09512791940693, "lon": -97.6062517438001}
+{"location_name": "SUNRAY", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 481.59, "lat": 34.426108981971936, "lon": -97.95281900086295}
+{"location_name": "SSS SUNRAY", "source": "start", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 481.51, "lat": 34.43668203540826, "lon": -97.95737110292151}
+{"location_name": "BNSF JCT", "source": "end", "scac": "UP", "subdivision_id": 320, "track_name": "MT", "mp": 208.41, "lat": 38.168310039276584, "lon": -97.11076407078178}
+{"location_name": "LOST SPRINGS", "source": "end", "scac": "UP", "subdivision_id": 320, "track_name": "MT", "mp": 180.41, "lat": 38.54082004298896, "lon": -96.96288005445885}
+{"location_name": "IKE", "source": "end", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 170.1, "lat": 38.903597012040734, "lon": -97.31896601619614}
+{"location_name": "GEORGE WEST", "source": "end", "scac": "UP", "subdivision_id": 534, "track_name": "MT", "mp": 89.69, "lat": 28.320596005182942, "lon": -98.09940895496543}
+{"location_name": "CP H083", "source": "end", "scac": "UP", "subdivision_id": 527, "track_name": "MT", "mp": 16.35, "lat": 31.598585857942123, "lon": -95.82561056701913}
+{"location_name": "PALMER LAKE", "source": "start", "scac": "UP", "subdivision_id": 700, "track_name": "MT 2", "mp": 51.9, "lat": 39.128268015590365, "lon": -104.90490703454986}
+{"location_name": "LITTLETON", "source": "end", "scac": "UP", "subdivision_id": 700, "track_name": "MT 2", "mp": 12.4, "lat": 39.5865010894516, "lon": -105.02230503956075}
+{"location_name": "TRAILER DOCK", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "MT 1", "mp": 456.59, "lat": 43.57626602574673, "lon": -116.5531680538387}
+{"location_name": "BEAUMONT (EAST OF SP562)", "source": "start", "scac": "UP", "subdivision_id": 943, "track_name": "MT 2", "mp": 562.06, "lat": 33.92777505379258, "lon": -116.98354296526833}
+{"location_name": "INDIO", "source": "start", "scac": "UP", "subdivision_id": 943, "track_name": "MT 1", "mp": 604.79, "lat": 33.76261896887971, "lon": -116.31214592953039}
+{"location_name": "CP L680", "source": "start", "scac": "UP", "subdivision_id": 475, "track_name": "MT", "mp": 680.21, "lat": 30.27155117469172, "lon": -92.96952108578004}
+{"location_name": "DONALDSONVILLE", "source": "start", "scac": "UP", "subdivision_id": 455, "track_name": "SIDING", "mp": 65.05, "lat": 30.097427985713544, "lon": -90.9899999791455}
+{"location_name": "CAT SPRING", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 123.54, "lat": 29.847897215453973, "lon": -96.32970649493788}
+{"location_name": "FAYETTEVILLE", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 103.53, "lat": 29.907186053376524, "lon": -96.66793200400035}
+{"location_name": "VALLEY", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "SIDING", "mp": 343.39, "lat": 36.277970055586934, "lon": -115.06727499544051}
+{"location_name": "NELLIS", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "MT", "mp": 340.4, "lat": 36.245041048015665, "lon": -115.10195100448502}
+{"location_name": "DESERT", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "MT", "mp": 341.54, "lat": 36.252076066461285, "lon": -115.09456494079924}
+{"location_name": "CP W009", "source": "start", "scac": "UP", "subdivision_id": 215, "track_name": "MT", "mp": 0.15, "lat": 41.17169708430382, "lon": -101.22385095075623}
+{"location_name": "CP K625", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 625.54, "lat": 39.75076308418012, "lon": -104.73500205402466}
+{"location_name": "CP K550", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 550.02, "lat": 39.2458467347256, "lon": -103.65390636451005}
+{"location_name": "CP K379", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 411.28, "lat": 38.978844958436845, "lon": -101.43333378263473}
+{"location_name": "CP K359", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 359.05, "lat": 39.110901022786834, "lon": -100.46996201829702}
+{"location_name": "CP K309", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 338.12, "lat": 39.03704990057984, "lon": -100.15016666875323}
+{"location_name": "CP K206", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 251.43, "lat": 38.87102228144031, "lon": -98.66832406851717}
+{"location_name": "CP Q048", "source": "end", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 32.94, "lat": 30.037711282790983, "lon": -95.87405225489577}
+{"location_name": "BUCKEYE", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 137.67, "lat": 42.41724849206333, "lon": -93.37558816747759}
+{"location_name": "HERSEY", "source": "end", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 39.1, "lat": 44.97134596755598, "lon": -92.41295371370867}
+{"location_name": "CP VIRGINIA POINT", "source": "end", "scac": "UP", "subdivision_id": 575, "track_name": "MT", "mp": 41.15, "lat": 29.308575167532254, "lon": -94.90442196356622}
+{"location_name": "AZUZAS", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "IND SIDING", "mp": 502.58, "lat": 34.00896304459124, "lon": -117.92632592497439}
+{"location_name": "OSAWATOMIE MT2", "source": "start", "scac": "UP", "subdivision_id": 335, "track_name": "MT 2", "mp": 333.06, "lat": 38.500581023270364, "lon": -94.95269593407627}
+{"location_name": "WAHSATCH", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 928.01, "lat": 41.20515903457816, "lon": -111.10478407679491}
+{"location_name": "EMORY", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 944.37, "lat": 41.0456119459824, "lon": -111.31020148262849}
+{"location_name": "CALDWELL", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 278.33, "lat": 37.238346022177204, "lon": -97.45517504699423}
+{"location_name": "CP Q918", "source": "start", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 918.78, "lat": 30.575370088667675, "lon": -97.403148993916}
+{"location_name": "CP A001", "source": "start", "scac": "UP", "subdivision_id": 133, "track_name": "MT", "mp": 1.48, "lat": 42.03573803760305, "lon": -94.23959296317247}
+{"location_name": "MOORLAND", "source": "end", "scac": "UP", "subdivision_id": 133, "track_name": "MT", "mp": 29.1, "lat": 42.44472027153333, "lon": -94.29173433501943}
+{"location_name": "GRAND JUNCTION", "source": "start", "scac": "UP", "subdivision_id": 133, "track_name": "MT", "mp": 1.48, "lat": 42.03573803760305, "lon": -94.23959296317247}
+{"location_name": "WEST END BEVERLY YARD MT1", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 1", "mp": 86.57, "lat": 41.93225706622122, "lon": -91.71616407165752}
+{"location_name": "CP A189", "source": "start", "scac": "UP", "subdivision_id": 129, "track_name": "MT", "mp": 0.05, "lat": 42.02503303322379, "lon": -93.62246603991082}
+{"location_name": "GUDE", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 208.71, "lat": 32.06912925611296, "lon": -96.46345307191969}
+{"location_name": "LITTLE RIVER", "source": "end", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 885.99, "lat": 30.998624459661812, "lon": -97.36568931455695}
+{"location_name": "LUCAS", "source": "end", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 309.03, "lat": 32.40386803564039, "lon": -93.69727898802617}
+{"location_name": "CITY OF INDUSTRY", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "IND SIDING", "mp": 502.58, "lat": 34.00896304459124, "lon": -117.92632592497439}
+{"location_name": "MCCAMMON", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "MT 2", "mp": 189.94, "lat": 42.631846047695255, "lon": -112.17718398357093}
+{"location_name": "EAST SIDING", "source": "start", "scac": "UP", "subdivision_id": 750, "track_name": "E PASS SIDING", "mp": 111.09, "lat": 42.65054504136004, "lon": -112.18996298550007}
+{"location_name": "SANTA CRUZ", "source": "end", "scac": "UP", "subdivision_id": 683, "track_name": "MT", "mp": 24.59, "lat": 31.883044029384912, "lon": -110.96916697127273}
+{"location_name": "HAYLAND", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 1", "mp": 272.55, "lat": 40.660398989518036, "lon": -98.57338192138026}
+{"location_name": "MOUNTAIN HOME", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "MT", "mp": 401.23, "lat": 43.12364609617455, "lon": -115.6896960901533}
+{"location_name": "HUMBLE", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 17.1, "lat": 29.981249025133565, "lon": -95.2725199804056}
+{"location_name": "CP L190", "source": "start", "scac": "UP", "subdivision_id": 475, "track_name": "MT", "mp": 602.36, "lat": 31.24951303484916, "lon": -92.43434700654575}
+{"location_name": "TRACY", "source": "start", "scac": "UP", "subdivision_id": 475, "track_name": "MT", "mp": 643.13, "lat": 30.74008603550672, "lon": -92.70192802761129}
+{"location_name": "NSS KINGFISHER", "source": "start", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 378.19, "lat": 35.86874705853522, "lon": -97.9272619743187}
+{"location_name": "UNION", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 448.13, "lat": 40.81633699639349, "lon": -95.92574401536454}
+{"location_name": "OZ", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 359.05, "lat": 39.110901022786834, "lon": -100.46996201829702}
+{"location_name": "RIGA", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 338.12, "lat": 39.03704990057984, "lon": -100.15016666875323}
+{"location_name": "HAYS SIDING", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 290.75, "lat": 38.868205016172986, "lon": -99.3233229904087}
+{"location_name": "CP K229", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 228.72, "lat": 38.73202927149965, "lon": -98.23915651588898}
+{"location_name": "CP YR239", "source": "end", "scac": "UP", "subdivision_id": 238, "track_name": "MT", "mp": 198.62, "lat": 41.71681561693881, "lon": -104.21072537520625}
+{"location_name": "NEW ULM", "source": "end", "scac": "UP", "subdivision_id": 567, "track_name": "MT", "mp": 113.84, "lat": 29.89356406241316, "lon": -96.49765700244023}
+{"location_name": "MIDLAND", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 279, "lat": 37.18004105381741, "lon": -97.5026199954888}
+{"location_name": "STANG", "source": "start", "scac": "UP", "subdivision_id": 320, "track_name": "MT", "mp": 198.28, "lat": 38.35122496052028, "lon": -97.02535402976181}
+{"location_name": "PEDLEY WYE", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 1", "mp": 48.86, "lat": 33.989672020591215, "lon": -117.48027305214325}
+{"location_name": "KEMMERER", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "SIDING", "mp": 39.22, "lat": 41.78499009526229, "lon": -110.53523393531701}
+{"location_name": "CTC PORT CHICAGO", "source": "start", "scac": "BNSF", "subdivision_id": 7193, "track_name": "MAIN", "mp": 1163.6, "lat": 38.04704710620267, "lon": -122.02250889822034}
+{"location_name": "UP 3030 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7193, "track_name": "MAIN", "mp": 1166.557, "lat": 38.01852404525396, "lon": -122.06722804202995}
+{"location_name": "EAST END TIE YARD", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 1", "mp": 68.18, "lat": 39.06669302079883, "lon": -95.66973595674574}
+{"location_name": "CART", "source": "start", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 447.07, "lat": 32.555491497566905, "lon": -93.72949668253518}
+{"location_name": "SARITA", "source": "end", "scac": "UP", "subdivision_id": 542, "track_name": "MT", "mp": 97.58, "lat": 27.230037066760328, "lon": -97.7951300252375}
+{"location_name": "SODA SPRINGS", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "SIDING", "mp": 144.1, "lat": 42.64067097835932, "lon": -111.57703898572495}
+{"location_name": "DELLE", "source": "start", "scac": "UP", "subdivision_id": 785, "track_name": "SIDING", "mp": 879.36, "lat": 40.76452606210172, "lon": -112.77109801346263}
+{"location_name": "PIONEER", "source": "end", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 58.78, "lat": 40.98355079466918, "lon": -89.65067497103328}
+{"location_name": "POTTSTOWN", "source": "end", "scac": "UP", "subdivision_id": 19, "track_name": "MT 2", "mp": 77.08, "lat": 40.718186054562075, "lon": -89.66085401224026}
+{"location_name": "PEORIA JCT", "source": "end", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 80.26, "lat": 40.68162205143447, "lon": -89.65557498968788}
+{"location_name": "WOLF", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 205.7, "lat": 38.757906090132295, "lon": -97.9189940541226}
+{"location_name": "JIM", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 446.99, "lat": 38.86290608521157, "lon": -102.01131003873803}
+{"location_name": "CP K449", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 448.76, "lat": 38.851226048449846, "lon": -102.09343795276881}
+{"location_name": "CP K487", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 485.12, "lat": 38.779213030202676, "lon": -102.7283139834185}
+{"location_name": "CP K504", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 502.25, "lat": 38.81880906141565, "lon": -102.98971997409848}
+{"location_name": "CP K568", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 548.33, "lat": 39.234014074488584, "lon": -103.62110795456893}
+{"location_name": "OGDEN", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 235.96, "lat": 29.641088022804713, "lon": -98.24755399997261}
+{"location_name": "CARNES", "source": "end", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 484.96, "lat": 42.79359721154424, "lon": -96.16378214211014}
+{"location_name": "CP MI108", "source": "start", "scac": "UP", "subdivision_id": 135, "track_name": "MT", "mp": 107.98, "lat": 43.95512826964692, "lon": -94.7836370848525}
+{"location_name": "RUSH SPRINGS", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 456.26, "lat": 34.792163032542334, "lon": -97.9560280111452}
+{"location_name": "HOPE", "source": "start", "scac": "UP", "subdivision_id": 405, "track_name": "N PASS SIDING", "mp": 456.12, "lat": 33.67612808631803, "lon": -93.56299901741765}
+{"location_name": "CLYMAN JCT.", "source": "end", "scac": "UP", "subdivision_id": 174, "track_name": "MT", "mp": 278.69, "lat": 43.31228325121345, "lon": -88.70383829282397}
+{"location_name": "CP Q016", "source": "end", "scac": "UP", "subdivision_id": 527, "track_name": "MT", "mp": 15.85, "lat": 31.62640609541476, "lon": -95.79583409370383}
+{"location_name": "N/E OF THE 486 LEAD", "source": "start", "scac": "UP", "subdivision_id": 520, "track_name": "MT 2", "mp": 210.95, "lat": 30.076918865559357, "lon": -95.41637900033676}
+{"location_name": "ARDEN", "source": "start", "scac": "UP", "subdivision_id": 760, "track_name": "SIDING", "mp": 322.96, "lat": 36.02257137034827, "lon": -115.22825983332616}
+{"location_name": "BOULDER JCT", "source": "start", "scac": "UP", "subdivision_id": 760, "track_name": "MT 2", "mp": 328.57, "lat": 36.07738202449414, "lon": -115.19937703301865}
+{"location_name": "NEW CROSSOVERS", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "MT 2", "mp": 456.61, "lat": 43.57674903561727, "lon": -116.55394603457904}
+{"location_name": "HUNTINGTON SID", "source": "start", "scac": "UP", "subdivision_id": 810, "track_name": "SIDING", "mp": 390.1, "lat": 44.355212020461714, "lon": -117.25682000763112}
+{"location_name": "BIG ISLAND", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 843.9, "lat": 41.61923302614197, "lon": -109.89291899997451}
+{"location_name": "TG SODA", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 833.52, "lat": 41.60707405780139, "lon": -109.72025993057449}
+{"location_name": "APEX", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "SIDING", "mp": 352.59, "lat": 36.33193931332682, "lon": -114.92500078385109}
+{"location_name": "MOAPA SIDING", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "SIDING", "mp": 384.34, "lat": 36.674572028545875, "lon": -114.62182100528506}
+{"location_name": "ARROLIME", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "MT", "mp": 356.03, "lat": 36.34898299643764, "lon": -114.9114570036748}
+{"location_name": "COLD STORAGE/CIR", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 73.39, "lat": 41.923751967163746, "lon": -89.03778348745006}
+{"location_name": "CP HL253", "source": "start", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 253.5, "lat": 32.636381021091694, "lon": -96.70680799855411}
+{"location_name": "RICE", "source": "start", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 221.22, "lat": 32.21992607693422, "lon": -96.48803601884376}
+{"location_name": "EDNA", "source": "end", "scac": "UP", "subdivision_id": 475, "track_name": "MT", "mp": 665.65, "lat": 30.43785468655358, "lon": -92.87646508358027}
+{"location_name": "TAIL TRACK", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "MARNE SIDING", "mp": 503.82, "lat": 34.006493020730076, "lon": -117.9110919790557}
+{"location_name": "ALHAMBRA IND LEAD", "source": "start", "scac": "UP", "subdivision_id": 975, "track_name": "MT", "mp": 513.33, "lat": 34.058320059688334, "lon": -117.77258496188934}
+{"location_name": "BEAUMONT (WEST OF SP562)", "source": "start", "scac": "UP", "subdivision_id": 943, "track_name": "MT 2", "mp": 561.79, "lat": 33.93127105788985, "lon": -116.99030293262685}
+{"location_name": "CP HL254", "source": "start", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 253.5, "lat": 32.636381021091694, "lon": -96.70680799855411}
+{"location_name": "MINCO", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 417.99, "lat": 35.31299003282043, "lon": -97.94110008049859}
+{"location_name": "ELGIN", "source": "end", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 936.92, "lat": 30.325225003353648, "lon": -97.36906705472832}
+{"location_name": "NELSON", "source": "start", "scac": "UP", "subdivision_id": 810, "track_name": "MT", "mp": 369.75, "lat": 44.576197988452144, "lon": -117.45261300124417}
+{"location_name": "DOWNTOWN ONTARIO", "source": "start", "scac": "UP", "subdivision_id": 810, "track_name": "MT", "mp": 498.15, "lat": 44.013391348616324, "lon": -116.96531693711029}
+{"location_name": "MT. VERNON", "source": "start", "scac": "UP", "subdivision_id": 943, "track_name": "CONN TRK", "mp": 539.66, "lat": 34.0630309693242, "lon": -117.31140069943858}
+{"location_name": "LUND", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "SIDING", "mp": 542.67, "lat": 38.019830002690576, "lon": -113.41728498591048}
+{"location_name": "BLENCOE", "source": "end", "scac": "UP", "subdivision_id": 119, "track_name": "MT", "mp": 32.29, "lat": 41.92328600197382, "lon": -96.08154197331041}
+{"location_name": "TEXARKANA", "source": "start", "scac": "UP", "subdivision_id": 405, "track_name": "MT 1", "mp": 488.94, "lat": 33.43366492762978, "lon": -94.02441613521927}
+{"location_name": "LORDSBURG", "source": "start", "scac": "UP", "subdivision_id": 678, "track_name": "SIDING", "mp": 1149.73, "lat": 32.345430098120644, "lon": -108.68838002216228}
+{"location_name": "ROBERT GREEN", "source": "start", "scac": "UP", "subdivision_id": 455, "track_name": "MT", "mp": 91.22, "lat": 30.351235966254116, "lon": -91.26587599775615}
+{"location_name": "MERRIAM", "source": "start", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 34.46, "lat": 44.73678805416914, "lon": -93.59361001468318}
+{"location_name": "CP SX171", "source": "end", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 171.21, "lat": 43.68276058329211, "lon": -95.49523464789561}
+{"location_name": "ELK CREEK", "source": "start", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 173.1, "lat": 43.66257705366253, "lon": -95.526283963033}
+{"location_name": "CP SX244", "source": "end", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 243.71, "lat": 42.79508202001028, "lon": -96.16224793679343}
+{"location_name": "LAND O LAKES", "source": "start", "scac": "UP", "subdivision_id": 807, "track_name": "MT", "mp": 331.22, "lat": 42.954557977903704, "lon": -114.58390518904532}
+{"location_name": "I&M JCT.", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 131.71, "lat": 39.96192305034132, "lon": -89.69689098020866}
+{"location_name": "MILFORD", "source": "start", "scac": "UP", "subdivision_id": 775, "track_name": "MT 2", "mp": 578.96, "lat": 38.40949006643064, "lon": -113.00096198514217}
+{"location_name": "ANDECITE", "source": "start", "scac": "UP", "subdivision_id": 710, "track_name": "MT", "mp": 11.18, "lat": 39.88182903477394, "lon": -104.88142098935913}
+{"location_name": "ROLLA", "source": "start", "scac": "UP", "subdivision_id": 710, "track_name": "MT", "mp": 11.18, "lat": 39.88182903477394, "lon": -104.88142098935913}
+{"location_name": "TERRA COTTA", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 207.51, "lat": 38.744393020376634, "lon": -97.962131988176}
+{"location_name": "DOLE", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 228.72, "lat": 38.7364340181154, "lon": -98.2628340647327}
+{"location_name": "MP 288.75 to 289 Do not exceed 40 MPH", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 261, "lat": 38.858722554910905, "lon": -98.78358253468636}
+{"location_name": "289 Do not exceed 40 MPH", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 290.75, "lat": 38.875704009816005, "lon": -99.34118797108592}
+{"location_name": "NORTH SIDING", "source": "start", "scac": "UP", "subdivision_id": 727, "track_name": "N SIDING", "mp": 360.66, "lat": 39.54971598447845, "lon": -107.33244202567828}
+{"location_name": "LONE PINE SWITCH", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT 2", "mp": 379.99, "lat": 35.112817822498116, "lon": -118.20621599711565}
+{"location_name": "CHEM TOOL", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT 2", "mp": 360.65, "lat": 35.13240404632023, "lon": -118.44618798199292}
+{"location_name": "ROANOKE", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "SIDING", "mp": 735.11, "lat": 33.00435799601449, "lon": -97.22773597641833}
+{"location_name": "E. END GARRETT", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 2", "mp": 228.12, "lat": 32.74005507306317, "lon": -97.03083297855699}
+{"location_name": "CP OK598", "source": "start", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 597.56, "lat": 32.94678708414108, "lon": -97.4218819568484}
+{"location_name": "RILLITO SIDING", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "SIDING", "mp": 967.31, "lat": 32.41090399102703, "lon": -111.14336098671033}
+{"location_name": "RILLITO EXTENSION TRACK", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 967.4, "lat": 32.40880408246864, "lon": -111.14036398478751}
+{"location_name": "P1", "source": "start", "scac": "UP", "subdivision_id": 255, "track_name": "MT 1", "mp": 510.63, "lat": 41.128527002025194, "lon": -104.82249700870382}
+{"location_name": "EGBERT HOUSE TRK", "source": "start", "scac": "UP", "subdivision_id": 235, "track_name": "SIDING", "mp": 476.73, "lat": 41.163697040195196, "lon": -104.24240005203005}
+{"location_name": "SPRING WYE", "source": "start", "scac": "UP", "subdivision_id": 520, "track_name": "MT", "mp": 203.86, "lat": 30.178026821121836, "lon": -95.44160996320154}
+{"location_name": "SINCLAIR", "source": "start", "scac": "UP", "subdivision_id": 255, "track_name": "MT 1", "mp": 677.94, "lat": 41.77766498085972, "lon": -107.11288045390597}
+{"location_name": "ONTARIO", "source": "start", "scac": "UP", "subdivision_id": 810, "track_name": "N PASS SIDING", "mp": 496.06, "lat": 43.98230004310704, "lon": -116.97513898883625}
+{"location_name": "KASOTA", "source": "start", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 79.07, "lat": 44.291376380311526, "lon": -93.9696975618272}
+{"location_name": "MP 7.8 to 7.3 Do not exceed 15 MPH", "source": "start", "scac": "UP", "subdivision_id": 683, "track_name": "MT", "mp": 20, "lat": 31.95114401849497, "lon": -110.95614300417468}
+{"location_name": "7.3 Do not exceed 15 MPH", "source": "end", "scac": "UP", "subdivision_id": 683, "track_name": "MT", "mp": 1, "lat": 32.21422900564134, "lon": -110.96082197189767}
+{"location_name": "CP X087", "source": "end", "scac": "UP", "subdivision_id": 175, "track_name": "MT", "mp": 0.07, "lat": 44.819605037500004, "lon": -91.50139305807076}
+{"location_name": "LARAMIE", "source": "start", "scac": "UP", "subdivision_id": 255, "track_name": "MT 3", "mp": 565.68, "lat": 41.30380404225703, "lon": -105.59740302379404}
+{"location_name": "STAUFFER", "source": "start", "scac": "UP", "subdivision_id": 785, "track_name": "SIDING", "mp": 897.77, "lat": 40.68700201014496, "lon": -112.43817804113907}
+{"location_name": "ANDERSON ETHANOL", "source": "start", "scac": "UP", "subdivision_id": 106, "track_name": "MT 1", "mp": 290.73, "lat": 41.99204700153874, "lon": -95.39297201425316}
+{"location_name": "OLD YARD", "source": "start", "scac": "UP", "subdivision_id": 760, "track_name": "MT 1", "mp": 163.69, "lat": 34.90365105648535, "lon": -116.82082496303128}
+{"location_name": "JAMES HARDY", "source": "start", "scac": "UP", "subdivision_id": 795, "track_name": "MT", "mp": 261.15, "lat": 39.56182697822664, "lon": -119.50557697700549}
+{"location_name": "SODA ASH", "source": "start", "scac": "UP", "subdivision_id": 316, "track_name": "MT", "mp": 241.99, "lat": 38.07300405940737, "lon": -97.88850297048963}
+{"location_name": "JAMA", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 2", "mp": 212.19, "lat": 29.85141001365106, "lon": -97.96647000636251}
+{"location_name": "TEXAS CEMENT", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT", "mp": 195.69, "lat": 30.062628076845588, "lon": -97.85405107381253}
+{"location_name": "HUNTER", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 2", "mp": 216.64, "lat": 29.80814504742818, "lon": -98.02196200682306}
+{"location_name": "MONDAMIN", "source": "start", "scac": "UP", "subdivision_id": 119, "track_name": "MT", "mp": 16.65, "lat": 41.71075508248197, "lon": -96.0242329851273}
+{"location_name": "SPRING WYE", "source": "start", "scac": "UP", "subdivision_id": 536, "track_name": "MT", "mp": 0.09, "lat": 30.077940114587868, "lon": -95.41668303715527}
+{"location_name": "SPOFFORD", "source": "start", "scac": "UP", "subdivision_id": 640, "track_name": "SIDING", "mp": 340.15, "lat": 29.159586074081794, "lon": -100.3920320688182}
+{"location_name": "OVERTON", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 3", "mp": 208.31, "lat": 40.7259130969923, "lon": -99.44401990757667}
+{"location_name": "CP E238", "source": "start", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 237.9, "lat": 46.34808799700742, "lon": -118.72807703942921}
+{"location_name": "CP E269", "source": "end", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 269.3, "lat": 46.601709018650354, "lon": -118.3313150242757}
+{"location_name": "HOOPER JCT", "source": "start", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 284.82, "lat": 46.744901231665565, "lon": -118.1871597779969}
+{"location_name": "AYER", "source": "end", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 267.19, "lat": 46.593469044376334, "lon": -118.3624358672196}
+{"location_name": "ARLINGTON", "source": "start", "scac": "UP", "subdivision_id": 830, "track_name": "SIDING", "mp": 139.69, "lat": 45.73448806225245, "lon": -120.18868006880649}
+{"location_name": "THUMEL GRAIN", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 1", "mp": 118.27, "lat": 41.18898104005953, "lon": -97.88126602578883}
+{"location_name": "CARTER", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 875.71, "lat": 41.43548802979187, "lon": -110.4321900414327}
+{"location_name": "BODIE", "source": "start", "scac": "UP", "subdivision_id": 520, "track_name": "MT", "mp": 1.18, "lat": 32.48509599314495, "lon": -94.74486196446716}
+{"location_name": "NSS MINCO", "source": "start", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 416.6, "lat": 35.333749054821226, "lon": -97.93676903693037}
+{"location_name": "CP OK580", "source": "start", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 579.9, "lat": 33.111550071674955, "lon": -97.63412601012837}
+{"location_name": "EAST FREMONT", "source": "start", "scac": "UP", "subdivision_id": 203, "track_name": "MT 1", "mp": 364.31, "lat": 41.42887508476192, "lon": -96.44506105228263}
+{"location_name": "SHELTON", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 1", "mp": 166.43, "lat": 40.79861210949952, "lon": -98.6715250456207}
+{"location_name": "MIDDLEBROOK", "source": "start", "scac": "UP", "subdivision_id": 80, "track_name": "MT", "mp": 77.2, "lat": 37.759211008591876, "lon": -90.62161197639944}
+{"location_name": "CTC WEST CYPRESS", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.24641811477574, "lon": -88.82301898805957}
+{"location_name": "UP 5346 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "COAL SPUR COOK", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.24641811477574, "lon": -88.82301898805957}
+{"location_name": "UP 5346 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "COOP SWITCH", "source": "start", "scac": "UP", "subdivision_id": 213, "track_name": "REC LD", "mp": 284.42, "lat": 41.14016999633217, "lon": -100.7636139777062}
+{"location_name": "DUBOIS", "source": "end", "scac": "UP", "subdivision_id": 820, "track_name": "MT", "mp": 316, "lat": 45.09619304439924, "lon": -112.7777720022152}
+{"location_name": "OXFORD", "source": "end", "scac": "UP", "subdivision_id": 174, "track_name": "MT", "mp": 222.07, "lat": 43.774562971826676, "lon": -89.53408206859208}
+{"location_name": "BUICK", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 594.54, "lat": 39.70330037655933, "lon": -104.19001244032994}
+{"location_name": "HACKBERRY", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 379.43, "lat": 39.123625061686944, "lon": -100.86751797678423}
+{"location_name": "CP K361", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 360.84, "lat": 39.12271874691991, "lon": -100.54696144845734}
+{"location_name": "MCALLASTER", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 411.28, "lat": 38.978844958436845, "lon": -101.43333378263473}
+{"location_name": "EAST AMES YARD", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 182.18, "lat": 42.02691803161776, "lon": -93.48309504607421}
+{"location_name": "CP RB178", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 178.41, "lat": 31.952423023277134, "lon": -94.21336057530272}
+{"location_name": "SPLENDORA", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 34.34, "lat": 30.2209740327301, "lon": -95.17062895623333}
+{"location_name": "LEGGETT", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 90.9, "lat": 30.96786198982957, "lon": -94.82724095925951}
+{"location_name": "GOTHENBURG", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 1", "mp": 245.85, "lat": 40.90486800832978, "lon": -100.11358600828622}
+{"location_name": "COZAD", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 3", "mp": 238.84, "lat": 40.85860301469022, "lon": -99.99134908865665}
+{"location_name": "MP 447.65 to 447.7 Do not exceed 25 MPH", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 446.66, "lat": 40.78898656751091, "lon": -95.91733079690533}
+{"location_name": "447.7 Do not exceed 25 MPH", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 447.7, "lat": 40.81633699639349, "lon": -95.92574401536454}
+{"location_name": "JEFFERSON", "source": "start", "scac": "UP", "subdivision_id": 106, "track_name": "MT 1", "mp": 225.23, "lat": 42.03222300185432, "lon": -94.2445389435307}
+{"location_name": "MP 78.6 TO MP 69.6", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3680", "mp": 74.808, "lat": 36.18350608004327, "lon": -102.03133699927346}
+{"location_name": "UP 5468 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3680", "mp": 74.769, "lat": 36.18383702825281, "lon": -102.03143396998317}
+{"location_name": "MP 72 TO MP 12", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 78.6 TO SW MP 26.8", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 27.531, "lat": 35.546370468974686, "lon": -101.91854310002057}
+{"location_name": "MP 39 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "RL MP 338 TO MP 388", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 337.911, "lat": 35.21494004089651, "lon": -101.84758700268112}
+{"location_name": "UP 5468 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 388, "lat": 35.68266602160136, "lon": -102.33182798819156}
+{"location_name": "RL MP 338 TO NSS CHANNING", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 337.911, "lat": 35.21494004089651, "lon": -101.84758700268112}
+{"location_name": "NSS CHANNING TO CTC CP 4154", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 390.288, "lat": 35.694617052723245, "lon": -102.32854399582364}
+{"location_name": "CP SA211", "source": "start", "scac": "UP", "subdivision_id": 644, "track_name": "MT", "mp": 0.05, "lat": 29.40298801168072, "lon": -98.48924697601933}
+{"location_name": "LE SUEUR", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 74.67, "lat": 44.314102055132544, "lon": -93.95119497501533}
+{"location_name": "CP TA011", "source": "end", "scac": "UP", "subdivision_id": 80, "track_name": "MT", "mp": 0.12, "lat": 38.62036004761854, "lon": -90.26005100358162}
+{"location_name": "GALT OVERHEAD", "source": "start", "scac": "UP", "subdivision_id": 1, "track_name": "MT 2", "mp": 113.75, "lat": 41.78796800823017, "lon": -89.76936095198405}
+{"location_name": "DEPOT TRACKS", "source": "start", "scac": "UP", "subdivision_id": 800, "track_name": "MT 1", "mp": 213.33, "lat": 42.85159097779793, "lon": -112.43673801787241}
+{"location_name": "AJAX", "source": "end", "scac": "UP", "subdivision_id": 169, "track_name": "MT", "mp": 74.27, "lat": 44.891406412612554, "lon": -91.7358464395808}
+{"location_name": "WAMEGO", "source": "end", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 104.93, "lat": 39.20019203949693, "lon": -96.30570495563092}
+{"location_name": "CHAPMAN", "source": "start", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 153.04, "lat": 38.97046306846423, "lon": -97.00726897675133}
+{"location_name": "EAST FUNSTON", "source": "end", "scac": "UP", "subdivision_id": 306, "track_name": "MT", "mp": 132.21, "lat": 39.10073503794086, "lon": -96.73664296949087}
+{"location_name": "HEMPSTEAD", "source": "end", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 32.94, "lat": 30.037711282790983, "lon": -95.87405225489577}
+{"location_name": "UP 5545 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "POTTSVILLE", "source": "start", "scac": "UP", "subdivision_id": 415, "track_name": "MT", "mp": 411.45, "lat": 35.24578518533314, "lon": -93.03346435884254}
+{"location_name": "GRAND JCT SIDING", "source": "start", "scac": "UP", "subdivision_id": 727, "track_name": "GRAND JCT LD", "mp": 448.66, "lat": 39.062589070160854, "lon": -108.55592398854742}
+{"location_name": "DALTON", "source": "end", "scac": "UP", "subdivision_id": 174, "track_name": "MT", "mp": 239.56, "lat": 43.674895976805715, "lon": -89.26277599638534}
+{"location_name": "UP 5626 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "SSS CAMBRIDGE", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "UP 5626 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "OLD AUSTIN MAIN", "source": "start", "scac": "UP", "subdivision_id": 517, "track_name": "MT", "mp": 58.6, "lat": 30.19104102249271, "lon": -96.936349946938}
+{"location_name": "ALCHEM", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 833.52, "lat": 41.60809604512451, "lon": -109.7215230606687}
+{"location_name": "NORTH LEG WYE", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "MT", "mp": 656.33, "lat": 33.82202005791085, "lon": -96.5326850842192}
+{"location_name": "EAST SETOUT", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 2", "mp": 146.72, "lat": 39.82879099168777, "lon": -96.63191598586857}
+{"location_name": "WBCS CENTRALIA-IC XING", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 122.278, "lat": 38.521576073800865, "lon": -89.13846004046013}
+{"location_name": "UP 5664 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 121.387, "lat": 38.530576029652806, "lon": -89.13563296140798}
+{"location_name": "KING SIDING", "source": "start", "scac": "UP", "subdivision_id": 682, "track_name": "SIDING", "mp": 559.29, "lat": 35.92682404384903, "lon": -102.69386304310885}
+{"location_name": "EAST END SP YARD", "source": "start", "scac": "UP", "subdivision_id": 315, "track_name": "MT", "mp": 90.05, "lat": 39.06648904568353, "lon": -95.67421206521747}
+{"location_name": "DIAMOND PLASTICS", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 1", "mp": 149.99, "lat": 40.90398301855014, "lon": -98.39224299154725}
+{"location_name": "UP 5726 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "UP 5726 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "CP RB027", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 26.65, "lat": 30.131361929318693, "lon": -95.21937777283874}
+{"location_name": "BALD KNOB", "source": "start", "scac": "UP", "subdivision_id": 400, "track_name": "PASS SIDING", "mp": 288.54, "lat": 35.306907019327824, "lon": -91.57036804804024}
+{"location_name": "AMA", "source": "start", "scac": "UP", "subdivision_id": 455, "track_name": "MT 2", "mp": 19.3, "lat": 29.9305809794764, "lon": -90.32288445440372}
+{"location_name": "MCALESTER SIDING", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "SIDING", "mp": 563.74, "lat": 34.964329995193836, "lon": -95.7589289951929}
+{"location_name": "UP 5769 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 121.387, "lat": 38.530576029652806, "lon": -89.13563296140798}
+{"location_name": "ELBURZ", "source": "start", "scac": "UP", "subdivision_id": 796, "track_name": "MT 2", "mp": 578.42, "lat": 40.92896301586503, "lon": -115.5000319961278}
+{"location_name": "NSS CALDWELL", "source": "start", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 292.41, "lat": 37.060760064718245, "lon": -97.5896849949555}
+{"location_name": "CYPRESS", "source": "end", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 20.34, "lat": 29.966187399227714, "lon": -95.69380578405932}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 100.00 AND 103.00", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 103, "lat": 44.07790005677361, "lon": -94.37510594178411}
+{"location_name": "GARDENDALE", "source": "start", "scac": "UP", "subdivision_id": 533, "track_name": "SIDING", "mp": 339.36, "lat": 28.521233017735224, "lon": -99.21403401800266}
+{"location_name": "RAYMONDVILLE", "source": "end", "scac": "UP", "subdivision_id": 542, "track_name": "MT", "mp": 47.56, "lat": 26.512652249082958, "lon": -97.77880417630483}
+{"location_name": "CP K251", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 251.43, "lat": 38.87100311744668, "lon": -98.66816201309989}
+{"location_name": "CP K293", "source": "end", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 290.75, "lat": 38.875704009816005, "lon": -99.34118797108592}
+{"location_name": "CP K338", "source": "start", "scac": "UP", "subdivision_id": 310, "track_name": "MT", "mp": 338.12, "lat": 39.036954974878576, "lon": -100.15002401292776}
+{"location_name": "PAYNE", "source": "end", "scac": "UP", "subdivision_id": 820, "track_name": "MT", "mp": 191.48, "lat": 43.57022845293676, "lon": -112.05436717410245}
+{"location_name": "HUMPHREY", "source": "end", "scac": "UP", "subdivision_id": 820, "track_name": "MT", "mp": 316, "lat": 45.09619304439924, "lon": -112.7777720022152}
+{"location_name": "UP 5875 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "UP 5875 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131.407, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "SSS HINCKLEY", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "TAFT", "source": "start", "scac": "UP", "subdivision_id": 455, "track_name": "MT", "mp": 26.93, "lat": 29.965436042202352, "lon": -90.4321279685003}
+{"location_name": "CART SIDING", "source": "start", "scac": "UP", "subdivision_id": 453, "track_name": "SIDING", "mp": 446.89, "lat": 32.558670830527866, "lon": -93.73109192703527}
+{"location_name": "TOP END OF BRIAN", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 830.07, "lat": 41.55431600146845, "lon": -109.65939699478666}
+{"location_name": "CTC CENTRALIA", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 121.387, "lat": 38.530668635805256, "lon": -89.1356160315536}
+{"location_name": "UP 5971 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 122.278, "lat": 38.518179011602676, "lon": -89.13943495962593}
+{"location_name": "CTC COON CREEK TO MP 110", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.17095804892087, "lon": -93.29415702557819}
+{"location_name": "UP 5981 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "UP 5981 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "LEROY", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 899.98, "lat": 41.25032999040941, "lon": -110.68891202573506}
+{"location_name": "GOSHEN", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "SIDING", "mp": 237.47, "lat": 36.37476699538257, "lon": -119.43642903401891}
+{"location_name": "GREAT SOUTHWEST", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 1", "mp": 228.12, "lat": 32.74026498455494, "lon": -97.02962598104203}
+{"location_name": "WAURIKA", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 500.84, "lat": 34.15063101955861, "lon": -97.99395003562947}
+{"location_name": "OGDEN", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 989.9, "lat": 41.18089808145347, "lon": -111.99092604511002}
+{"location_name": "RYAN", "source": "end", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 511.83, "lat": 34.00267913992398, "lon": -97.95203648259003}
+{"location_name": "BRAUNTEX", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 227.6, "lat": 29.701969053427796, "lon": -98.12800700689486}
+{"location_name": "PLEASANTON", "source": "end", "scac": "UP", "subdivision_id": 534, "track_name": "MT", "mp": 33.43, "lat": 28.974772033881862, "lon": -98.48115395898876}
+{"location_name": "PEDLEY", "source": "start", "scac": "UP", "subdivision_id": 965, "track_name": "MT 1", "mp": 48.86, "lat": 33.989672020591215, "lon": -117.48027305214325}
+{"location_name": "HANOVER", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 2", "mp": 165.54, "lat": 39.92301502567686, "lon": -96.90899395797072}
+{"location_name": "CP SX231", "source": "end", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 230.77, "lat": 42.95911200529913, "lon": -96.02562595352232}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 21.37 AND 16.00", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 16, "lat": 44.783977040413816, "lon": -93.28293505848539}
+{"location_name": "ERIE", "source": "end", "scac": "UP", "subdivision_id": 330, "track_name": "MT", "mp": 121.56, "lat": 37.55800958281059, "lon": -95.23600991337585}
+{"location_name": "WEST END OF GARRETT", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 1", "mp": 228.12, "lat": 32.74026498455494, "lon": -97.02962598104203}
+{"location_name": "CLINE", "source": "start", "scac": "UP", "subdivision_id": 640, "track_name": "MT", "mp": 315.94, "lat": 29.256564038514895, "lon": -100.02824605624099}
+{"location_name": "MATTHEWS", "source": "end", "scac": "UP", "subdivision_id": 870, "track_name": "MT", "mp": 257.67, "lat": 46.55350005953597, "lon": -118.54545405661865}
+{"location_name": "UP 6281 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "UP 6281 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "NEW BRAUNFELS HOUSE TRK", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 223.11, "lat": 29.738077579960787, "lon": -98.08831416373546}
+{"location_name": "AVIATION", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 2", "mp": 225.49, "lat": 32.74548103752717, "lon": -96.98629603785972}
+{"location_name": "CP HL034", "source": "start", "scac": "UP", "subdivision_id": 615, "track_name": "MT", "mp": 33.59, "lat": 30.047377042136176, "lon": -95.89979208182496}
+{"location_name": "HISLIP 92.5", "source": "start", "scac": "UP", "subdivision_id": 900, "track_name": "MT", "mp": 92.62, "lat": 37.93847797176822, "lon": -121.2735130044014}
+{"location_name": "UPTON", "source": "end", "scac": "UP", "subdivision_id": 152, "track_name": "MT", "mp": 32, "lat": 42.29072675438116, "lon": -87.87088221055039}
+{"location_name": "EDELSTEIN", "source": "end", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 13.09, "lat": 41.61415233984239, "lon": -89.63816776987733}
+{"location_name": "GREEN RIVER", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 15.14, "lat": 41.583717062629475, "lon": -89.64439295704904}
+{"location_name": "CP P089", "source": "end", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 80.26, "lat": 40.68162205143447, "lon": -89.65557498968788}
+{"location_name": "GRANITE SIDING", "source": "start", "scac": "UP", "subdivision_id": 255, "track_name": "SIDING", "mp": 528.69, "lat": 41.09962397648035, "lon": -105.16106501038351}
+{"location_name": "BOARDMAN", "source": "start", "scac": "UP", "subdivision_id": 830, "track_name": "SIDING", "mp": 165.18, "lat": 45.8499050298154, "lon": -119.6788128853691}
+{"location_name": "HARNEY", "source": "start", "scac": "UP", "subdivision_id": 810, "track_name": "MT", "mp": 322.95, "lat": 45.019714011689544, "lon": -117.93170204879343}
+{"location_name": "GRANGER", "source": "start", "scac": "UP", "subdivision_id": 565, "track_name": "MT", "mp": 907.39, "lat": 30.729106054512968, "lon": -97.4420159438795}
+{"location_name": "ROCK ISLAND", "source": "start", "scac": "UP", "subdivision_id": 200, "track_name": "MT 2", "mp": 350.95, "lat": 41.26022105024614, "lon": -95.86148107284106}
+{"location_name": "SSS NICKERSON", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "UP 6511 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "AMTRAK TIE UP", "source": "start", "scac": "UP", "subdivision_id": 917, "track_name": "MT 1", "mp": 106.89, "lat": 38.753039038070945, "lon": -121.28069599857606}
+{"location_name": "DUNSMUIR", "source": "start", "scac": "UP", "subdivision_id": 920, "track_name": "SIDING", "mp": 322.48, "lat": 41.21526503516229, "lon": -122.27167698488897}
+{"location_name": "K FALLS", "source": "start", "scac": "UP", "subdivision_id": 841, "track_name": "MT", "mp": 429.79, "lat": 42.22820428678221, "lon": -121.77311221688574}
+{"location_name": "PILGRIMS", "source": "start", "scac": "UP", "subdivision_id": 447, "track_name": "MT", "mp": 491.11, "lat": 33.00043772542098, "lon": -94.96819402124652}
+{"location_name": "ORIENTAL", "source": "start", "scac": "UP", "subdivision_id": 740, "track_name": "MT 1", "mp": 698.62, "lat": 40.20155406265164, "lon": -111.62846802846774}
+{"location_name": "FINDLAY JCT", "source": "start", "scac": "UP", "subdivision_id": 46, "track_name": "MT", "mp": 188.17, "lat": 39.485936985253936, "lon": -88.78356697538949}
+{"location_name": "FLETA", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT", "mp": 381.6, "lat": 35.04042699152751, "lon": -118.17032195632086}
+{"location_name": "NORTH MOJAVE XOVERS", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT 1", "mp": 380.07, "lat": 35.10763398264704, "lon": -118.18913801465293}
+{"location_name": "FLATONIA", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "MT", "mp": 120.14, "lat": 29.687057070724777, "lon": -97.1179620819621}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 29.00 AND 24.14", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 24.14, "lat": 44.79546902981106, "lon": -93.44998695365179}
+{"location_name": "ANGUS", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 202.77, "lat": 32.00517405989829, "lon": -96.43713542563889}
+{"location_name": "MENOKEN RUNNER", "source": "start", "scac": "UP", "subdivision_id": 300, "track_name": "MT 1", "mp": 72.68, "lat": 39.08960599121285, "lon": -95.74978004648264}
+{"location_name": "THE HUNTSVILLE IND LEAD", "source": "start", "scac": "UP", "subdivision_id": 520, "track_name": "MT", "mp": 165.82, "lat": 30.705335028422276, "lon": -95.43546592849638}
+{"location_name": "ALTOONA", "source": "start", "scac": "UP", "subdivision_id": 169, "track_name": "MT 1", "mp": 92.13, "lat": 44.80249007107677, "lon": -91.41341789329601}
+{"location_name": "GLOVER", "source": "start", "scac": "UP", "subdivision_id": 214, "track_name": "MT 1", "mp": 115.51, "lat": 41.687408997117025, "lon": -103.11077895174107}
+{"location_name": "CP MD023", "source": "end", "scac": "UP", "subdivision_id": 619, "track_name": "MT", "mp": 25, "lat": 32.511748278191995, "lon": -97.0089100602309}
+{"location_name": "UP 683 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7113, "track_name": "MAIN", "mp": 201.782, "lat": 30.237943033481393, "lon": -92.9233092138248}
+{"location_name": "PIXLEY", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 263.98, "lat": 36.00793795738926, "lon": -119.30302904421949}
+{"location_name": "DIBOLL", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 105.95, "lat": 31.17296206288329, "lon": -94.79155899128259}
+{"location_name": "ALDEN BRIDGE", "source": "start", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 433.18, "lat": 32.77720902424078, "lon": -93.71713497489355}
+{"location_name": "COOKSON", "source": "start", "scac": "UP", "subdivision_id": 345, "track_name": "SIDING", "mp": 580.46, "lat": 35.94264418959218, "lon": -95.36468122202885}
+{"location_name": "STRAUSS", "source": "start", "scac": "UP", "subdivision_id": 678, "track_name": "MT 1", "mp": 1285.11, "lat": 31.822811024809013, "lon": -106.63007965279468}
+{"location_name": "KIT CARSON", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 446.99, "lat": 38.86290608521157, "lon": -102.01131003873803}
+{"location_name": "SWANSON SWITCH", "source": "start", "scac": "UP", "subdivision_id": 214, "track_name": "MT 2", "mp": 164.11, "lat": 41.92786809822653, "lon": -103.96677794702114}
+{"location_name": "SSS GRASSTON", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "UP 6949 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "GRANITE MOUNTAIN", "source": "start", "scac": "UP", "subdivision_id": 420, "track_name": "MT", "mp": 313.96, "lat": 34.69551906109155, "lon": -92.23509099928346}
+{"location_name": "UP 6960 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "CP OK582", "source": "start", "scac": "UP", "subdivision_id": 326, "track_name": "MT", "mp": 581.85, "lat": 33.095216003785325, "lon": -97.60637207539558}
+{"location_name": "BAILEY", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 55.24, "lat": 30.4859580321838, "lon": -95.0051190233418}
+{"location_name": "UP 7041 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "WESTON", "source": "end", "scac": "UP", "subdivision_id": 750, "track_name": "MT", "mp": 66.01, "lat": 42.0490818411784, "lon": -111.97078085870568}
+{"location_name": "WOODBURN", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT", "mp": 733.81, "lat": 45.12710405930452, "lon": -122.87532701969634}
+{"location_name": "HALSEY", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT", "mp": 677.64, "lat": 44.38605703625225, "lon": -123.10817901359586}
+{"location_name": "THOMASTON", "source": "end", "scac": "UP", "subdivision_id": 637, "track_name": "MT", "mp": 40.56, "lat": 28.963496053522565, "lon": -97.13712899207304}
+{"location_name": "JORDAN", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 1", "mp": 200.35, "lat": 42.05499004875257, "lon": -93.83058489706228}
+{"location_name": "MONSANTO", "source": "start", "scac": "UP", "subdivision_id": 455, "track_name": "MT", "mp": 20.89, "lat": 29.927555055346236, "lon": -90.34850203217519}
+{"location_name": "JUNE PIT", "source": "start", "scac": "UP", "subdivision_id": 500, "track_name": "MT 1", "mp": 227.9, "lat": 32.74623807334627, "lon": -96.97135394582057}
+{"location_name": "CP N080", "source": "start", "scac": "UP", "subdivision_id": 10, "track_name": "MT", "mp": 79.88, "lat": 42.963791304145566, "lon": -87.86828625238218}
+{"location_name": "CP E069", "source": "end", "scac": "UP", "subdivision_id": 10, "track_name": "MT", "mp": 68.67, "lat": 42.82560402657843, "lon": -87.83241396199948}
+{"location_name": "CEMEX", "source": "start", "scac": "UP", "subdivision_id": 536, "track_name": "MT", "mp": 0.09, "lat": 30.077940114587868, "lon": -95.41668303715527}
+{"location_name": "ESS SABETHA", "source": "start", "scac": "UP", "subdivision_id": 304, "track_name": "MT", "mp": 60.8, "lat": 39.90468501110122, "lon": -95.80378598949011}
+{"location_name": "UP 7280 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "UP 7280 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "CP P081", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 80.26, "lat": 40.69128498921692, "lon": -89.64977001251827}
+{"location_name": "RINGER", "source": "start", "scac": "UP", "subdivision_id": 330, "track_name": "MT", "mp": 46.59, "lat": 38.54771484801144, "lon": -94.90192370207426}
+{"location_name": "SULPHUR", "source": "start", "scac": "UP", "subdivision_id": 595, "track_name": "MT", "mp": 229.84, "lat": 30.23761704751346, "lon": -93.356171007021}
+{"location_name": "MP 780 TO MP 797", "source": "start", "scac": "BNSF", "subdivision_id": 7064, "track_name": "MAIN", "mp": 780, "lat": 32.67240404639498, "lon": -96.74377007398566}
+{"location_name": "UP 732 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7064, "track_name": "MAIN", "mp": 797, "lat": 32.38868401053629, "lon": -96.85700705371274}
+{"location_name": "MP 780 TO NSS WAXAHACHIE", "source": "start", "scac": "BNSF", "subdivision_id": 7064, "track_name": "MAIN", "mp": 271, "lat": 32.382025211948395, "lon": -96.84624742375655}
+{"location_name": "MP 780 TO MP 796", "source": "start", "scac": "BNSF", "subdivision_id": 7064, "track_name": "MAIN", "mp": 780, "lat": 32.67240404639498, "lon": -96.74377007398566}
+{"location_name": "FERRIS", "source": "end", "scac": "UP", "subdivision_id": 618, "track_name": "MT", "mp": 254.3, "lat": 32.64927296757642, "lon": -96.71213797141732}
+{"location_name": "NEW STOCK", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 1", "mp": 183.14, "lat": 40.10163502421723, "lon": -97.1396660747151}
+{"location_name": "PAXTON", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 178.34, "lat": 31.949695021057472, "lon": -94.23474599938196}
+{"location_name": "FONDA", "source": "end", "scac": "UP", "subdivision_id": 157, "track_name": "MT", "mp": 98.25, "lat": 43.12514003788135, "lon": -88.03170705735884}
+{"location_name": "EAST END OF LOWDEN PASS", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 41.22, "lat": 41.85571102676288, "lon": -90.92629896340668}
+{"location_name": "KENNETH", "source": "start", "scac": "UP", "subdivision_id": 335, "track_name": "SIDING", "mp": 298.06, "lat": 38.881727049606994, "lon": -94.58917697055712}
+{"location_name": "CARLETON", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "SIDING", "mp": 215.62, "lat": 40.29454406579714, "lon": -97.64676993673777}
+{"location_name": "UP 7435 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "UP 7435 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 5.00 AND 2.28", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 2.28, "lat": 44.92665302907875, "lon": -93.11876803198398}
+{"location_name": "BRINGHURST", "source": "end", "scac": "UP", "subdivision_id": 475, "track_name": "MT", "mp": 616.93, "lat": 31.06615305691423, "lon": -92.52301401230515}
+{"location_name": "GRAND JCT", "source": "end", "scac": "UP", "subdivision_id": 133, "track_name": "MT", "mp": 2.98, "lat": 42.07391768495452, "lon": -94.23921591133147}
+{"location_name": "CP SX173", "source": "start", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 173.1, "lat": 43.66257705366253, "lon": -95.526283963033}
+{"location_name": "MP 92 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "UP 7495 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.794, "lat": 35.53844000506608, "lon": -101.92377202701051}
+{"location_name": "RL MP 338 TO MP 387", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 337.911, "lat": 35.21494004089651, "lon": -101.84758700268112}
+{"location_name": "UP 7495 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 387, "lat": 35.634366050666564, "lon": -102.33868605022711}
+{"location_name": "RL MP 338 TO CTC CP 4154", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 337.911, "lat": 35.21494004089651, "lon": -101.84758700268112}
+{"location_name": "MP 78.6 TO MP 59.6", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3628", "mp": 61.779, "lat": 35.9966290172574, "lon": -101.99663396836833}
+{"location_name": "MP 78.6 TO MP 36.5", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3610", "mp": 41.035, "lat": 35.7138579708387, "lon": -102.02399895737481}
+{"location_name": "MP 36.5 TO MP 12", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 36.5 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "BROOKLYN", "source": "start", "scac": "UP", "subdivision_id": 845, "track_name": "MT 1", "mp": 767.97, "lat": 45.482709998096354, "lon": -122.64156200731937}
+{"location_name": "FERN", "source": "end", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 224.74, "lat": 31.510007013563943, "lon": -92.8917929578654}
+{"location_name": "STRINGTOWN", "source": "start", "scac": "UP", "subdivision_id": 355, "track_name": "SIDING", "mp": 602.69, "lat": 34.46790399735515, "lon": -96.05523698261803}
+{"location_name": "UP 7604 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "TRAPROCK", "source": "start", "scac": "UP", "subdivision_id": 640, "track_name": "MT", "mp": 295.43, "lat": 29.29213302943398, "lon": -99.6499339952173}
+{"location_name": "LONGSTREET", "source": "end", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 200.74, "lat": 32.10317502255246, "lon": -93.94765504480647}
+{"location_name": "GLIDDEN", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "SIDING", "mp": 86.2, "lat": 29.705014035476996, "lon": -96.5695739825948}
+{"location_name": "CP U148", "source": "end", "scac": "UP", "subdivision_id": 110, "track_name": "MT", "mp": 147.62, "lat": 42.52140211002047, "lon": -93.25054398874987}
+{"location_name": "RANGER", "source": "start", "scac": "UP", "subdivision_id": 511, "track_name": "MT", "mp": 339.42, "lat": 32.48791903945723, "lon": -98.66848304696558}
+{"location_name": "CP P013", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 13.19, "lat": 41.61266102725372, "lon": -89.63841998125328}
+{"location_name": "MP 448.64 to 447.67 Do not exceed 30 MPH", "source": "start", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 450, "lat": 40.82223502707941, "lon": -95.92596496626118}
+{"location_name": "447.67 Do not exceed 30 MPH", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 446, "lat": 40.79656295851506, "lon": -95.91553099143036}
+{"location_name": "NAPTON", "source": "start", "scac": "UP", "subdivision_id": 75, "track_name": "MT", "mp": 195.02, "lat": 39.02821405337949, "lon": -93.05762979311932}
+{"location_name": "UP 7806 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "CTC BOYLSTON TO SSS ANDOVER", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.23324507133266, "lon": -93.2917879580172}
+{"location_name": "UP 7806 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131.407, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "TUCSON", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "SIDING 2", "mp": 987.52, "lat": 32.191610038767976, "lon": -110.91791702804996}
+{"location_name": "WEST VACO", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 2", "mp": 843.9, "lat": 41.62409404838897, "lon": -109.83353907037367}
+{"location_name": "CP K485", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 485.12, "lat": 38.78286198437448, "lon": -102.71153683245002}
+{"location_name": "CP K447", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 448.76, "lat": 38.85120161036346, "lon": -102.0936100834725}
+{"location_name": "CP K594", "source": "start", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 594.54, "lat": 39.70326213243631, "lon": -104.18983548872079}
+{"location_name": "MP 557 TO CTC CP 5540", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "MAIN", "mp": 557, "lat": 37.9863490254535, "lon": -103.55951108535616}
+{"location_name": "UP 7835 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7025, "track_name": "MAIN", "mp": 555.835, "lat": 37.98013104889338, "lon": -103.56378501121249}
+{"location_name": "CTC LAS ANIMAS JCT", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "2701", "mp": 226.147, "lat": 37.93746004009925, "lon": -103.1835279808522}
+{"location_name": "MP 205 TO MP 160.5", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "6301", "mp": 162.315, "lat": 37.25079701971528, "lon": -102.59214397363098}
+{"location_name": "MP 189 TO MP 116.6", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "5301", "mp": 135.068, "lat": 36.877411080852674, "lon": -102.52335394985442}
+{"location_name": "MP 151 TO MP 96.2", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3692", "mp": 99.646, "lat": 36.490799000986215, "lon": -102.2343690318697}
+{"location_name": "MP 139 TO MP 31.7", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3610", "mp": 41.035, "lat": 35.7138579708387, "lon": -102.02399895737481}
+{"location_name": "MP 89 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "COLFAX", "source": "start", "scac": "UP", "subdivision_id": 917, "track_name": "MT 2", "mp": 140.41, "lat": 39.07987299552567, "lon": -120.96622697386904}
+{"location_name": "CP SH449", "source": "end", "scac": "UP", "subdivision_id": 453, "track_name": "MT", "mp": 449.03, "lat": 32.52907158338807, "lon": -93.721476742358}
+{"location_name": "LONGVIEW ASPHALT", "source": "start", "scac": "UP", "subdivision_id": 465, "track_name": "MT", "mp": 337.64, "lat": 32.501472015835475, "lon": -94.14916502070825}
+{"location_name": "JOHN VALLEY", "source": "start", "scac": "UP", "subdivision_id": 460, "track_name": "MT", "mp": 192.26, "lat": 31.27642498685118, "lon": -92.4401039592003}
+{"location_name": "PORTOLA", "source": "start", "scac": "UP", "subdivision_id": 908, "track_name": "SIDING", "mp": 322.24, "lat": 39.807891992293484, "lon": -120.4683890274059}
+{"location_name": "SOUTHTON", "source": "end", "scac": "UP", "subdivision_id": 644, "track_name": "MT", "mp": 8, "lat": 29.31235599048488, "lon": -98.44084998820131}
+{"location_name": "OAK CREEK", "source": "start", "scac": "UP", "subdivision_id": 10, "track_name": "SIDING", "mp": 68.47, "lat": 42.822258052271, "lon": -87.83068589639133}
+{"location_name": "CP MD025", "source": "end", "scac": "UP", "subdivision_id": 619, "track_name": "MT", "mp": 25, "lat": 32.511748278191995, "lon": -97.0089100602309}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 16.00 AND 21.37", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 21.37, "lat": 44.78429107746941, "lon": -93.39542994725379}
+{"location_name": "UP 7973 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "UP 7981 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 390.288, "lat": 35.711250245081, "lon": -102.3239728905181}
+{"location_name": "DALHART", "source": "start", "scac": "UP", "subdivision_id": 682, "track_name": "W SIDING", "mp": 544.03, "lat": 36.079823986585104, "lon": -102.49961895283403}
+{"location_name": "UP 7981 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3628", "mp": 61.739, "lat": 35.9970340673381, "lon": -101.99666897664238}
+{"location_name": "MP 78.6 TO MP 40.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3610", "mp": 41.035, "lat": 35.7138579708387, "lon": -102.02399895737481}
+{"location_name": "MP 78.6 TO MP 22", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 78.6 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 90 TO MP 59.6", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3628", "mp": 61.779, "lat": 35.9966290172574, "lon": -101.99663396836833}
+{"location_name": "MP 90 TO MP 40.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3610", "mp": 41.035, "lat": 35.7138579708387, "lon": -102.02399895737481}
+{"location_name": "MP 56 TO MP 22", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 26 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "MAIN", "mp": 26, "lat": 35.49403600423304, "lon": -101.91229496880354}
+{"location_name": "MP 26 TO MP 7.4", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "MAIN", "mp": 26, "lat": 35.49403600423304, "lon": -101.91229496880354}
+{"location_name": "TP&W JCT", "source": "start", "scac": "UP", "subdivision_id": 40, "track_name": "MT 1", "mp": 77.51, "lat": 40.82848075766048, "lon": -87.73503403937445}
+{"location_name": "QUEBEC SIDING", "source": "start", "scac": "UP", "subdivision_id": 648, "track_name": "SIDING", "mp": 659.16, "lat": 30.50006802059452, "lon": -104.38670094989362}
+{"location_name": "KREMLIN", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 330.63, "lat": 36.54877210861497, "lon": -97.83366896609485}
+{"location_name": "AROYA", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 594.54, "lat": 39.70330037655933, "lon": -104.19001244032994}
+{"location_name": "OLD YARD", "source": "start", "scac": "UP", "subdivision_id": 220, "track_name": "MT 1", "mp": 149.09, "lat": 39.851830037669814, "lon": -96.65566003343268}
+{"location_name": "SCHAFER", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 1", "mp": 101.54, "lat": 41.333268015840574, "lon": -97.62354903052082}
+{"location_name": "COACH YD", "source": "start", "scac": "UP", "subdivision_id": 152, "track_name": "MT 1", "mp": 11.93, "lat": 42.04301498966483, "lon": -87.90953604168384}
+{"location_name": "UP 8161 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "EAST END OF GULF COAST YARD", "source": "start", "scac": "UP", "subdivision_id": 461, "track_name": "MT", "mp": 544.17, "lat": 30.490862083912692, "lon": -92.85061693757406}
+{"location_name": "CP D053", "source": "start", "scac": "UP", "subdivision_id": 55, "track_name": "MT", "mp": 77.61, "lat": 38.00717762841099, "lon": -89.95033964582753}
+{"location_name": "SOUTH JCT", "source": "end", "scac": "UP", "subdivision_id": 55, "track_name": "MT", "mp": 56.7, "lat": 38.11909704086354, "lon": -89.72115901314528}
+{"location_name": "CP P061", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 61.05, "lat": 40.940892013616015, "lon": -89.65258097827318}
+{"location_name": "MP 6 to 6.25 Do not exceed 20 MPH", "source": "start", "scac": "UP", "subdivision_id": 641, "track_name": "MT", "mp": 2.51, "lat": 29.428865999344968, "lon": -98.50600297332322}
+{"location_name": "6.25 Do not exceed 20 MPH", "source": "end", "scac": "UP", "subdivision_id": 641, "track_name": "MT", "mp": 15.55, "lat": 29.577834032819872, "lon": -98.58297103143782}
+{"location_name": "NORTH FLETA", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT", "mp": 381.6, "lat": 35.04042699152751, "lon": -118.17032195632086}
+{"location_name": "MAURICEVILLE BRANCH", "source": "start", "scac": "UP", "subdivision_id": 595, "track_name": "MT", "mp": 259.36, "lat": 30.088808041873914, "lon": -93.78272802294215}
+{"location_name": "PRAIRIE CREEK", "source": "start", "scac": "UP", "subdivision_id": 25, "track_name": "MT", "mp": 44.89, "lat": 41.419109987612345, "lon": -88.10533695491577}
+{"location_name": "LEXINGTON (EAST OF B226)", "source": "start", "scac": "UP", "subdivision_id": 210, "track_name": "MT 3", "mp": 225.59, "lat": 40.77857406234406, "lon": -99.75401307194623}
+{"location_name": "HINTON", "source": "start", "scac": "UP", "subdivision_id": 123, "track_name": "MT", "mp": 498.57, "lat": 42.62923807687027, "lon": -96.29092297266534}
+{"location_name": "LONGHORN", "source": "start", "scac": "UP", "subdivision_id": 528, "track_name": "MT 1", "mp": 250.54, "lat": 29.541314054711826, "lon": -98.44284198704678}
+{"location_name": "SALADO", "source": "start", "scac": "UP", "subdivision_id": 640, "track_name": "MT 2", "mp": 203.6, "lat": 29.457907809652635, "lon": -98.40740933289008}
+{"location_name": "PUMP HOUSE WYE", "source": "start", "scac": "UP", "subdivision_id": 265, "track_name": "MT 1", "mp": 859.97, "lat": 41.55288784101986, "lon": -110.19213087385677}
+{"location_name": "BLUE ROOM", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 732.51, "lat": 32.72747602246509, "lon": -114.6154400536792}
+{"location_name": "OIL SPUR", "source": "start", "scac": "UP", "subdivision_id": 940, "track_name": "MT", "mp": 381.6, "lat": 35.04042699152751, "lon": -118.17032195632086}
+{"location_name": "MP 75.75 to 76.25 Do not exceed 10 MPH", "source": "start", "scac": "UP", "subdivision_id": 304, "track_name": "MT", "mp": 75, "lat": 39.847342212960335, "lon": -95.98637191135671}
+{"location_name": "76.25 Do not exceed 10 MPH", "source": "end", "scac": "UP", "subdivision_id": 304, "track_name": "MT", "mp": 107.93, "lat": 39.828848081599844, "lon": -96.53721494868638}
+{"location_name": "MERIDIAN", "source": "start", "scac": "UP", "subdivision_id": 648, "track_name": "MT", "mp": 740.18, "lat": 31.188469119778176, "lon": -105.40996030712202}
+{"location_name": "BOND", "source": "start", "scac": "UP", "subdivision_id": 719, "track_name": "E SIDING", "mp": 127.1, "lat": 39.855059032957875, "lon": -106.66014997963937}
+{"location_name": "MP 74.8 TO MP 12", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "UP 8514 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.794, "lat": 35.53844000506608, "lon": -101.92377202701051}
+{"location_name": "MP 74.8 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "UP 8514 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 390.337, "lat": 35.711250245081, "lon": -102.3239728905181}
+{"location_name": "MP 88 TO MP 64.7", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3645", "mp": 64.964, "lat": 36.04198899103066, "lon": -102.00527694631312}
+{"location_name": "MP 88 TO MP 62", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3629", "mp": 63.413, "lat": 36.0200220685518, "lon": -102.00096995131175}
+{"location_name": "MP 62 TO MP 42", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3611", "mp": 51.925, "lat": 35.85438302339346, "lon": -101.98091902849141}
+{"location_name": "MP 62 TO MP 31.7", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3610", "mp": 41.035, "lat": 35.7138579708387, "lon": -102.02399895737481}
+{"location_name": "MP 62 TO MP 22", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 62 TO MP 12", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "MP 62 TO RL MP 2.9", "source": "start", "scac": "BNSF", "subdivision_id": 7025, "track_name": "3603", "mp": 26.852, "lat": 35.53809699450826, "lon": -101.92418701661576}
+{"location_name": "SUBWAY", "source": "start", "scac": "UP", "subdivision_id": 675, "track_name": "MT 2", "mp": 735.46, "lat": 32.70007905103393, "lon": -114.6123310410914}
+{"location_name": "CLEVELAND", "source": "start", "scac": "UP", "subdivision_id": 612, "track_name": "MT", "mp": 43.81, "lat": 30.348985022064877, "lon": -95.0849360222768}
+{"location_name": "CP SX063", "source": "end", "scac": "UP", "subdivision_id": 119, "track_name": "MT", "mp": 63.42, "lat": 42.32978601913353, "lon": -96.30189096238713}
+{"location_name": "RL MP 338 TO MP 400", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 337.911, "lat": 35.21494004089651, "lon": -101.84758700268112}
+{"location_name": "UP 8553 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 390.337, "lat": 35.711250245081, "lon": -102.3239728905181}
+{"location_name": "MP 386 TO CTC CP 4154", "source": "start", "scac": "BNSF", "subdivision_id": 7060, "track_name": "MAIN", "mp": 386, "lat": 35.61296612920089, "lon": -102.35020796470592}
+{"location_name": "HONDO", "source": "start", "scac": "UP", "subdivision_id": 640, "track_name": "SIDING", "mp": 259.62, "lat": 29.346109001719043, "lon": -99.15892507551663}
+{"location_name": "JACKS", "source": "end", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 366.89, "lat": 36.03895109288763, "lon": -97.91026798798964}
+{"location_name": "AURORA COOP", "source": "start", "scac": "UP", "subdivision_id": 206, "track_name": "MT 2", "mp": 142.52, "lat": 40.97327988929766, "lon": -98.23964624924605}
+{"location_name": "KEYES", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 119.56, "lat": 37.56559501683263, "lon": -120.92792001361758}
+{"location_name": "HARWOOD", "source": "start", "scac": "UP", "subdivision_id": 628, "track_name": "SIDING", "mp": 142.34, "lat": 29.66793398534381, "lon": -97.4719379855}
+{"location_name": "CP P059", "source": "start", "scac": "UP", "subdivision_id": 19, "track_name": "MT", "mp": 58.78, "lat": 40.998967241396485, "lon": -89.65047526745802}
+{"location_name": "ROYAL", "source": "start", "scac": "UP", "subdivision_id": 40, "track_name": "MT", "mp": 108.57, "lat": 40.34620371195027, "lon": -87.88961825676817}
+{"location_name": "FINDLAY JCT", "source": "start", "scac": "UP", "subdivision_id": 44, "track_name": "MT", "mp": 185.57, "lat": 39.5168650372303, "lon": -88.75395201619267}
+{"location_name": "CP Q015", "source": "start", "scac": "UP", "subdivision_id": 527, "track_name": "MT", "mp": 15.85, "lat": 31.62745162874448, "lon": -95.79504220634087}
+{"location_name": "CTC COON CREEK TO NSS BRUNO", "source": "start", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.17095804892087, "lon": -93.29415702557819}
+{"location_name": "UP 8711 NORTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 131, "lat": 45.22736804152579, "lon": -93.29200695997501}
+{"location_name": "UP 8711 SOUTH", "source": "end", "scac": "BNSF", "subdivision_id": 7102, "track_name": "MAIN", "mp": 136.804, "lat": 45.15572500154712, "lon": -93.29389403912678}
+{"location_name": "NSS MIDLAND", "source": "start", "scac": "UP", "subdivision_id": 325, "track_name": "MT", "mp": 248.94, "lat": 37.62245304649108, "lon": -97.33634596454091}
+{"location_name": "UP 8744 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "MP 222 TO MP 212", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.24641811477574, "lon": -88.82301898805957}
+{"location_name": "UP 8744 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "MP 222 TO CTC WEST CYPRESS", "source": "start", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.357, "lat": 37.24641811477574, "lon": -88.82301898805957}
+{"location_name": "UP 8773 WEST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "MAIN", "mp": 216.175, "lat": 37.27390830928906, "lon": -88.84700577591028}
+{"location_name": "UP 8773 EAST", "source": "end", "scac": "BNSF", "subdivision_id": 7017, "track_name": "2651", "mp": 218.352, "lat": 37.246143047715144, "lon": -88.82281301341321}
+{"location_name": "TOP END DOG YARD", "source": "start", "scac": "UP", "subdivision_id": 678, "track_name": "MT 6", "mp": 1298.29, "lat": 31.762601013552676, "lon": -106.48533002180655}
+{"location_name": "WEST CONNECTION", "source": "start", "scac": "UP", "subdivision_id": 765, "track_name": "MT 2", "mp": 576.61, "lat": 38.38773401888306, "lon": -113.01385998989977}
+{"location_name": "SHELDON", "source": "start", "scac": "UP", "subdivision_id": 605, "track_name": "MT", "mp": 346.66, "lat": 29.867774952411047, "lon": -95.1291790635335}
+{"location_name": "STELLA", "source": "end", "scac": "UP", "subdivision_id": 225, "track_name": "MT", "mp": 401.21, "lat": 40.23815899879093, "lon": -95.78613395839555}
+{"location_name": "BYERS", "source": "end", "scac": "UP", "subdivision_id": 715, "track_name": "MT", "mp": 594.54, "lat": 39.70330037655933, "lon": -104.19001244032994}
+{"location_name": "9.[X] LIMITS JOINTLY OCCUPIED BETWEEN 21.37 AND 19.00", "source": "end", "scac": "UP", "subdivision_id": 190, "track_name": "MT", "mp": 19, "lat": 44.779372085368195, "lon": -93.3531569628234}
+{"location_name": "2ND STREET", "source": "start", "scac": "UP", "subdivision_id": 100, "track_name": "MT 2", "mp": 153.73, "lat": 42.040663019178325, "lon": -92.91891201435925}
+{"location_name": "LAWRENCE", "source": "start", "scac": "UP", "subdivision_id": 495, "track_name": "MT", "mp": 186.18, "lat": 32.737665032455595, "lon": -96.33539906619212}
+{"location_name": "TRAVER", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 231.25, "lat": 36.45401710858654, "lon": -119.48869202645184}
+{"location_name": "KINCAID", "source": "end", "scac": "UP", "subdivision_id": 330, "track_name": "MT", "mp": 81.14, "lat": 38.10187507239535, "lon": -95.13258897482592}
+{"location_name": "W SPARKS", "source": "start", "scac": "UP", "subdivision_id": 917, "track_name": "MT 1", "mp": 244.87, "lat": 39.531805044756574, "lon": -119.75473100869247}
+{"location_name": "P4", "source": "start", "scac": "UP", "subdivision_id": 255, "track_name": "MT 4", "mp": 510.54, "lat": 41.125449063682154, "lon": -104.83015794618069}
+{"location_name": "GERING", "source": "start", "scac": "UP", "subdivision_id": 214, "track_name": "MT 1", "mp": 138.75, "lat": 41.78871210270265, "lon": -103.5300449255976}
+{"location_name": "GATOR HAWK", "source": "start", "scac": "UP", "subdivision_id": 520, "track_name": "MT 2", "mp": 214.66, "lat": 30.025085051555195, "lon": -95.40341794099352}
+{"location_name": "SUISUN", "source": "start", "scac": "UP", "subdivision_id": 910, "track_name": "MT 1", "mp": 42.36, "lat": 38.15597610038058, "lon": -122.087790075519}
+{"location_name": "SELBY", "source": "start", "scac": "UP", "subdivision_id": 910, "track_name": "MT 2", "mp": 20.95, "lat": 38.020746031870125, "lon": -122.28669194374162}
+{"location_name": "KINGSBURG", "source": "start", "scac": "UP", "subdivision_id": 938, "track_name": "MT", "mp": 224.04, "lat": 36.53031094289195, "lon": -119.5721299460769}

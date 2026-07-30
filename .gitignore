@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+
+# Build outputs
+bin/
+obj/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+subdivs/obj/
+subdivs/bin/
+
+railmap_csx.json
+subdivs/matched_tracks.json
+subdivs/Bulletin Search Results - Actual/parsed_messages.jsonl
+subdivs/Bulletin Search Results - Actual/track_seg_output.jsonl
